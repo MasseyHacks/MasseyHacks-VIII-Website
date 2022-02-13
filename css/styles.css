@@ -1,29 +1,131 @@
-#hamburger {
-    width: 40px;
-    height: 5px;
-    background-color: #FF58C0;
-    position: absolute;
-    left: 50px;
+:root {
+    --nav-burger-width: clamp(35px, 4vw, 40px);
+    --nav-burger-line-height: max(5px, calc((var(--nav-burger-width) * 0.4) / 3));
+    --pink-colour: #FF58C0;
+    --grey-colour: #1C1D1F;
+    --blue-colour: #52FAF0;
+}
+
+
+.unstyled-list {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.nav-links > li > a {
+    text-decoration: none;
+    color: var(--grey-colour);
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 50px;
     top: 50px;
-    border-radius: 5px;
+    z-index: 1000;
+    background-color: var(--grey-colour);
+    border-radius: 5%;
+
+    padding: 5px;
+    transition: background-color 500ms;
+
+    box-shadow: 0 0 5px var(--pink-colour);
 }
 
-#hamburger::before {
-    content: "";
-    width: 40px;
-    height: 5px;
-    background-color: #FF58C0;
-    position: absolute;
-    top: 15px;
-    border-radius: 5px;
+.nav-active {
+    background-color: var(--pink-colour);
+    border-radius: 2.5%;
 }
 
-#hamburger::after {
-    content: "";
-    width: 40px;
-    height: 5px;
-    background-color: #FF58C0;
-    position: absolute;
-    top: 30px;
+/* NAV BURGER ICON */
+.nav-burger {
+    display: block;
+    cursor: pointer;
+    padding: 0 calc(((var(--nav-burger-width)) * 0.7071067812 - var(--nav-burger-line-height) * 2) / 2);
+}
+
+.nav-burger > div {
+    background-color: var(--pink-colour);
+    width: var(--nav-burger-width);
+    height: var(--nav-burger-line-height);
+    margin: calc(((var(--nav-burger-width)) * 0.7071067812 - var(--nav-burger-line-height) * 2) / 2) 0;
     border-radius: 5px;
+    margin-left: auto;
+}
+
+.nav-burger > div:nth-child(1) {
+    transform-origin: left;
+    transition-property: transform, background-color, box-shadow;
+    transition-duration: 500ms;
+}
+
+.nav-burger > div:nth-child(2) {
+    transform-origin: left;
+    transition-property: transform, background-color, box-shadow;
+    transition-duration: 500ms;
+}
+
+.nav-burger > div:nth-child(3) {
+    transform-origin: left;
+    transition-property: transform, background-color, box-shadow;
+    transition-duration: 500ms;
+}
+
+
+
+.nav-burger-active > div:nth-child(1) {
+    transform: rotate(45deg);
+    background-color: var(--grey-colour);
+}
+
+.nav-burger-active > div:nth-child(2) {
+    background-color: transparent;
+    box-shadow: none;
+    transform: translateX(-20px);
+}
+
+.nav-burger-active > div:nth-child(3) {
+    transform: rotate(-45deg);
+    background-color: var(--grey-colour);
+}
+
+.nav-links {
+    display: flex;
+    /*align-items: end;*/
+    flex-direction: column;
+
+    max-width: 0;
+    max-height: 0;
+
+    transform: scale(0, 0);
+    transform-origin: 15px 0;
+
+    margin: auto 0;
+
+    transition-property: max-width, max-height, transform;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+}
+
+.nav-links-active {
+    max-width: 250px;
+    max-height: 270px;
+    transform: scale(1, 1);
+}
+
+.nav-links > li {
+    margin: 5px 15px 5px 6px;
+}
+
+body {
+    font-family: IBM Plex Sans;
+    background-color: #1C1D1F;
+}
+
+.container {
+    margin-top: 15vh; color: white;
 }
