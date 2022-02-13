@@ -121,5 +121,11 @@ nav {
     margin: 5px 15px 5px 6px;
 }
 
+body {
+    font-family: IBM Plex Sans;
+    background-color: #1C1D1F;
+}
 
-
+.container {
+    margin-top: 15vh; color: white;
+}
