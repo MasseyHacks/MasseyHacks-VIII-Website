@@ -24,7 +24,7 @@ nav {
     display: flex;
     flex-direction: column;
     position: fixed;
-    left: 50px;
+    right: 50px;
     top: 50px;
     z-index: 1000;
     background-color: var(--grey-colour);
@@ -44,14 +44,16 @@ nav {
 .nav-burger {
     display: block;
     cursor: pointer;
+    padding: 0 calc(((var(--nav-burger-width)) * 0.7071067812 - var(--nav-burger-line-height) * 2) / 2);
 }
 
 .nav-burger > div {
     background-color: var(--pink-colour);
     width: var(--nav-burger-width);
     height: var(--nav-burger-line-height);
-    margin: calc(((var(--nav-burger-width)) * 0.7071067812 - var(--nav-burger-line-height) * 2) / 2);
+    margin: calc(((var(--nav-burger-width)) * 0.7071067812 - var(--nav-burger-line-height) * 2) / 2) 0;
     border-radius: 5px;
+    margin-left: auto;
 }
 
 .nav-burger > div:nth-child(1) {
@@ -71,6 +73,8 @@ nav {
     transition-property: transform, background-color, box-shadow;
     transition-duration: 500ms;
 }
+
+
 
 .nav-burger-active > div:nth-child(1) {
     transform: rotate(45deg);
