@@ -28,7 +28,7 @@ nav {
     top: 50px;
     z-index: 1000;
     background-color: var(--grey-colour);
-    border-radius: 10%;
+    border-radius: 5%;
 
     padding: 5px;
     transition: background-color 500ms;
@@ -38,6 +38,7 @@ nav {
 
 .nav-active {
     background-color: var(--pink-colour);
+    border-radius: 2.5%;
 }
 
 /* NAV BURGER ICON */
