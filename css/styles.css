@@ -129,3 +129,10 @@ body {
 .container {
     margin-top: 15vh; color: white;
 }
+#faq {
+    text-align: center;
+}
+
+.subtitle {
+    font-weight: 700;
+}
