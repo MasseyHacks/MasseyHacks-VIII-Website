@@ -183,3 +183,16 @@ body {
     text-align: left;
     font-size: large;
 }
+
+footer{
+    background: #111;
+    color: white;
+}
+
+.footer {
+    height: 20vh;
+}
+
+.footer-title{
+    margin-bottom: 1rem
+}
