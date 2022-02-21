@@ -6,6 +6,29 @@
     --blue-colour: #52FAF0;
 }
 
+::-webkit-scrollbar{
+    width: 0.5rem;
+    height: auto;
+    position: absolute;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #777;
+    border-radius: 0.2rem;
+    width: 80%;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+
+::-webkit-scrollbar-thumb:active{
+    background: #333;
+}
 
 .unstyled-list {
     list-style: none;
