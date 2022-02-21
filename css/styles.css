@@ -150,5 +150,36 @@ body {
 }
 
 .container {
-    margin-top: 15vh; color: white;
+    margin-top: 16vh;
+    margin-bottom: 5vh;
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #FF58C0;
+}
+
+.accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23138F9F'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-item {
+    border: none;
+}
+
+.subtitle {
+    font-weight: 700;
+}
+
+.question {
+    background-color: transparent !important;
+    margin-top: 10vh;
+    font-weight: 700;
+    font-size: xx-large;
+    color: #FF58C0;
+}
+
+.answer {
+    text-align: left;
+    font-size: large;
 }
