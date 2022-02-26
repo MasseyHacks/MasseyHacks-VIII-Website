@@ -127,7 +127,7 @@ body {
 }
 
 .container {
-    margin-top: 16vh;
+    margin-top: 25vh;
     margin-bottom: 5vh;
     color: white;
 }
@@ -159,4 +159,8 @@ body {
 .answer {
     text-align: left;
     font-size: large;
+}
+
+.sponsor-us-text {
+    font-size: x-large;
 }
