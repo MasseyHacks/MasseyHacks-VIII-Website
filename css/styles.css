@@ -190,9 +190,13 @@ footer{
 }
 
 .footer {
-    height: 20vh;
+    height: 40vh;
 }
 
-.footer-title{
-    margin-bottom: 1rem
+.footer-logo{
+    height: 10vh;
+}
+
+.footer-social{
+    font-size: 2rem;
 }
