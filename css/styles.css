@@ -190,7 +190,13 @@ footer{
 }
 
 .footer {
-    height: 40vh;
+    height: clamp(500px,50vh,50vh);
+}
+
+.footer-title{
+    font-size: clamp(2rem, 40px, 3rem);
+    letter-spacing: 10px;
+    padding-top: 2vh;
 }
 
 .footer-logo{
@@ -199,4 +205,15 @@ footer{
 
 .footer-social{
     font-size: 2rem;
+    padding-top: 2vh;
+}
+
+.footer-links{
+    padding-top: 2vh;
+}
+
+.footer-link{
+    text-decoration: none !important;
+    color: white !important;
+    font-size: clamp(1rem, 20px, 2rem);
 }
