@@ -4,6 +4,7 @@
     --pink-colour: #FF58C0;
     --grey-colour: #1C1D1F;
     --blue-colour: #52FAF0;
+    --yellow-colour: #F3DFAD;
 }
 
 
@@ -38,7 +39,7 @@ nav {
 
 .nav-active {
     background-color: var(--pink-colour);
-    border-radius: 2.5%;
+    border-radius: 3%;
 }
 
 /* NAV BURGER ICON */
@@ -128,4 +129,54 @@ body {
 
 .container {
     margin-top: 15vh; color: white;
+}
+
+.week-2 {
+    background-image: url("../images/startup-section/week-2-tab.svg");
+}
+
+#startup-section {
+    padding: 50px;
+}
+
+
+.startup-container {
+    /*display: flex !important;*/
+
+    width: 86% !important;
+    height: 73% !important;
+    position: absolute !important;
+    top: 20% !important;
+    left: 7% !important;
+}
+
+.startup-folder-buttons {
+    position: absolute !important;
+    display: flex !important;
+    width: 86.7% !important;
+    height: 11.9% !important;
+    top: 0 !important;
+    justify-content: space-around !important;
+    font-size: clamp(0.55rem, 2vw, 2.5rem) !important;
+}
+
+.startup-folder-buttons > span {
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    width: 25% !important;
+    height: 100% !important;
+    font-weight: bolder !important;
+
+    border-radius: 22% !important;
+    background-color: transparent !important;
+    color: var(--grey-colour) !important;
+    opacity: 1 !important;
+}
+
+.folder-pagination-custom {
+    top: -25% !important;
+    left: -8% !important;
+    bottom: initial !important;
 }

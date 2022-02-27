@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>MasseyHacks VIII</title>
     <meta charset="UTF-8">
@@ -54,6 +54,9 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="https://cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
+
     <style type="text/css">
         #mc_embed_signup {
             background: none;
@@ -143,7 +146,79 @@
         </div>
     </section>
 
-    <script src="js/main.js"></script>
 
+
+    <section id="startup-section" class="container-lg position-relative">
+        <img src="images/startup-section/startup-background.svg" alt="Background" class="d-block w-100 h-100 position-absolute translate-middle top-50 start-50" style="object-fit: cover;">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 position-relative p-0">
+                <img class="d-block w-100" src="images/startup-section/base-foreground.svg" alt="Folder">
+                <img id="week-2-img" class="d-block w-100 position-absolute top-0 start-0 d-none" src="images/startup-section/week-2-tab.svg" alt="Folder">
+                <img id="week-3-img" class="d-block w-100 position-absolute top-0 start-0 d-none" src="images/startup-section/week-3-tab.svg" alt="Folder">
+                <img id="week-5-img" class="d-block w-100 position-absolute top-0 start-0 d-none" src="images/startup-section/week-5-tab.svg" alt="Folder">
+
+                <div class="startup-folder-buttons swiper-pagination"></div>
+
+                <!-- Weeks -->
+                <div class="folder-swiper swiper startup-container">
+                    <div class="swiper-wrapper">
+                        <div id="week-1-ctn" class="d-flex px-1 swiper-slide">
+                            <img class="d-block" style="width: 35%;" src="images/startup-section/brain-solid.svg" alt="Brain Icon">
+                            <div class="d-flex flex-column justify-content-center" style="padding-left: 10%;">
+                                <h1 class="fw-bolder" style="color: var(--pink-colour); font-size: clamp(0.63rem, 5.1vw, 5rem);">Learnathon</h1>
+                                <p class="fw-bold" style="color: var(--grey-colour); font-size: clamp(0.63rem, 2.9vw, 2.5rem);">
+                                    Start of &#60PRE-EVENT&#62<br>
+                                    and<br>
+                                    the introductory week.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="week-2-ctn" class="d-flex px-1 swiper-slide">
+                            <img class="d-block" style="width: 35%;" src="images/startup-section/laptop-code-solid.svg" alt="Brain Icon">
+                            <div class="d-flex flex-column justify-content-center" style="padding-left: 10%;">
+                                <h1 class="fw-bolder" style="color: var(--yellow-colour); font-size: clamp(0.63rem, 5.1vw, 5rem);">Web Dev</h1>
+                                <p class="fw-bold" style="color: var(--grey-colour); font-size: clamp(0.63rem, 2.9vw, 2.5rem);">
+                                    Introduction to web<br>
+                                    development and<br>
+                                    creating static websites<br>
+                                    using HTML and CSS.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="week-3-ctn" class="d-flex px-1 swiper-slide">
+                            <img class="d-block" style="width: 35%;" src="images/startup-section/gamepad-solid.svg" alt="Brain Icon">
+                            <div class="d-flex flex-column justify-content-center" style="padding-left: 10%;">
+                                <h1 class="fw-bolder" style="color: var(--yellow-colour); font-size: clamp(0.63rem, 5.2vw, 5rem);">Game Jam</h1>
+                                <p class="fw-bold" style="color: var(--grey-colour); font-size: clamp(0.63rem, 3vw, 2.5rem);">
+                                    Learning about game<br>
+                                    development using<br>
+                                    Unity 3D.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="week-5-ctn" class="d-flex px-1 swiper-slide">
+                            <img class="d-block" style="width: 35%;" src="images/startup-section/microchip-solid.svg" alt="Brain Icon">
+                            <div class="d-flex flex-column justify-content-center" style="padding-left: 10%;">
+                                <h1 class="fw-bolder" style="color: var(--yellow-colour); font-size: clamp(0.63rem, 5.2vw, 5rem);">Hardware</h1>
+                                <p class="fw-bold" style="color: var(--grey-colour); font-size: clamp(0.63rem, 3vw, 2.5rem);">
+                                    Hardware engineering<br>
+                                    using Arduino and<br>
+                                    TinkerCad.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
