@@ -216,3 +216,7 @@ footer{
     color: white !important;
     font-size: clamp(1rem, 20px, 2rem);
 }
+
+.cursor-pointer{
+    cursor: pointer;
+}
