@@ -6,6 +6,29 @@
     --blue-colour: #52FAF0;
 }
 
+::-webkit-scrollbar{
+    width: 0.5rem;
+    height: auto;
+    position: absolute;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #777;
+    border-radius: 0.2rem;
+    width: 80%;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+
+::-webkit-scrollbar-thumb:active{
+    background: #333;
+}
 
 .unstyled-list {
     list-style: none;
@@ -132,6 +155,15 @@ body {
     color: white;
 }
 
+.text-bg {
+    background: rgba(25, 34, 52, 0.7);
+    border-radius: 62px;
+}
+
+.about-p {
+    font-size: 20px;
+}
+
 .accordion-button:not(.collapsed) {
     color: #FF58C0;
 }
@@ -163,4 +195,37 @@ body {
 
 .sponsor-us-text {
     font-size: x-large;
+}
+
+footer{
+    background: #111;
+    color: white;
+}
+
+.footer {
+    height: clamp(500px,50vh,50vh);
+}
+
+.footer-title{
+    font-size: clamp(2rem, 40px, 3rem);
+    padding-top: 2vh;
+}
+
+.footer-logo{
+    height: 10vh;
+}
+
+.footer-social{
+    font-size: 2rem;
+    padding-top: 2vh;
+}
+
+.footer-links{
+    padding-top: 2vh;
+}
+
+.footer-link{
+    text-decoration: none !important;
+    color: white !important;
+    font-size: clamp(1rem, 20px, 2rem);
 }
