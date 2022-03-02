@@ -145,72 +145,104 @@
 
     <!-- Frequently Asked Questions -->
     <section id="faq" class="container">
-        <h1 class="subtitle" style="font-size: 80px;"><span style="color: #44F3E8;">.</span>/<span style="color: #F3DFAD;">FAQ</span></h1>
-        <div>
-            <!-- FAQ Accordion -->
-            <div class="row accordion text-left" id="faq-accordion">
-                <!-- Left Column -->
-                <div class="col-md-6">
-                    <!-- Q1 -->
-                    <div class="accordion-item bg-transparent">
-                        <h2 class="accordion-header" id="q1-header">
-                            <button class="accordion-button collapsed question" type="button" data-bs-toggle="collapse" data-bs-target="#q1-collapse" aria-expanded="false" aria-controls="q1-collapse">
+        <h1 class="subtitle mb-4" style="font-size: 80px;"><span style="color: #44F3E8;">.</span>/<span style="color: #F3DFAD;">FAQ</span></h1>
+        <div class="justify-content-center text-bg">
+            <div class="row accordion text-left p-5 pb-1" id="faqAccordion">
+                <div class="col-md-6" id="faq1">
+                    <div class="card border-0 bg-transparent mb-2">
+                        <div class="card-header border-0 p-0 bg-transparent" id="faqOne">
+                            <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapseFaqOne" aria-expanded="true" aria-controls="collapseFaqOne">
+                                What is a hackathon?
+                            </h4>
+                        </div>
+    
+                        <div id="collapseFaqOne" class="collapse bg-transparent" aria-labelledby="faqOne" data-bs-parent="#faqAccordion">
+                            <p>(Insert something here)</p>
+                        </div>
+                    </div>  
+                    <div class="card border-0 bg-transparent mb-2">
+                        <div class="card-header border-0 p-0 bg-transparent" id="faqTwo">
+                            <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapseFaqTwo" aria-expanded="true" aria-controls="collapseFaqTwo">
                                 Who can participate?
-                            </button>
-                        </h2>
-                        <div id="q1-collapse" class="accordion-collapse collapse answer" aria-labelledby="q1-header" data-bs-parent="#faq-accordion">
-                            <div class="accordion-body">
-                                Any student in grade 7 to 12 can register to be a participant. If you've graduated from high school, we welcome you to apply as a mentor!
-                            </div>
+                            </h4>
+                        </div>
+    
+                        <div id="collapseFaqTwo" class="collapse bg-transparent" aria-labelledby="faqTwo" data-bs-parent="#faqAccordion">
+                            <p>Any student in grade 7 to 12 can register to be a participant. If you've graduated from high school, we welcome you to apply as a mentor!</p>
                         </div>
                     </div>
-
-                    <!-- Q3 -->
-                    <div class="accordion-item bg-transparent">
-                        <h2 class="accordion-header" id="q3-header">
-                            <button class="accordion-button collapsed question" type="button" data-bs-toggle="collapse" data-bs-target="#q3-collapse" aria-expanded="false" aria-controls="q3-collapse">
+                    <div class="card border-0 bg-transparent mb-2">
+                        <div class="card-header border-0 p-0 bg-transparent" id="faqThree">
+                            <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapseFaqThree" aria-expanded="true" aria-controls="collapseFaqThree">
                                 Do I need to know how to program?
-                            </button>
-                        </h2>
-                        <div id="q3-collapse" class="accordion-collapse collapse answer" aria-labelledby="q3-header" data-bs-parent="#faq-accordion">
-                            <div class="accordion-body">
-                                Not at all - in fact, we encourage newcomers to come and participate in MasseyHacks.
-                            </div>
+                            </h4>
+                        </div>
+    
+                        <div id="collapseFaqThree" class="collapse bg-transparent" aria-labelledby="faqThree" data-bs-parent="#faqAccordion">
+                            <p>Not at all — in fact, we encourage newcomers to come and participate in MasseyHacks.</p>
                         </div>
                     </div>
-                </div>
-
-
-                <!-- Right Column -->
-                <div class="col-md-6" style="margin-top: 5vh;">
-                    <!-- Q2 -->
-                    <div class="accordion-item bg-transparent">
-                        <h2 class="accordion-header" id="q2-header">
-                            <button class="accordion-button collapsed question" type="button" data-bs-toggle="collapse" data-bs-target="#q2-collapse" aria-expanded="false" aria-controls="q2-collapse">
+                    <div class="card border-0 bg-transparent mb-2">
+                        <div class="card-header border-0 p-0 bg-transparent" id="faqFour">
+                            <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapseFaqFour" aria-expanded="true" aria-controls="collapseFaqFour">
                                 How much does it cost to attend?
-                            </button>
-                        </h2>
-                        <div id="q2-collapse" class="accordion-collapse collapse answer" aria-labelledby="q2-header" data-bs-parent="#faq-accordion">
-                            <div class="accordion-body">
-                                Admission to MasseyHacks VII is completely free! We want to give the largest possible amount of people the opportunity to participate.
-                            </div>
+                            </h4>
                         </div>
-                    </div>
-
-                    <!-- Q4 -->
-                    <div class="accordion-item bg-transparent">
-                        <h2 class="accordion-header" id="q4-header">
-                            <button class="accordion-button collapsed question" type="button" data-bs-toggle="collapse" data-bs-target="#q4-collapse" aria-expanded="false" aria-controls="q4-collapse">
-                                Code of Conduct
-                            </button>
-                        </h2>
-                        <div id="q4-collapse" class="accordion-collapse collapse answer" aria-labelledby="q4-header" data-bs-parent="#faq-accordion">
-                            <div class="accordion-body">
-                                To ensure an event is safe and enjoyable for everyone, we ask that hackers follow the MasseyHacks Code of Conduct. If you have any questions or would like to inform us of any issues, please email us at hello@masseyhacks.ca
-                            </div>
+    
+                        <div id="collapseFaqFour" class="collapse bg-transparent" aria-labelledby="faqFour" data-bs-parent="#faqAccordion">
+                            <p>Admission to MasseyHacks VIII is completely free! We will provide all the resources, mentorship, and support needed for each week’s activities and challenges.</p>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6" id="faq2">
+                    <div class="card border-0 bg-transparent mb-2">
+                        <div class="card-header border-0 p-0 bg-transparent" id="faqFive">
+                            <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapseFaqFive" aria-expanded="true" aria-controls="collapseFaqFive">
+                                What is a hackathon?
+                            </h4>
+                        </div>
+    
+                        <div id="collapseFaqFive" class="collapse bg-transparent" aria-labelledby="faqFive" data-bs-parent="#faqAccordion">
+                            <p>(Insert something here)</p>
+                        </div>
+                    </div>  
+                    <div class="card border-0 bg-transparent mb-2">
+                        <div class="card-header border-0 p-0 bg-transparent" id="faqSix">
+                            <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapseFaqSix" aria-expanded="true" aria-controls="collapseFaqSix">
+                                Who can participate?
+                            </h4>
+                        </div>
+    
+                        <div id="collapseFaqSix" class="collapse bg-transparent" aria-labelledby="faqSix" data-bs-parent="#faqAccordion">
+                            <p>Any student in grade 7 to 12 can register to be a participant. If you've graduated from high school, we welcome you to apply as a mentor!</p>
+                        </div>
+                    </div>
+                    <div class="card border-0 bg-transparent mb-2">
+                        <div class="card-header border-0 p-0 bg-transparent" id="faqSeven">
+                            <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapseFaqSeven" aria-expanded="true" aria-controls="collapseFaqSeven">
+                                Do I need to know how to program?
+                            </h4>
+                        </div>
+    
+                        <div id="collapseFaqSeven" class="collapse bg-transparent" aria-labelledby="faqSeven" data-bs-parent="#faqAccordion">
+                            <p>Not at all — in fact, we encourage newcomers to come and participate in MasseyHacks.</p>
+                        </div>
+                    </div>
+                    <div class="card border-0 bg-transparent mb-2">
+                        <div class="card-header border-0 p-0 bg-transparent" id="faqEight">
+                            <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapseFaqEight" aria-expanded="true" aria-controls="collapseFaqEight">
+                                Code of Conduct?
+                            </h4>
+                        </div>
+    
+                        <div id="collapseFaqEight" class="collapse bg-transparent" aria-labelledby="faqEight" data-bs-parent="#faqAccordion">
+                            <p>(Replace if we get accepted by MLH)</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="row text-center">
+                <p>If you have any questions or would like to inform us of any issues, please email us at hello@masseyhacks.ca</p>
             </div>
         </div>
     </section>

@@ -30,6 +30,10 @@
     background: #333;
 }
 
+p {
+    font-size: 1.1rem;
+}
+
 .unstyled-list {
     list-style: none;
     margin-left: 0;
@@ -165,10 +169,6 @@ body {
     border-radius: 62px;
 }
 
-.about-p {
-    font-size: 20px;
-}
-
 .accordion-button:not(.collapsed) {
     color: #FF58C0;
 }
@@ -241,7 +241,11 @@ footer{
     font-size: clamp(1rem, 20px, 2rem);
 }
 
-/* rom https://github.com/VMCSC/vmcs-7wc-website/blob/master/_scss/styles/sections/sponsors.scss */
+
+.cursor-pointer{
+    cursor: pointer;
+}
+  
 .sponsor-obj {
   padding-left: 10px;
   padding-right: 10px;
