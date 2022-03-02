@@ -146,17 +146,22 @@ nav {
 
 body {
     font-family: IBM Plex Sans;
-    background-color: #1C1D1F;
+    background-color: #2C2D2E;
 }
 
 .container {
-    margin-top: 16vh;
-    margin-bottom: 5vh;
+    margin-top: 25vh;
+    margin-bottom: 10vh;
     color: white;
 }
 
 .text-bg {
-    background: rgba(25, 34, 52, 0.7);
+    background: rgba(29, 29, 29, 0.8);
+    border-radius: 62px;
+}
+
+.sponsors-bg {
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 62px;
 }
 
@@ -193,6 +198,16 @@ body {
     font-size: large;
 }
 
+.sponsor-prompt {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.sponsor-prompt-text {
+    font-size: x-large;
+    color: black;
+}
+
 footer{
     background: #111;
     color: white;
@@ -224,4 +239,52 @@ footer{
     text-decoration: none !important;
     color: white !important;
     font-size: clamp(1rem, 20px, 2rem);
+}
+
+/* rom https://github.com/VMCSC/vmcs-7wc-website/blob/master/_scss/styles/sections/sponsors.scss */
+.sponsor-obj {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.gold img {
+  max-height: 500px;
+  max-width: 900px;
+  /*max-width: 95%;*/
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.silver img {
+  max-height: 300px;
+  max-width: 400px;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.partner img {
+  max-height: 300px;
+  width: 300px;
+  max-width: 30%;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bronze img {
+  max-height: 125px;
+  max-width: 275px;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
