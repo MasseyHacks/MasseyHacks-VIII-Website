@@ -30,6 +30,10 @@
     background: #333;
 }
 
+p {
+    font-size: 1.1rem;
+}
+
 .unstyled-list {
     list-style: none;
     margin-left: 0;
@@ -158,10 +162,6 @@ body {
 .text-bg {
     background: rgba(25, 34, 52, 0.7);
     border-radius: 62px;
-}
-
-.about-p {
-    font-size: 20px;
 }
 
 .accordion-button:not(.collapsed) {
