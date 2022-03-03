@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>MasseyHacks VIII</title>
     <meta charset="UTF-8">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://masseyhacks.ca/">
     <meta name="description" content="Windsor-Essex's eight high-school hackathon–for students, by students.">
-    
+
     <meta property="og:title" content="MasseyHacks VII">
     <meta property="og:description" content="Windsor-Essex's eight high-school hackathon–for students, by students.">
     <!--meta property="og:image" content="https://masseyhacks.ca/assets/images/banner.png"-->
     <meta property="og:url" content="https://masseyhacks.ca/">
     <meta property="og:type" content="website">
-    
+
     <meta property="twitter:title" content="MasseyHacks VIII">
     <meta property="twitter:description"
           content="Windsor-Essex's eight high-school hackathon-for students, by students.">
@@ -46,7 +46,7 @@
             "url": "https://masseyhacks.ca/"
         }
     </script>
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
@@ -54,6 +54,9 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="https://cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
+
     <style type="text/css">
         #mc_embed_signup {
             background: none;
@@ -96,51 +99,108 @@
     </nav>
 </header>
 
-    <section id="main-section" style="width: 100%; height: 100vh; background-color: #1C1D1F;">
-        <img src="images/main-section/main-background.svg" alt="Background" class="d-block w-100 h-100 position-absolute translate-middle top-50 start-50" style="object-fit: cover;">
-        <img src="images/main-section/main-foreground.svg" alt="Background" class="d-block w-75 h-100 position-absolute translate-middle top-50 start-50" style="
-        max-width: 900px; object-fit: contain;">
-    </section>
 
+<section id="hero-section">
+    <div class="hero-glass">
+        <img src="images/main-logo.svg" alt="Logo">
+        <div></div>
+        <h1>MasseyHacks VIII</h1>
+        <div></div>
+        <h2>I'm an ape, I love my banana with peel</h2>
+    </div>
+</section>
 
-    <!-- About -->
-    <section id="about" class="container">
-        <div class="row">
-            <!-- Title and Paragraph -->
-            <div class="col-md-7">
-                <div class="text-bg p-5">
-                    <div>
-                        <h1 class="subtitle">Canada's oldest high school <span style="text-shadow: 2px 2px #FF58C0;">hackathon</span></h1>
-                        <p class="about-p mt-5">MasseyHacks is a high school hackathon where 150+ students of all skill levels gather to learn, create, and experience something amazing. Over this 36-hour event, you will find seasoned mentors to learn from, lively activities to take part in, and a plethora of workshops to discover! Complete with three main learning streams based on your hacking experience, MasseyHacks is a place to explore the world of computer science and technology.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Stats of prizes and students attended -->
-            <div class="col-md-5" style="text-align: center;">
-                <div class="row">
-                    <div class="col-md-12">
-                        <i class="fas fa-graduation-cap fa-10x"></i>
-                    </div>
-                    <div class="col-md-12">
-                        <h2>1000+</h2>
-                    </div>
-                    <div class="col-md-12">
-                        <p>students have attended</p>
-                    </div>
-                    <div class="col-md-12" style="margin-top: 3rem;">
-                        <i class="fas fa-trophy fa-10x"></i>
-                    </div>
-                    <div class="col-md-12">
-                        <h2 style="margin-top: 2vh;">$18300+</h2>
-                    </div>
-                    <div class="col-md-12">
-                        <p>in prizes awarded</p>
-                    </div>
+<!-- About -->
+<section id="about" class="container">
+    <div class="row">
+        <!-- Title and Paragraph -->
+        <div class="col-md-7">
+            <div class="text-bg p-5">
+                <div>
+                    <h1 class="subtitle">Canada's oldest high school <span style="text-shadow: 2px 2px #FF58C0;">hackathon</span></h1>
+                    <p class="about-p mt-5">MasseyHacks is a high school hackathon where 150+ students of all skill levels gather to learn, create, and experience something amazing. Over this 36-hour event, you will find seasoned mentors to learn from, lively activities to take part in, and a plethora of workshops to discover! Complete with three main learning streams based on your hacking experience, MasseyHacks is a place to explore the world of computer science and technology.</p>
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- Stats of prizes and students attended -->
+        <div class="col-md-5" style="text-align: center;">
+            <div class="row">
+                <div class="col-md-12">
+                    <i class="fas fa-graduation-cap fa-10x"></i>
+                </div>
+                <div class="col-md-12">
+                    <h2>1000+</h2>
+                </div>
+                <div class="col-md-12">
+                    <p>students have attended</p>
+                </div>
+                <div class="col-md-12" style="margin-top: 3rem;">
+                    <i class="fas fa-trophy fa-10x"></i>
+                </div>
+                <div class="col-md-12">
+                    <h2 style="margin-top: 2vh;">$18300+</h2>
+                </div>
+                <div class="col-md-12">
+                    <p>in prizes awarded</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="jumpstart-section" class="container-lg position-relative">
+    <img src="images/jumpstart-section/jumpstart-triangles.svg" alt="Background" class="d-block w-100 h-100 position-absolute translate-middle top-50 start-50" style="object-fit: cover;">
+    <div class="row justify-content-center">
+        <div class="folder col-lg-10">
+            <div class="folder-tabs swiper-pagination">
+                <div onclick="openTab(1)" style="background-color: var(--week-1-colour);"></div>
+                <div onclick="openTab(2)" style="background-color: var(--week-2-colour);"></div>
+                <div onclick="openTab(3)" style="background-color: var(--week-3-colour);"></div>
+                <div onclick="openTab(4)" style="background-color: var(--week-5-colour);"></div>
+            </div>
+
+
+            <!-- Slider main container -->
+            <div class="folder-swiper swiper folder-cover-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide folder-cover-slide" style="background-color: transparent; border-radius: 25px;">
+                        asdasd
+                    </div>
+                    <div class="swiper-slide folder-cover-slide" style="background: linear-gradient(var(--week-2-colour), #158C9B2B); border-radius: 25px;">
+                        asdasd
+                    </div>
+                    <div class="swiper-slide folder-cover-slide" style="background: linear-gradient(var(--week-3-colour), #06C4B82B); border-radius: 25px;">
+                        asdasd
+                    </div>
+                    <div class="swiper-slide folder-cover-slide" style="background: linear-gradient(var(--week-5-colour), #03B2C82B); border-radius: 25px;">
+                        asd
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev d-none"></div>
+                <div class="swiper-button-next d-none"></div>
+            </div>
+
+
+            <div class="folder-cover-container d-none">
+                <div class="w-100 p-4 d-flex" style="background: linear-gradient(var(--week-2-colour), #158C9B2B); border-radius: 25px;">
+                    <img class="d-block" style="width: 35%;" src="images/jumpstart-section/brain-solid.svg" alt="Brain">
+                    <div class="folder-content-container">
+                        <h1>adasdasdasd</h1>
+                        <p>jasfjsalvslaalkf</p>
+                    </div>
+                </div>
+                <div class="w-100 p-4 d-flex d-none" style="background: linear-gradient(var(--week-3-colour), #06C4B82B); border-radius: 25px;"></div>
+                <div class="w-100 p-4 d-flex d-none" style="background: linear-gradient(var(--week-5-colour), #03B2C82B); border-radius: 25px;"></div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
     <!-- Frequently Asked Questions -->
@@ -360,6 +420,7 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
