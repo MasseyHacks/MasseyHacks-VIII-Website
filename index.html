@@ -17,8 +17,8 @@
     <meta property="twitter:title" content="MasseyHacks VIII">
     <meta property="twitter:description"
           content="Windsor-Essex's eight high-school hackathon-for students, by students.">
-
-    <!--
+    
+    
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -26,7 +26,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#212529">
     <meta name="msapplication-TileColor" content="#f7f7f7">
     <meta name="theme-color" content="#f7f7f7">
-    -->
+    
     <!-- Schema -->
     <script type="application/ld+json">
         {
@@ -99,6 +99,7 @@
     </nav>
 </header>
 
+
 <section id="hero-section">
     <div class="hero-glass">
         <img src="images/main-logo.svg" alt="Logo">
@@ -109,41 +110,39 @@
     </div>
 </section>
 
-
 <!-- About -->
 <section id="about" class="container">
     <div class="row">
         <!-- Title and Paragraph -->
         <div class="col-md-7">
-            <!-- Text Class -->
-            <div>
-                <h1 style="font-weight: 700;">Canada's oldest high school <span style="text-shadow: 2px 2px #FF58C0;">hackathon</span></h1>
-                <p style="margin-top: 3vh; font-size: large;">MasseyHacks is a high school hackathon where 150+ students of all skill levels gather to learn, create, and experience something amazing. Over this 36-hour event, you will find seasoned mentors to learn from, lively activities to take part in, and a plethora of workshops to discover! Complete with three main learning streams based on your hacking experience, MasseyHacks is a place to explore the world of computer science and technology.</p>
+            <div class="text-bg p-5">
+                <div>
+                    <h1 class="subtitle">Canada's oldest high school <span style="text-shadow: 2px 2px #FF58C0;">hackathon</span></h1>
+                    <p class="about-p mt-5">MasseyHacks is a high school hackathon where 150+ students of all skill levels gather to learn, create, and experience something amazing. Over this 36-hour event, you will find seasoned mentors to learn from, lively activities to take part in, and a plethora of workshops to discover! Complete with three main learning streams based on your hacking experience, MasseyHacks is a place to explore the world of computer science and technology.</p>
+                </div>
             </div>
         </div>
 
-        <div class="col-md-1"></div>
-
         <!-- Stats of prizes and students attended -->
-        <div class="col-md-4" style="text-align: center;">
+        <div class="col-md-5" style="text-align: center;">
             <div class="row">
                 <div class="col-md-12">
-                    <i class="fas fa-medal fa-8x"></i>
-                </div>
-                <div class="col-md-12">
-                    <h2 style="margin-top: 2vh;">$18300+</h2>
-                </div>
-                <div class="col-md-12">
-                    <p>in prizes awarded</p>
-                </div>
-                <div class="col-md-12">
-                    <i class="fas fa-graduation-cap fa-8x"></i>
+                    <i class="fas fa-graduation-cap fa-10x"></i>
                 </div>
                 <div class="col-md-12">
                     <h2>1000+</h2>
                 </div>
                 <div class="col-md-12">
                     <p>students have attended</p>
+                </div>
+                <div class="col-md-12" style="margin-top: 3rem;">
+                    <i class="fas fa-trophy fa-10x"></i>
+                </div>
+                <div class="col-md-12">
+                    <h2 style="margin-top: 2vh;">$18300+</h2>
+                </div>
+                <div class="col-md-12">
+                    <p>in prizes awarded</p>
                 </div>
             </div>
         </div>
@@ -204,8 +203,224 @@
 </section>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="js/main.js"></script>
+    <!-- Frequently Asked Questions -->
+    <section id="faq" class="container">
+        <h1 class="subtitle mb-4" style="font-size: 80px;"><span style="color: #44F3E8;">.</span>/<span style="color: #F3DFAD;">FAQ</span></h1>
+        <div class="justify-content-center text-bg">
+            <div class="row accordion text-left p-5 pb-1" id="faqAccordion">
+                <div class="col-md-6" id="faq1">
+                    <div class="card border-0 bg-transparent mb-2">
+                        <div class="card-header border-0 p-0 bg-transparent" id="faqOne">
+                            <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapseFaqOne" aria-expanded="true" aria-controls="collapseFaqOne">
+                                What is a hackathon?
+                            </h4>
+                        </div>
+    
+                        <div id="collapseFaqOne" class="collapse bg-transparent" aria-labelledby="faqOne" data-bs-parent="#faqAccordion">
+                            <p>(Insert something here)</p>
+                        </div>
+                    </div>  
+                    <div class="card border-0 bg-transparent mb-2">
+                        <div class="card-header border-0 p-0 bg-transparent" id="faqTwo">
+                            <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapseFaqTwo" aria-expanded="true" aria-controls="collapseFaqTwo">
+                                Who can participate?
+                            </h4>
+                        </div>
+    
+                        <div id="collapseFaqTwo" class="collapse bg-transparent" aria-labelledby="faqTwo" data-bs-parent="#faqAccordion">
+                            <p>Any student in grade 7 to 12 can register to be a participant. If you've graduated from high school, we welcome you to apply as a mentor!</p>
+                        </div>
+                    </div>
+                    <div class="card border-0 bg-transparent mb-2">
+                        <div class="card-header border-0 p-0 bg-transparent" id="faqThree">
+                            <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapseFaqThree" aria-expanded="true" aria-controls="collapseFaqThree">
+                                Do I need to know how to program?
+                            </h4>
+                        </div>
+    
+                        <div id="collapseFaqThree" class="collapse bg-transparent" aria-labelledby="faqThree" data-bs-parent="#faqAccordion">
+                            <p>Not at all — in fact, we encourage newcomers to come and participate in MasseyHacks.</p>
+                        </div>
+                    </div>
+                    <div class="card border-0 bg-transparent mb-2">
+                        <div class="card-header border-0 p-0 bg-transparent" id="faqFour">
+                            <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapseFaqFour" aria-expanded="true" aria-controls="collapseFaqFour">
+                                How much does it cost to attend?
+                            </h4>
+                        </div>
+    
+                        <div id="collapseFaqFour" class="collapse bg-transparent" aria-labelledby="faqFour" data-bs-parent="#faqAccordion">
+                            <p>Admission to MasseyHacks VIII is completely free! We will provide all the resources, mentorship, and support needed for each week’s activities and challenges.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" id="faq2">
+                    <div class="card border-0 bg-transparent mb-2">
+                        <div class="card-header border-0 p-0 bg-transparent" id="faqFive">
+                            <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapseFaqFive" aria-expanded="true" aria-controls="collapseFaqFive">
+                                What is a hackathon?
+                            </h4>
+                        </div>
+    
+                        <div id="collapseFaqFive" class="collapse bg-transparent" aria-labelledby="faqFive" data-bs-parent="#faqAccordion">
+                            <p>(Insert something here)</p>
+                        </div>
+                    </div>  
+                    <div class="card border-0 bg-transparent mb-2">
+                        <div class="card-header border-0 p-0 bg-transparent" id="faqSix">
+                            <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapseFaqSix" aria-expanded="true" aria-controls="collapseFaqSix">
+                                Who can participate?
+                            </h4>
+                        </div>
+    
+                        <div id="collapseFaqSix" class="collapse bg-transparent" aria-labelledby="faqSix" data-bs-parent="#faqAccordion">
+                            <p>Any student in grade 7 to 12 can register to be a participant. If you've graduated from high school, we welcome you to apply as a mentor!</p>
+                        </div>
+                    </div>
+                    <div class="card border-0 bg-transparent mb-2">
+                        <div class="card-header border-0 p-0 bg-transparent" id="faqSeven">
+                            <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapseFaqSeven" aria-expanded="true" aria-controls="collapseFaqSeven">
+                                Do I need to know how to program?
+                            </h4>
+                        </div>
+    
+                        <div id="collapseFaqSeven" class="collapse bg-transparent" aria-labelledby="faqSeven" data-bs-parent="#faqAccordion">
+                            <p>Not at all — in fact, we encourage newcomers to come and participate in MasseyHacks.</p>
+                        </div>
+                    </div>
+                    <div class="card border-0 bg-transparent mb-2">
+                        <div class="card-header border-0 p-0 bg-transparent" id="faqEight">
+                            <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapseFaqEight" aria-expanded="true" aria-controls="collapseFaqEight">
+                                Code of Conduct?
+                            </h4>
+                        </div>
+    
+                        <div id="collapseFaqEight" class="collapse bg-transparent" aria-labelledby="faqEight" data-bs-parent="#faqAccordion">
+                            <p>(Replace if we get accepted by MLH)</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="row text-center px-4">
+                <p>If you have any questions or would like to inform us of any issues, please email us at hello@masseyhacks.ca</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors and Partners -->
+    <section id="sponsors" class="container">
+        <div>
+            <h1 class="subtitle" style="font-size: 80px;"><span style="color: #44F3E8;">.</span>/<span style="color: #F3DFAD;">SPONSORS</span></h1>
+            <h1 class="subtitle" style="font-size: 80px; color: #F3DFAD;">& PARTNERS</span></h1>
+        </div>
+       
+        <!-- Sponsorship Prompt -->
+        <div class="sponsor-prompt sponsors-bg p-4">
+            <p class="sponsor-prompt-text">
+                Interested in becoming a sponsor?
+                <br>
+                Check out our <a href="" class="underline">prospectus</a> and contact us at sponsorship@masseyhacks.ca!
+                <br>
+                The MasseyHacks VIII transparency report is available <a href="https://masseyhacks.ca/files/transparency-report.pdf" class="underline">here</a>.
+            </p>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <!-- Gold Tier -->
+            <div class="col-lg-12 gold sponsor-prompt sponsors-bg p-4">
+                <a class="sponsor-obj" href="https://www.alturanft.com/" target="_blank"><img
+                            alt="Altura" class="zoom"
+                            src="images/sponsors/gold/alturanft.png"></a>
+            </div>
+
+            <!-- Silver Tier -->
+            <div class="col-lg-12 silver sponsor-prompt sponsors-bg p-4">
+                <a class="sponsor-obj" href="https://www.wetech-alliance.com/" target="_blank"><img
+                        alt="We-Tech Alliance" class="zoom"
+                        src="images/sponsors/silver/wetech.png"></a>
+            </div>
+
+            <!-- Bronze Tier -->
+            <div class="col-lg-12 bronze sponsor-prompt sponsors-bg p-4">
+                <a class="sponsor-obj" href="https://www.wfcu.ca" target="_blank"><img
+                        alt="WFCU" class="zoom"
+                        src="images/sponsors/bronze/wfcu.png"></a>
+                <!--a class="sponsor-obj" href="https://publicboard.ca/" target="_blank"><img
+                        alt="Greater Essex County District School Board" class="zoom"
+                        src="images/sponsors/bronze/gecdsb.png"></a-->
+                <a class="sponsor-obj" href="https://echoar.xyz" target="_blank"><img
+                        alt="echoAR" class="zoom"
+                        src="images/sponsors/bronze/echoAR.png"></a>
+                <a class="sponsor-obj" href="https://www.stickermule.com/" target="_blank"><img
+                        alt="Sticker Mule" class="zoom"
+                        src="images/sponsors/bronze/stickermule.png"></a>
+                <a class="sponsor-obj" href="https://www.taskade.com/" target="_blank"><img
+                        alt="Taskade" class="zoom"
+                        src="images/sponsors/bronze/taskade-logo-vector.svg"></a>
+                <a class="sponsor-obj" href="https://www.1password.com/" target="_blank"><img
+                    alt="1Password" class="zoom"
+                    src="images/sponsors/bronze/1P-wordmark.svg"></a>
+                <a class="sponsor-obj" href="https://artofproblemsolving.com/" target="_blank"><img
+                    alt="Art of Problem Solving" class="zoom"
+                    src="images/sponsors/bronze/aops.svg"></a>
+                <!--Add sponsors from tracking-->
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-center footer">
+                <div class="col-md-5 text-center">
+                    <img class="footer-logo mb-6" src="images/logo.svg">
+                    <h1 class="footer-title">MasseyHacks VIII</h1>
+                    <div class="row footer-social">
+                        <div class="col">
+                            <a href="mailto:hello@masseyhacks.ca" target="_blank">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://instagram.com/masseyhacks" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://twitter.com/masseyhacks" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://www.youtube.com/channel/UCTYmXP2HjkqhLV1OW4EDW5Q" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://www.facebook.com/masseyhacks" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <a class="footer-link" href="#main-section">Home</a>
+                        <br>
+                        <a class="footer-link" href="#about">About</a>
+                        <br>
+                        <a class="footer-link" href="#faq">FAQ</a>
+                        <br>
+                        <a class="footer-link" href="">Weeks</a>
+                        <br>
+                        <a class="footer-link" href="">Sponsorship</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
