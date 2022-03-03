@@ -237,7 +237,7 @@ body {
 }
 
 .sponsor-prompt {
-    margin-top: 10vh;
+    margin-top: 2rem;
     text-align: center;
 }
 
@@ -284,17 +284,14 @@ footer{
     cursor: pointer;
 }
   
-.sponsor-obj {
+.sponsor-obj img{
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .gold img {
-  max-height: 500px;
-  max-width: 900px;
-  /*max-width: 95%;*/
-  margin-left: 10px;
-  margin-right: 10px;
+  max-height: 450px;
+  max-width: min(900px, 100%);
   vertical-align: middle;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -302,9 +299,7 @@ footer{
 
 .silver img {
   max-height: 300px;
-  max-width: 400px;
-  margin-left: 10px;
-  margin-right: 10px;
+  max-width: min(400px, 100%);
   vertical-align: middle;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -314,8 +309,6 @@ footer{
   max-height: 300px;
   width: 300px;
   max-width: 30%;
-  margin-left: 10px;
-  margin-right: 10px;
   vertical-align: middle;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -323,10 +316,17 @@ footer{
 
 .bronze img {
   max-height: 125px;
-  max-width: 275px;
-  margin-left: 10px;
-  margin-right: 10px;
+  max-width: min(275px, 100%);
   vertical-align: middle;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.zoom {
+    transition: transform .2s;
+    transform: scale(1);
+}
+
+.zoom:hover{
+    transform: scale(1.05);
 }
