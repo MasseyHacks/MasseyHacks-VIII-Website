@@ -150,13 +150,13 @@ nav {
 
 a {
     text-decoration: none;
-    color: #0074D9 !important;
 }
 
 /*https://codepen.io/gabrielcojea/pen/ExPaBzQ*/
 
 .underline{
   position: relative;
+  color: #0074D9 !important;
 }
 
 .underline::before{
