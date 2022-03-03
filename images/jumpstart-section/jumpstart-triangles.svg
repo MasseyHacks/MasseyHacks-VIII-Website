@@ -1,0 +1,62 @@
+<svg width="1440" height="1024" viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_480_2)">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M122.181 618.139C119.797 607.448 130.064 598.285 140.419 601.863L410.547 695.189C420.651 698.68 423.273 711.747 415.298 718.864L207.348 904.443C199.373 911.56 186.684 907.476 184.359 897.044L122.181 618.139Z"
+              fill="url(#paint0_linear_480_2)"
+              filter="url(#shadow)"/>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M363.756 86.464C373.81 82.1163 384.737 90.4812 383.166 101.323L333.826 441.95C332.293 452.529 319.95 457.557 311.463 451.06L44.9417 247.021C36.4544 240.523 38.084 227.294 47.8943 223.052L363.756 86.464Z"
+              fill="url(#paint1_linear_480_2)"
+              filter="url(#shadow)"/>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M1049.69 852.054C1038.97 849.814 1034.85 836.681 1042.39 828.725L1292.64 564.328C1299.98 556.564 1312.97 559.567 1316.16 569.768L1422.22 908.588C1425.41 918.789 1416.45 928.663 1405.99 926.478L1049.69 852.054Z"
+              fill="url(#paint2_linear_480_2)"
+              filter="url(#shadow)"/>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M1036.04 204.803C1037.32 199.477 1043.94 197.614 1047.81 201.493L1108.69 262.576C1112.46 266.362 1110.77 272.808 1105.62 274.255L1024.66 297.027C1019.52 298.474 1014.71 293.855 1015.96 288.658L1036.04 204.803Z"
+              fill="url(#paint3_linear_480_2)"
+              filter="url(#shadow)"/>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M730.481 704.919C736.078 699.455 745.5 702.245 747.221 709.877L774.024 828.723C775.704 836.173 768.753 842.679 761.431 840.511L647.468 806.761C640.146 804.592 637.857 795.349 643.32 790.015L730.481 704.919Z"
+              fill="url(#paint4_linear_480_2)"
+              filter="url(#shadow)"/>
+        <circle cx="532" cy="183" r="50" fill="#FF58C0" filter="url(#shadow)"/>
+        <circle cx="267.5" cy="857.5" r="32.5" fill="#52FAF0" filter="url(#shadow)"/>
+        <circle cx="1149" cy="676" r="64" fill="#F3D0AD" filter="url(#shadow)"/>
+    </g>
+    <defs>
+        <filter id="shadow" x="-20%" y="-20%" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+        <linearGradient id="paint0_linear_480_2" x1="116.732" y1="593.674" x2="311.289" y2="811.684"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#F5D18C"/>
+            <stop offset="1" stop-color="#F3D0AD"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear_480_2" x1="386.765" y1="76.5207" x2="178.16" y2="349.008"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#52FAF0"/>
+            <stop offset="1" stop-color="#158C9B"/>
+        </linearGradient>
+        <linearGradient id="paint2_linear_480_2" x1="1025.15" y1="846.922" x2="1369.21" y2="739.232"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FF58C0"/>
+            <stop offset="1" stop-color="#FF7DD3"/>
+        </linearGradient>
+        <linearGradient id="paint3_linear_480_2" x1="1038.96" y1="192.616" x2="1065.13" y2="285.645"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#52FAF0"/>
+            <stop offset="1" stop-color="#158C9B"/>
+        </linearGradient>
+        <linearGradient id="paint4_linear_480_2" x1="1036.83" y1="843.118" x2="997.97" y2="974.327"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#F44D6B"/>
+            <stop offset="1" stop-color="#FF58C0"/>
+        </linearGradient>
+        <clipPath id="clip0_480_2">
+            <rect width="1440" height="1024" fill="white"/>
+        </clipPath>
+    </defs>
+</svg>

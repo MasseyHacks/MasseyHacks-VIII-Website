@@ -1,12 +1,172 @@
 :root {
     --nav-burger-width: clamp(35px, 4vw, 40px);
     --nav-burger-line-height: max(5px, calc((var(--nav-burger-width) * 0.4) / 3));
-    --pink-colour: #FF58C0;
+
+    --bg-colour: #2C2D2E;
     --grey-colour: #1C1D1F;
+    --glass-colour: #1D1D1D;
+
+    --pink-colour: #FF58C0;
     --blue-colour: #52FAF0;
     --yellow-colour: #F3DFAD;
+
+    --week-1-colour: #52FAF0;
+    --week-2-colour: #158C9B;
+    --week-3-colour: #06C4B8;
+    --week-5-colour: #03B2C8;
 }
 
+body {
+    font-family: IBM Plex Sans, sans-serif;
+    background-color: var(--grey-colour);
+}
+
+.container {
+    margin-top: 15vh; color: white;
+}
+
+#jumpstart-section {
+    padding: 50px;
+}
+
+/* Hero Section Thingies */
+#hero-section {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-colour);
+    background-image: url("../images/hero-section/hero-triangles-large.svg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-glass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 300px;
+
+    width: 50%;
+    padding: 5% 0;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #1D1D1DCC;
+    border-radius: clamp(10px, 5vw, 50px);
+}
+
+.hero-glass > img {
+    display: block;
+    width: 45%;
+}
+
+.hero-glass > div:nth-child(2) {
+    width: 80%;
+    height: 5px;
+    background-color: var(--blue-colour);
+    margin: 10px 0;
+}
+
+.hero-glass > h1 {
+    margin: 0;
+    font-size: clamp(1.1rem, 3vw, 4rem);
+    color: white;
+    letter-spacing: 0;
+    /*letter-spacing: 0.2em;*/
+    font-weight: bold;
+}
+
+.hero-glass > h2 {
+    margin: 0;
+    color: white;
+    font-size: clamp(0.8rem, 1.2vw, 3.4rem);
+}
+
+.hero-glass > div:nth-child(4) {
+    width: 70%;
+    height: 5px;
+    background-color: var(--pink-colour);
+    margin: 10px 0;
+}
+
+/* Folder Section Thingies */
+
+.folder {
+    position: relative;
+    padding: 0;
+}
+
+.folder-tabs {
+    display: flex !important;
+    align-items: stretch !important;
+    position: initial !important;
+    min-height: calc(80vw * 0.06) !important;
+}
+
+.folder-tabs > span {
+    display: block !important;
+    margin: 0 !important;
+    width: 20% !important;
+    height: initial !important;
+    border-radius: 25px 25px 0 0;
+    opacity: 1 !important;
+}
+
+.folder-tabs > span:nth-child(1) {
+    background-color: var(--week-1-colour) !important;
+}
+
+.folder-tabs > span:nth-child(2) {
+    background-color: var(--week-2-colour) !important;
+}
+
+.folder-tabs > span:nth-child(3) {
+    background-color: var(--week-3-colour) !important;
+}
+
+.folder-tabs > span:nth-child(4) {
+    background-color: var(--week-5-colour) !important;
+}
+
+.folder-cover-container {
+    display: flex;
+    align-items: stretch !important;
+
+    width: 100%;
+    min-height: calc(80vw * 0.5);
+    background: linear-gradient(var(--week-1-colour), #52FAF02F);
+
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.folder-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6%;
+}
+
+.folder-swiper .swiper-wrapper {
+    width: 100%;
+}
+
+.folder-cover-slide {
+    display: flex;
+    width: 100%;
+    min-height: calc(80vw * 0.5);
+    padding: 25px;
+
+}
+
+/* Navbar Thingies */
 
 .unstyled-list {
     list-style: none;
@@ -76,8 +236,6 @@ nav {
     transition-duration: 500ms;
 }
 
-
-
 .nav-burger-active > div:nth-child(1) {
     transform: rotate(45deg);
     background-color: var(--grey-colour);
@@ -122,61 +280,38 @@ nav {
     margin: 5px 15px 5px 6px;
 }
 
-body {
-    font-family: IBM Plex Sans;
-    background-color: #1C1D1F;
+/* Medium Size Screen Styles */
+@media screen and (max-width: 768px) {
+    /* Hero Section */
+    #hero-section {
+        background-image: url("../images/hero-section/hero-triangles-medium.svg");
+    }
+
+    .hero-glass {
+        width: 60%;
+    }
 }
 
-.container {
-    margin-top: 15vh; color: white;
-}
+/* Small Size Screen Styles */
+@media screen and (max-width: 576px) {
+    /* Hero Section */
+    .hero-glass {
+        width: 75%;
+    }
 
-.week-2 {
-    background-image: url("../images/startup-section/week-2-tab.svg");
-}
+    .hero-glass > img {
+        /*width: 65%;*/
+    }
 
-#startup-section {
-    padding: 50px;
-}
+    .hero-glass > div:nth-child(2) {
+        margin-bottom: 10px;
+    }
 
+    .hero-glass > h1 {
+        font-size: clamp(1.4rem, 2.5vw, 3rem);
+    }
 
-.startup-container {
-    /*display: flex !important;*/
-
-    width: 86% !important;
-    height: 73% !important;
-    position: absolute !important;
-    top: 20% !important;
-    left: 7% !important;
-}
-
-.startup-folder-buttons {
-    position: absolute !important;
-    display: flex !important;
-    width: 86.7% !important;
-    height: 11.9% !important;
-    top: 0 !important;
-    justify-content: space-around !important;
-    font-size: clamp(0.55rem, 2vw, 2.5rem) !important;
-}
-
-.startup-folder-buttons > span {
-    display: inline-flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-
-    width: 25% !important;
-    height: 100% !important;
-    font-weight: bolder !important;
-
-    border-radius: 22% !important;
-    background-color: transparent !important;
-    color: var(--grey-colour) !important;
-    opacity: 1 !important;
-}
-
-.folder-pagination-custom {
-    top: -25% !important;
-    left: -8% !important;
-    bottom: initial !important;
+    .hero-glass > div:nth-child(4) {
+        margin-top: 10px;
+    }
 }

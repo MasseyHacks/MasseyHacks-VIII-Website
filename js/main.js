@@ -10,31 +10,31 @@ const toggleNavLinks = () => {
 };
 
 //Startup Folder Functions
-const weekTwoImgNode = document.querySelector("#week-2-img");
-const weekThreeImgNode = document.querySelector("#week-3-img");
-const weekFiveImgNode = document.querySelector("#week-5-img");
+const weekTwoCoverNode = document.querySelector(".folder-cover-slide:nth-child(1)");
+const weekThreeCoverNode = document.querySelector(".folder-cover-slide:nth-child(2)");
+const weekFiveCoverNode = document.querySelector(".folder-cover-slide:nth-child(3)");
 
 const openTab = (tabID) => {
     switch (tabID) {
         case 1:
-            weekTwoImgNode.classList.add("d-none");
-            weekThreeImgNode.classList.add("d-none");
-            weekFiveImgNode.classList.add("d-none");
+            weekTwoCoverNode.classList.add("d-none");
+            weekThreeCoverNode.classList.add("d-none");
+            weekFiveCoverNode.classList.add("d-none");
             break;
         case 2:
-            weekTwoImgNode.classList.remove("d-none");
-            weekThreeImgNode.classList.add("d-none");
-            weekFiveImgNode.classList.add("d-none");
+            weekTwoCoverNode.classList.remove("d-none");
+            weekThreeCoverNode.classList.add("d-none");
+            weekFiveCoverNode.classList.add("d-none");
             break;
         case 3:
-            weekTwoImgNode.classList.add("d-none");
-            weekThreeImgNode.classList.remove("d-none");
-            weekFiveImgNode.classList.add("d-none");
+            weekTwoCoverNode.classList.add("d-none");
+            weekThreeCoverNode.classList.remove("d-none");
+            weekFiveCoverNode.classList.add("d-none");
             break;
         case 4:
-            weekTwoImgNode.classList.add("d-none");
-            weekThreeImgNode.classList.add("d-none");
-            weekFiveImgNode.classList.remove("d-none");
+            weekTwoCoverNode.classList.add("d-none");
+            weekThreeCoverNode.classList.add("d-none");
+            weekFiveCoverNode.classList.remove("d-none");
             break;
     }
 };
@@ -78,10 +78,16 @@ const swiper = new Swiper('.folder-swiper', {
         el: '.swiper-pagination',
         clickable: true,
     },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 });
 
 swiper.on('slideChange', function () {
-    openTab(swiper.realIndex + 1);
+    // openTab(swiper.realIndex + 1);
 });
 
 window.onload = () => {
