@@ -72,6 +72,8 @@ const swiper = new Swiper('.folder-swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    // spaceBetween: 30,
+    // effect: "fade",
 
     // If we need pagination
     pagination: {

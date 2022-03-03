@@ -18,7 +18,7 @@
 
 body {
     font-family: IBM Plex Sans, sans-serif;
-    background-color: var(--grey-colour);
+    background-color: var(--bg-colour);
 }
 
 .container {
@@ -149,6 +149,7 @@ body {
 
 .folder-content-container {
     display: flex;
+    width: 60%;
     flex-direction: column;
     justify-content: center;
     padding-left: 6%;
@@ -160,6 +161,7 @@ body {
 
 .folder-cover-slide {
     display: flex;
+    justify-content: center;
     width: 100%;
     min-height: calc(80vw * 0.5);
     padding: 25px;
