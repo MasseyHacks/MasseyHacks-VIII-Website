@@ -34,7 +34,7 @@ body {
     width: 100%;
     height: 100vh;
     background-color: var(--bg-colour);
-    background-image: url("../images/hero-section/hero-triangles-large.svg");
+    /*background-image: url("../images/hero-section/hero-triangles-large.svg");*/
 
     background-position: center;
     background-repeat: no-repeat;
@@ -286,7 +286,7 @@ nav {
 @media screen and (max-width: 768px) {
     /* Hero Section */
     #hero-section {
-        background-image: url("../images/hero-section/hero-triangles-medium.svg");
+        /*background-image: url("../images/hero-section/hero-triangles-medium.svg");*/
     }
 
     .hero-glass {
