@@ -353,18 +353,13 @@ nav {
     }
 }
 
-a {
+a:not(.sponsor-obj){
     text-decoration: none;
-}
-
-/*https://codepen.io/gabrielcojea/pen/ExPaBzQ*/
-
-.underline{
   position: relative;
-  color: #0074D9 !important;
+  color: #0074D9;
 }
 
-.underline::before{
+a:not(.sponsor-obj)::before{
   content: '';
   position: absolute;
   bottom: 0;
@@ -376,7 +371,7 @@ a {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .underline:hover::before{
+  a:not(.sponsor-obj):hover::before{
     left: 0;
     right: auto;
     width: 100%;
@@ -384,7 +379,7 @@ a {
 }
 
 @media (hover: hover) and (pointer: fine) {
-    a:hover::before{
+    a:not(.sponsor-obj):hover::before{
         left: 0;
         right: auto;
         width: 100%;
@@ -447,8 +442,9 @@ body {
 }
 
 .sponsor-prompt-text {
-    font-size: x-large;
     color: black;
+    font-size: larger;
+    margin-bottom: 0;
 }
 
 footer{
@@ -462,20 +458,18 @@ footer{
 
 .footer-title{
     font-size: clamp(2rem, 40px, 3rem);
-    padding-top: 2vh;
 }
 
 .footer-logo{
-    height: 10vh;
+    height: 15vh;
 }
 
 .footer-social{
     font-size: 2rem;
-    padding-top: 2vh;
 }
 
-.footer-links{
-    padding-top: 2vh;
+.footer-social a{
+    color: white;
 }
 
 .footer-link{
