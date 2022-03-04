@@ -102,6 +102,7 @@ body {
 #mc-embedded-subscribe{
     background-color: white !important;
     color: black !important;
+    margin: 0 !important;
 }
 
 /* Folder Section Thingies */
