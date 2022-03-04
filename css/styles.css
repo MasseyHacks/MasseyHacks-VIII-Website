@@ -95,6 +95,15 @@ body {
     margin: 10px 0;
 }
 
+.mc-field-group > label{
+    color: white;
+}
+
+#mc-embedded-subscribe{
+    background-color: white !important;
+    color: black !important;
+}
+
 /* Folder Section Thingies */
 
 .folder {
