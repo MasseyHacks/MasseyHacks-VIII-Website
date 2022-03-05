@@ -16,6 +16,7 @@
     --week-5-colour: #03B2C8;
 
     --folder-width: 768px;
+    scroll-behavior: auto;
 }
 
 body {
@@ -27,12 +28,12 @@ body {
     margin-top: 15vh; color: white;
 }
 
-#jumpstart-section {
+#jumpstart {
     padding: 3rem;
 }
 
 /* Hero Section Thingies */
-#hero-section {
+#hero {
     width: 100%;
     height: 100vh;
     background-color: var(--bg-colour);
@@ -344,7 +345,7 @@ nav {
 /* Medium Size Screen Styles */
 @media screen and (max-width: 48rem) {
     /* Hero Section */
-    #hero-section {
+    #hero {
         /*background-image: url("../images/hero-section/hero-triangles-medium.svg");*/
     }
 
