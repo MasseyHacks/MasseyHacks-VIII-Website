@@ -71,7 +71,7 @@ body {
 
 .hero-glass > div:nth-child(2) {
     width: 80%;
-    height: 0.5rem;
+    height: 0.32rem;
     background-color: var(--blue-colour);
     margin: 0.7rem 0;
 }
@@ -605,5 +605,11 @@ footer{
         font-weight: bolder;
         font-size: clamp(0.7rem, 3vw, 3rem);
         padding: 2px;
+    }
+}
+
+@media screen and (max-width:320px){
+    .subtitle{
+        font-size: 3rem;
     }
 }
