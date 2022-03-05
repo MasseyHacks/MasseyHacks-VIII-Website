@@ -66,3 +66,6 @@ node_modules/
 
 # IntelliJ metadata
 .idea/
+
+# VSCode Local Settings
+.vscode/
