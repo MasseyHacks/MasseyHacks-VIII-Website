@@ -95,6 +95,10 @@ body {
     margin: 0.64rem 0;
 }
 
+.hero-glass > p{
+    color: white;
+}
+
 .mc-field-group > label{
     color: white;
 }
