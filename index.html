@@ -53,9 +53,10 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="https://cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 </head>
 
@@ -70,17 +71,17 @@
         </div>
 
         <ul class="unstyled-list nav-links">
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">FAQ</a></li>
-            <li><a href="">WEEKS</a></li>
-            <li><a href="">SPONSORSHIP</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#jumpstart">Weeks</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#sponsors">Sponsorship</a></li>
         </ul>
     </nav>
 </header>
 
 
-<section id="hero-section">
+<section id="hero">
     <div class="d-flex flex-column w-100 h-100 position-absolute translate-middle top-50 start-50">
         <div class="d-flex justify-content-around align-items-center w-100" style="height: 50%;">
             <svg width="395" height="421" viewBox="0 0 395 421" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -130,38 +131,29 @@
                         style="transform: translate(20px, 20px);"/>
             </svg>
 
-            <div class="hero-glass">
-                <img src="images/main-logo.svg" alt="Logo">
-                <div></div>
-                <h1>MasseyHacks VIII</h1>
-                <div></div>
-                <p><i class="fas fa-calendar-day"></i> May 14th-15th, 2022</p>
-                <!-- Begin Mailchimp Signup Form -->
-                <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
-                <div id="mc_embed_signup" class="w-100 px-4">
-                    <form action="https://masseyhacks.us17.list-manage.com/subscribe/post?u=a94f560f49609f97702adaac7&amp;id=9434a090dc"
-                          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                          class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                            <div class="mc-field-group">
-                                <label for="mce-EMAIL">Join our mailing list for updates!
-                                </label>
-                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"
-                                       placeholder="Enter your email address">
-                            </div>
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                                                                                                      name="b_a94f560f49609f97702adaac7_9434a090dc"
-                                                                                                      tabindex="-1"
-                                                                                                      value=""></div>
-                            <div class="optionalParent">
-                                <div class="clear foot">
-                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
-                                           class="button">
-                                </div>
-                            </div>
+    <div class="hero-glass">
+        <img src="images/main-logo.svg" alt="Logo">
+        <div></div>
+        <h1>MasseyHacks VIII</h1>
+        <div></div>
+        <p><i class="fas fa-calendar-day"></i> May 14th-15th, 2022</p>
+        <!-- Begin Mailchimp Signup Form -->
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+        <div id="mc_embed_signup" class="w-100 px-4">
+        <form action="https://masseyhacks.us17.list-manage.com/subscribe/post?u=a94f560f49609f97702adaac7&amp;id=9434a090dc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate py-0" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+            <div class="mc-field-group">
+            	<label for="mce-EMAIL">Join our mailing list for updates!
+            </label>
+            	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email address">
+            </div>
+            	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a94f560f49609f97702adaac7_9434a090dc" tabindex="-1" value=""></div>
+                    <div class="optionalParent">
+                        <div class="clear foot">
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button p-0">
                         </div>
-                    </form>
+                    </div>
                 </div>
                 <script type='text/javascript'
                         src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
@@ -195,10 +187,10 @@
 </section>
 
 <!-- About -->
-<section id="about" class="container">
+<section id="about" class="container mb-5 mt-0 pt-2">
     <div class="row">
         <!-- Title and Paragraph -->
-        <div class="col-md-7 pt-5">
+        <div class="col-md-7 my-auto">
             <div class="text-bg p-5">
                 <div>
                     <h1 id="aboutsubtitle">Canada's oldest high school <span id="aboutshadow">hackathon</span></h1>
@@ -212,7 +204,7 @@
         </div>
 
         <!-- Stats of prizes and students attended -->
-        <div class="col-md-5 text-center">
+        <div class="col-md-5 text-center my-5">
             <div class="row">
                 <div class="col-md-12">
                     <i class="fas fa-graduation-cap fa-10x"></i>
@@ -237,7 +229,7 @@
     </div>
 </section>
 
-<section id="jumpstart-section" class="container-lg position-relative">
+<section id="jumpstart" class="container-lg position-relative">
     <!--    <img src="images/jumpstart-section/jumpstart-triangles.svg" alt="Background" class="d-block w-100 h-100 position-absolute translate-middle top-50 start-50" style="object-fit: cover;">-->
     <svg class="d-block w-100 h-100 position-absolute translate-middle top-50 start-50" width="1440" height="1024"
          viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -380,164 +372,12 @@
 </section>
 
 
+
 <!-- Frequently Asked Questions -->
 <section id="faq" class="container mb-5 mt-0 pt-2">
     <h1 class="subtitle mb-4">
         <span style="color: #44F3E8;">.</span><span style="color: white;">/</span>FAQ
     </h1>
-    <!-- Jumpstart FAQ -->
-    <div class="justify-content-center text-bg p-4 mt-5">
-        <h1 class="text-center">Jumpstart</h1>
-        <div class="row accordion text-left px-4 pb-1 pt-3" id="jsAccordion">
-            <div class="col-md-6">
-                <div class="card border-0 bg-transparent mb-2">
-                    <div class="card-header border-0 p-0 bg-transparent" id="js1">
-                        <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse-js1"
-                            aria-expanded="true" aria-controls="collapse-js1">
-                            What is Jumpstart?
-                        </h4>
-                    </div>
-
-                    <div id="collapse-js1" class="collapse bg-transparent" aria-labelledby="js1"
-                         data-bs-parent="#jsAccordion">
-                        <p>
-                            JumpStart is a five week event meant to teach you new skills in different areas of
-                            programming and technology regardless of your skill level going in. Join us each week to
-                            learn about a new topic, with workshops to attend, points to earn, and a weekly cumulative
-                            project to complete! Our planned weeks this year include: Learnathon, Web Development, Game
-                            Jam and Hardware.
-                        </p>
-                    </div>
-                </div>
-                <div class="card border-0 bg-transparent mb-2">
-                    <div class="card-header border-0 p-0 bg-transparent" id="js2">
-                        <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse-js2"
-                            aria-expanded="true" aria-controls="collapse-js2">
-                            What format will JumpStart be held in?
-                        </h4>
-                    </div>
-
-                    <div id="collapse-js2" class="collapse bg-transparent" aria-labelledby="js2"
-                         data-bs-parent="#jsAccordion">
-                        <p>JumpStart will take place fully virtually through our MasseyHacks Discord, with workshops
-                            taking place on Zoom.</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-md-6">
-                <div class="card border-0 bg-transparent mb-2">
-                    <div class="card-header border-0 p-0 bg-transparent" id="js3">
-                        <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse-js3"
-                            aria-expanded="true" aria-controls="collapse-js3">
-                            Can I still earn prizes in JumpStart?
-                        </h4>
-                    </div>
-
-                    <div id="collapse-js3" class="collapse bg-transparent" aria-labelledby="js3"
-                         data-bs-parent="#jsAccordion">
-                        <p>Yes! Gain points by attending workshops and completing projects to get sweet prizes through
-                            JumpStart. Sign up and get ready to start racking up those coins!</p>
-                    </div>
-                </div>
-                <div class="card border-0 bg-transparent mb-2">
-                    <div class="card-header border-0 p-0 bg-transparent" id="js4">
-                        <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse-js4"
-                            aria-expanded="true" aria-controls="collapse-js4">
-                            Do I need programming experience to participate?
-                        </h4>
-                    </div>
-
-                    <div id="collapse-js4" class="collapse bg-transparent" aria-labelledby="js4"
-                         data-bs-parent="#jsAccordion">
-                        <p>Not at all! JumpStart was initiated as a way for experts and rookies alike to learn and
-                            refresh their skills in the basics as well as other areas such as web development and game
-                            development. While MasseyHacks is a beginner friendly hackathon, we highly recommend signing
-                            up for JumpStart to build advantageous skills in preparation for MasseyHacks!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Masseyhacks FAQ -->
-    <div class="justify-content-center text-bg p-4 mt-5">
-        <h1 class="text-center">MasseyHacks</h1>
-        <div class="row accordion text-left px-4 pb-1 pt-3" id="mhAccordion">
-            <div class="col-md-6">
-                <div class="card border-0 bg-transparent mb-2">
-                    <div class="card-header border-0 p-0 bg-transparent" id="mh1">
-                        <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse-mh1"
-                            aria-expanded="true" aria-controls="collapse-mh1">
-                            What format will MasseyHacks be held in?
-                        </h4>
-                    </div>
-
-                    <div id="collapse-mh1" class="collapse bg-transparent" aria-labelledby="mh1"
-                         data-bs-parent="#mhAccordion">
-                        <p>
-                            This year, MasseyHacks will be presented to you in an all new hybrid model. Hackers in the
-                            Greater Essex County District School Board have the opportunity to attend MasseyHacks
-                            in-person, taking place at Vincent Massey Secondary School. In-person participants will
-                            return home in the evening to continue working on their hacks and participating in virtual
-                            events! All other participants will attend the hackathon completely virtually. All our
-                            workshops and major events will be accessible to hackers attending in-person and virtually.
-                            Due to capacity limits, in-person spots for MasseyHacks are not guaranteed.
-                        </p>
-                    </div>
-                </div>
-                <div class="card border-0 bg-transparent mb-2">
-                    <div class="card-header border-0 p-0 bg-transparent" id="mh2">
-                        <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse-mh2"
-                            aria-expanded="true" aria-controls="collapse-mh2">
-                            Will food be provided?
-                        </h4>
-                    </div>
-
-                    <div id="collapse-mh2" class="collapse bg-transparent" aria-labelledby="mh2"
-                         data-bs-parent="#mhAccordion">
-                        <p>Yes, all your nutritional needs will be satisfied free of charge throughout our in-person
-                            MasseyHacks event. </p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-md-6">
-                <div class="card border-0 bg-transparent mb-2">
-                    <div class="card-header border-0 p-0 bg-transparent" id="mh3">
-                        <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse-mh3"
-                            aria-expanded="true" aria-controls="collapse-mh3">
-                            What is being done to prevent the spread of COVID-19 at MasseyHacks?
-                        </h4>
-                    </div>
-
-                    <div id="collapse-mh3" class="collapse bg-transparent" aria-labelledby="mh3"
-                         data-bs-parent="#mhAccordion">
-                        <p>Here at MasseyHacks, keeping hackers safe is and will always be our number one priority. Some
-                            steps we plan to take this year include splitting hackers into cohorts to make sure social
-                            distancing can be maintained, and regularly sanitizing all surfaces and hacker areas
-                            throughout the event. For more information on our COVID-19 policies, please refer to our
-                            Code of Conduct.</p>
-                    </div>
-                </div>
-                <div class="card border-0 bg-transparent mb-2">
-                    <div class="card-header border-0 p-0 bg-transparent" id="mh4">
-                        <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse-mh4"
-                            aria-expanded="true" aria-controls="collapse-mh4">
-                            Do I need programming experience to participate?
-                        </h4>
-                    </div>
-
-                    <div id="collapse-mh4" class="collapse bg-transparent" aria-labelledby="mh4"
-                         data-bs-parent="#mhAccordion">
-                        <p>Not at all! MasseyHacks is a beginner friendly hackathon, we will have workshops and mentors
-                            throughout the event.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     <!-- General FAQ -->
     <div class="justify-content-center text-bg p-4 mt-5">
@@ -676,32 +516,143 @@
             </div>
         </div>
     </div>
+    <!-- Jumpstart FAQ -->
+    <div class="justify-content-center text-bg p-4 mt-5">
+        <h1 class="text-center">Jumpstart</h1>
+        <div class="row accordion text-left px-4 pb-1 pt-3" id="jsAccordion">
+            <div class="col-md-6">
+                <div class="card border-0 bg-transparent mb-2">
+                    <div class="card-header border-0 p-0 bg-transparent" id="js1">
+                        <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse-js1" aria-expanded="true" aria-controls="collapse-js1">
+                            What is Jumpstart?
+                        </h4>
+                    </div>
+
+                    <div id="collapse-js1" class="collapse bg-transparent" aria-labelledby="js1" data-bs-parent="#jsAccordion">
+                        <p>
+                            JumpStart is a five week event meant to teach you new skills in different areas of programming and technology regardless of your skill level going in. Join us each week to learn about a new topic, with workshops to attend, points to earn, and a weekly cumulative project to complete! Our planned weeks this year include: Learnathon, Web Development, Game Jam and Hardware.
+                        </p>
+                    </div>
+                </div>  
+                <div class="card border-0 bg-transparent mb-2">
+                    <div class="card-header border-0 p-0 bg-transparent" id="js2">
+                        <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse-js2" aria-expanded="true" aria-controls="collapse-js2">
+                            What format will JumpStart be held in?
+                        </h4>
+                    </div>
+
+                    <div id="collapse-js2" class="collapse bg-transparent" aria-labelledby="js2" data-bs-parent="#jsAccordion">
+                        <p>JumpStart will take place fully virtually through our MasseyHacks Discord, with workshops taking place on Zoom.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-6">
+                <div class="card border-0 bg-transparent mb-2">
+                    <div class="card-header border-0 p-0 bg-transparent" id="js3">
+                        <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse-js3" aria-expanded="true" aria-controls="collapse-js3">
+                            Can I still earn prizes in JumpStart?
+                        </h4>
+                    </div>
+
+                    <div id="collapse-js3" class="collapse bg-transparent" aria-labelledby="js3" data-bs-parent="#jsAccordion">
+                        <p>Yes! Gain points by attending workshops and completing projects to get sweet prizes through JumpStart. Sign up and get ready to start racking up those coins!</p>
+                    </div>
+                </div>
+                <div class="card border-0 bg-transparent mb-2">
+                    <div class="card-header border-0 p-0 bg-transparent" id="js4">
+                        <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse-js4" aria-expanded="true" aria-controls="collapse-js4">
+                            Do I need programming experience to participate?
+                        </h4>
+                    </div>
+
+                    <div id="collapse-js4" class="collapse bg-transparent" aria-labelledby="js4" data-bs-parent="#jsAccordion">
+                        <p>Not at all! JumpStart was initiated as a way for experts and rookies alike to learn and refresh their skills in the basics as well as other areas such as web development and game development. While MasseyHacks is a beginner friendly hackathon, we highly recommend signing up for JumpStart to build advantageous skills in preparation for MasseyHacks!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Masseyhacks FAQ -->
+    <div class="justify-content-center text-bg p-4 mt-5">
+        <h1 class="text-center">MasseyHacks</h1>
+        <div class="row accordion text-left px-4 pb-1 pt-3" id="mhAccordion">
+            <div class="col-md-6">
+                <div class="card border-0 bg-transparent mb-2">
+                    <div class="card-header border-0 p-0 bg-transparent" id="mh1">
+                        <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse-mh1" aria-expanded="true" aria-controls="collapse-mh1">
+                            What format will MasseyHacks be held in?
+                        </h4>
+                    </div>
+
+                    <div id="collapse-mh1" class="collapse bg-transparent" aria-labelledby="mh1" data-bs-parent="#mhAccordion">
+                        <p>
+                            This year, MasseyHacks will be presented to you in an all new hybrid model. Hackers in the Greater Essex County District School Board have the opportunity to attend MasseyHacks in-person, taking place at Vincent Massey Secondary School. In-person participants will return home in the evening to continue working on their hacks and participating in virtual events! All other participants will attend the hackathon completely virtually. All our workshops and major events will be accessible to hackers attending in-person and virtually. Due to capacity limits, in-person spots for MasseyHacks are not guaranteed.
+                        </p>
+                    </div>
+                </div>  
+                <div class="card border-0 bg-transparent mb-2">
+                    <div class="card-header border-0 p-0 bg-transparent" id="mh2">
+                        <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse-mh2" aria-expanded="true" aria-controls="collapse-mh2">
+                            Will food be provided?
+                        </h4>
+                    </div>
+
+                    <div id="collapse-mh2" class="collapse bg-transparent" aria-labelledby="mh2" data-bs-parent="#mhAccordion">
+                        <p>Yes, all your nutritional needs will be satisfied free of charge throughout our in-person MasseyHacks event. </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-6">
+                <div class="card border-0 bg-transparent mb-2">
+                    <div class="card-header border-0 p-0 bg-transparent" id="mh3">
+                        <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse-mh3" aria-expanded="true" aria-controls="collapse-mh3">
+                            What is being done to prevent the spread of COVID-19 at MasseyHacks?
+                        </h4>
+                    </div>
+
+                    <div id="collapse-mh3" class="collapse bg-transparent" aria-labelledby="mh3" data-bs-parent="#mhAccordion">
+                        <p>Here at MasseyHacks, keeping hackers safe is and will always be our number one priority. Some steps we plan to take this year include splitting hackers into cohorts to make sure social distancing can be maintained, and regularly sanitizing all surfaces and hacker areas throughout the event. For more information on our COVID-19 policies, please refer to our Code of Conduct.</p>
+                    </div>
+                </div>
+                <div class="card border-0 bg-transparent mb-2">
+                    <div class="card-header border-0 p-0 bg-transparent" id="mh4">
+                        <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse-mh4" aria-expanded="true" aria-controls="collapse-mh4">
+                            Do I need programming experience to participate?
+                        </h4>
+                    </div>
+
+                    <div id="collapse-mh4" class="collapse bg-transparent" aria-labelledby="mh4" data-bs-parent="#mhAccordion">
+                        <p>Not at all! MasseyHacks is a beginner friendly hackathon, we will have workshops and mentors throughout the event.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="text-center p-4 mt-5 text-bg">
-        <p class="m-0">If you have any questions or would like to inform us of any issues, please email us at <a
-                href="mailto:hello@masseyhacks.ca">hello@masseyhacks.ca</a></p>
+        <p class="m-0">If you have any questions or would like to inform us of any issues, please email us at <a href="mailto:hello@masseyhacks.ca">hello@masseyhacks.ca</a></p>
     </div>
 </section>
 
-<!-- Sponsors and Partners -->
-<section id="sponsors" class="container mb-6 mt-0 pt-2">
-    <div>
-        <h1 class="subtitle">
-            <span style="color: #44F3E8;">.</span><span style="color: white;">/</span>SPONSORS<br>& PARTNERS
-        </h1>
-    </div>
-
-    <!-- Sponsorship Prompt -->
-    <div class="sponsor-prompt sponsors-bg p-4">
-        <p class="sponsor-prompt-text">
-            Interested in becoming a sponsor?
-            <br>
-            Check out our <a href="files/MH8 Sponsorship Prospectus.pdf" target="_blank">prospectus</a> and contact us
-            at <a href="mailto:sponsorship@masseyhacks.ca">sponsorship@masseyhacks.ca!</a>
-            <br>
-            The MasseyHacks VII transparency report is available <a
-                href="https://mh7.masseyhacks.ca/files/transparency-report.pdf">here</a>.
-        </p>
-    </div>
+    <!-- Sponsors and Partners -->
+    <section id="sponsors" class="container mb-6 mt-0 pt-2">
+        <div>
+            <h1 class="subtitle">
+                <span style="color: #44F3E8;">.</span><span style="color: white;">/</span>SPONSORS<br>& PARTNERS
+            </h1>
+        </div>
+       
+        <!-- Sponsorship Prompt -->
+        <div class="sponsor-prompt sponsors-bg p-4">
+            <p class="sponsor-prompt-text">
+                Interested in becoming a sponsor?
+                <br>
+                Check out our <a href="files/MH8 Sponsorship Prospectus.pdf" target="_blank">prospectus</a> and contact us at <a href="mailto:sponsorship@masseyhacks.ca">sponsorship@masseyhacks.ca!</a>
+                <br>
+                The MasseyHacks VII transparency report is available <a href="https://mh7.masseyhacks.ca/files/transparency-report.pdf">here</a>.
+            </p>
+        </div>
 
     <div class="row justify-content-center px-4">
 
@@ -747,60 +698,61 @@
                     src="images/sponsors/bronze/aops.svg"></a>
             <!--Add sponsors from tracking-->
         </div>
-    </div>
-
+    </div>        
 </section>
 
-<footer>
-    <div class="container-fluid">
-        <div class="row align-items-center justify-content-center footer">
-            <div class="col-md-6 text-center my-4">
-                <img class="footer-logo" src="images/logo.svg">
-                <h1 class="footer-title mt-2">MasseyHacks VIII</h1>
-                <div class="row footer-social">
-                    <div class="col">
-                        <a href="mailto:hello@masseyhacks.ca" target="_blank">
-                            <i class="far fa-envelope"></i>
-                        </a>
+    <footer>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-center footer">
+                <div class="col-md-6 text-center my-5">
+                    <img class="footer-logo" src="images/logo.svg">
+                    <h1 class="footer-title mt-2">MasseyHacks VIII</h1>
+                    <div class="row footer-social justify-content-center">
+                        <div class="col-2">
+                            <a href="mailto:hello@masseyhacks.ca" target="_blank">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <a href="https://instagram.com/masseyhacks" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <a href="https://twitter.com/masseyhacks" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <a href="https://www.youtube.com/channel/UCTYmXP2HjkqhLV1OW4EDW5Q" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <a href="https://www.facebook.com/masseyhacks" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col">
-                        <a href="https://instagram.com/masseyhacks" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
+                    <div class="footer-links mt-2">
+                        <a class="footer-link" href="#hero">Home</a>
+                        <br>
+                        <a class="footer-link" href="#about">About</a>
+                        <br>
+                        <a class="footer-link" href="#jumpstart">Weeks</a>
+                        <br>
+                        <a class="footer-link" href="#faq">FAQ</a>
+                        <br>
+                        <a class="footer-link" href="#sponsors">Sponsors</a>
                     </div>
-                    <div class="col">
-                        <a href="https://twitter.com/masseyhacks" target="_blank">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="https://www.youtube.com/channel/UCTYmXP2HjkqhLV1OW4EDW5Q" target="_blank">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="https://www.facebook.com/masseyhacks" target="_blank">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-links mt-2">
-                    <a class="footer-link" href="#hero-section">Home</a>
-                    <br>
-                    <a class="footer-link" href="#about">About</a>
-                    <br>
-                    <a class="footer-link" href="#jumpstart-section">Weeks</a>
-                    <br>
-                    <a class="footer-link" href="#faq">FAQ</a>
-                    <br>
-                    <a class="footer-link" href="#sponsors">Sponsorship & Partners</a>
                 </div>
             </div>
         </div>
     </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
