@@ -14,6 +14,8 @@
     --week-2-colour: #158C9B;
     --week-3-colour: #06C4B8;
     --week-5-colour: #03B2C8;
+
+    --folder-width: 768px;
 }
 
 body {
@@ -106,15 +108,19 @@ body {
     display: flex !important;
     align-items: stretch !important;
     position: initial !important;
-    min-height: calc(80vw * 0.06) !important;
+    min-height: calc(var(--folder-width) * 0.06) !important;
 }
 
 .folder-tabs > span {
-    display: block !important;
+    display: flex !important;
+    justify-content: center; !important;
+    align-items: center; !important;
     margin: 0 !important;
     width: 20% !important;
     height: initial !important;
-    border-radius: 25px 25px 0 0;
+    border-radius: 1.8vw 1.8vw 0 0;
+    font-weight: bolder;
+    font-size: clamp(0.8rem, 1.5vw, 3rem);
     opacity: 1 !important;
 }
 
@@ -139,7 +145,7 @@ body {
     align-items: stretch !important;
 
     width: 100%;
-    min-height: calc(80vw * 0.5);
+    min-height: calc(var(--folder-width) * 0.5);
     background: linear-gradient(var(--week-1-colour), #52FAF02F);
 
     border-top-right-radius: 25px;
@@ -149,23 +155,35 @@ body {
 
 .folder-content-container {
     display: flex;
-    width: 60%;
+    width: 50%;
     flex-direction: column;
     justify-content: center;
     padding-left: 6%;
 }
 
+.folder-content-container > h1 {
+    color: var(--yellow-colour);
+    font-weight: bolder;
+    font-size: clamp(2rem, 3.2vw, 3.2rem);
+    margin-bottom: 20px;
+}
+
+.folder-content-container > p {
+    font-weight: bold;
+    font-size: clamp(1.2rem, 1.5vw, 2.5rem);
+}
+
 .folder-swiper .swiper-wrapper {
     width: 100%;
+    height: initial !important;
 }
 
 .folder-cover-slide {
     display: flex;
     justify-content: center;
     width: 100%;
-    min-height: calc(80vw * 0.5);
+    min-height: calc(var(--folder-width) * 0.5);
     padding: 25px;
-
 }
 
 /* Navbar Thingies */
@@ -315,5 +333,40 @@ nav {
 
     .hero-glass > div:nth-child(4) {
         margin-top: 10px;
+    }
+
+    /* Folder Section */
+
+    .folder {
+        width: 80vw !important;
+    }
+
+    .folder-cover-slide {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .folder-content-container {
+        width: 100%;
+        align-items: center;
+        padding: 0;
+        text-align: center;
+    }
+
+    .folder-content-container > h1 {
+        margin: 15px;
+    }
+
+    .folder-tabs {
+        min-height: calc(var(--folder-width) * 0.09) !important;
+    }
+
+    .folder-tabs > span {
+        width: 22.5% !important;
+        height: initial !important;
+        border-radius: 2.5vw 2.5vw 0 0;
+        font-weight: bolder;
+        font-size: clamp(0.7rem, 3vw, 3rem);
+        padding: 2px;
     }
 }
