@@ -127,8 +127,8 @@ body {
 
 .folder-tabs > span {
     display: flex !important;
-    justify-content: center; !important;
-    align-items: center; !important;
+    justify-content: center !important;
+    align-items: center !important;
     margin: 0 !important;
     width: 20% !important;
     height: initial !important;
