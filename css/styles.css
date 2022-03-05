@@ -407,6 +407,14 @@ body {
     border-radius: 62px;
 }
 
+#aboutsubtitle {
+    font-weight: 700;
+}
+
+#aboutshadow {
+    text-shadow: 2px 2px #FF58C0;
+}
+
 .accordion-button:not(.collapsed) {
     color: #FF58C0;
 }
@@ -421,6 +429,7 @@ body {
 
 .subtitle {
     font-weight: 700;
+    font-size: 5rem; color: #F3DFAD;
 }
 
 .question {
