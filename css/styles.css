@@ -435,17 +435,13 @@ body {
     font-size: 5rem; color: #F3DFAD;
 }
 
-.question {
-    background-color: transparent !important;
-    margin-top: 10vh;
-    font-weight: 700;
-    font-size: xx-large;
-    color: #FF58C0;
+#faq h1{
+    color: var(--yellow-colour);
 }
 
-.answer {
-    text-align: left;
-    font-size: large;
+#faq h4{
+    color: var(--pink-colour);
+    font-weight: bold;
 }
 
 .sponsor-prompt {
@@ -539,4 +535,19 @@ footer{
     text-decoration: none !important;
     color: white !important;
     font-size: clamp(1rem, 20px, 2rem);
+}
+
+@media screen and (max-width: 767px){
+    html{
+        font-size: 14px;
+    }
+    .subtitle{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+    html{
+        font-size: 12px;
+    }
 }
