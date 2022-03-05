@@ -329,7 +329,7 @@ nav {
     }
 }
 
-/* Small Size Screen Styles */
+/* all Size Screen Styles */
 @media screen and (max-width: 576px) {
     /* Hero Section */
     .hero-glass {
@@ -359,6 +359,10 @@ a:not(.sponsor-obj){
   color: #0074D9;
 }
 
+footer a::before{
+    background-color: white !important;
+}
+
 a:not(.sponsor-obj)::before{
   content: '';
   position: absolute;
@@ -376,14 +380,9 @@ a:not(.sponsor-obj)::before{
     right: auto;
     width: 100%;
   }
-}
-
-@media (hover: hover) and (pointer: fine) {
-    a:not(.sponsor-obj):hover::before{
-        left: 0;
-        right: auto;
-        width: 100%;
-    }
+  a:not(.sponsor-obj):hover{
+      opacity: 0.8;
+  }
 }
 
 body {
@@ -447,38 +446,6 @@ body {
     margin-bottom: 0;
 }
 
-footer{
-    background: #111;
-    color: white;
-}
-
-.footer {
-    height: clamp(500px,50vh,50vh);
-}
-
-.footer-title{
-    font-size: clamp(2rem, 40px, 3rem);
-}
-
-.footer-logo{
-    height: 15vh;
-}
-
-.footer-social{
-    font-size: 2rem;
-}
-
-.footer-social a{
-    color: white;
-}
-
-.footer-link{
-    text-decoration: none !important;
-    color: white !important;
-    font-size: clamp(1rem, 20px, 2rem);
-}
-
-
 .cursor-pointer{
     cursor: pointer;
 }
@@ -528,4 +495,35 @@ footer{
 
 .zoom:hover{
     transform: scale(1.05);
+}
+
+footer{
+    background: #111;
+    color: white;
+}
+
+.footer {
+    height: clamp(500px,50vh,50vh);
+}
+
+.footer-title{
+    font-size: clamp(2rem, 40px, 3rem);
+}
+
+.footer-logo{
+    height: 15vh;
+}
+
+.footer-social{
+    font-size: 2rem;
+}
+
+.footer-social a{
+    color: white;
+}
+
+.footer-link{
+    text-decoration: none !important;
+    color: white !important;
+    font-size: clamp(1rem, 20px, 2rem);
 }
