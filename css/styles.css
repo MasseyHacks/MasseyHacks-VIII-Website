@@ -649,3 +649,13 @@ footer{
         height: 0;
     }
 }
+
+#shapes {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    display: inherit;
+    z-index: -1;
+}
