@@ -34,15 +34,15 @@ const initFolderBtn = () => {
     const applicationTabNode = document.createElement("span");
 
     const minimizeIconImgNode = document.createElement("img");
-    minimizeIconImgNode.src = "../images/jumpstart-section/folder-minimize-icon.svg";
+    minimizeIconImgNode.src = "images/jumpstart-section/folder-minimize-icon.svg";
     minimizeIconImgNode.alt = "Minimize Icon";
 
     const shrinkIconImgNode = document.createElement("img");
-    shrinkIconImgNode.src = "../images/jumpstart-section/folder-shrink-icon.svg";
+    shrinkIconImgNode.src = "images/jumpstart-section/folder-shrink-icon.svg";
     shrinkIconImgNode.alt = "Shrink Icon";
 
     const closeIconImgNode = document.createElement("img");
-    closeIconImgNode.src = "../images/jumpstart-section/folder-close-icon.svg";
+    closeIconImgNode.src = "images/jumpstart-section/folder-close-icon.svg";
     closeIconImgNode.alt = "Close Icon";
 
     applicationTabNode.appendChild(minimizeIconImgNode);
