@@ -28,6 +28,28 @@ const initFolderBtn = () => {
     weekTwoBtnNode.innerHTML = "WEEK 2";
     weekThreeBtnNode.innerHTML = "WEEK 3/4";
     weekFiveBtnNode.innerHTML = "WEEK 5";
+
+
+    const folderTabsNode = document.querySelector(".folder-tabs");
+    const applicationTabNode = document.createElement("span");
+
+    const minimizeIconImgNode = document.createElement("img");
+    minimizeIconImgNode.src = "images/jumpstart-section/folder-minimize-icon.svg";
+    minimizeIconImgNode.alt = "Minimize Icon";
+
+    const shrinkIconImgNode = document.createElement("img");
+    shrinkIconImgNode.src = "images/jumpstart-section/folder-shrink-icon.svg";
+    shrinkIconImgNode.alt = "Shrink Icon";
+
+    const closeIconImgNode = document.createElement("img");
+    closeIconImgNode.src = "images/jumpstart-section/folder-close-icon.svg";
+    closeIconImgNode.alt = "Close Icon";
+
+    applicationTabNode.appendChild(minimizeIconImgNode);
+    applicationTabNode.appendChild(shrinkIconImgNode);
+    applicationTabNode.appendChild(closeIconImgNode);
+
+    folderTabsNode.appendChild(applicationTabNode);
 };
 
 
