@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="505" height="533" fill="none" viewBox="-20 -20 505 533"><path fill="#52FAF0" fill-rule="evenodd" d="M68.917 301.759C65.0875 300.959 63.6193 296.269 66.3089 293.427L338.179 6.18836C340.803 3.41561 345.441 4.48792 346.581 8.13116L461.796 376.223C462.936 379.867 459.738 383.393 456.002 382.612L68.917 301.759Z" clip-rule="evenodd" filter="url(#shadow)"/><circle cx="400" cy="115" r="64" fill="#F3D0AD" filter="url(#shadow)"/><filter id="shadow" width="200%" height="200%" x="-50%" y="-50%"><feOffset dx="0" dy="0" in="SourceGraphic" result="offOut"/><feGaussianBlur in="offOut" result="blurOut" stdDeviation="10"/><feBlend in="SourceGraphic" in2="blurOut" mode="normal"/></filter></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="505" height="533" fill="none" viewBox="-20 -20 505 533">
+    <path fill="#52FAF0" fill-rule="evenodd"
+          d="M68.917 301.759C65.0875 300.959 63.6193 296.269 66.3089 293.427L338.179 6.18836C340.803 3.41561 345.441 4.48792 346.581 8.13116L461.796 376.223C462.936 379.867 459.738 383.393 456.002 382.612L68.917 301.759Z"
+          clip-rule="evenodd" filter="url(#shadow)"/>
+    <circle cx="400" cy="115" r="64" fill="#F3D0AD" filter="url(#shadow)"/>
+    <filter id="shadow" width="200%" height="200%" x="-50%" y="-50%">
+        <feOffset dx="0" dy="0" in="SourceGraphic" result="offOut"/>
+        <feGaussianBlur in="offOut" result="blurOut" stdDeviation="10"/>
+        <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+    </filter>
+</svg>
