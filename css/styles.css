@@ -608,6 +608,8 @@ footer{
 
 .footer {
     height: fit-content;
+    padding-left: 8rem !important;
+    padding-right: 8rem !important;
 }
 
 .footer-title{
