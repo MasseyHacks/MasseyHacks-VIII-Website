@@ -378,6 +378,21 @@
         <div class="row accordion text-left px-4 pb-1 pt-3" id="generalAccordion">
             <div class="col-md-6">
                 <div class="card border-0 bg-transparent mb-2">
+                    <div class="card-header border-0 p-0 bg-transparent" id="g0">
+                        <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse-g0"
+                            aria-expanded="true" aria-controls="collapse-g0">
+                            What is a hackathon?
+                        </h4>
+                    </div>
+
+                    <div id="collapse-g0" class="collapse bg-transparent" aria-labelledby="g0"
+                         data-bs-parent="#generalAccordion">
+                        <p>
+                            Hackathons are events where like-minded students interested in technology and computer science can get together to network, compete to create innovative projects, and build new skills through workshops and mentors.
+                        </p>
+                    </div>
+                </div>
+                <div class="card border-0 bg-transparent mb-2">
                     <div class="card-header border-0 p-0 bg-transparent" id="g1">
                         <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse-g1"
                             aria-expanded="true" aria-controls="collapse-g1">
@@ -419,20 +434,7 @@
 
                     <div id="collapse-g3" class="collapse bg-transparent" aria-labelledby="g3"
                          data-bs-parent="#generalAccordion">
-                        <p>Groups can have anywhere from one to four people.</p>
-                    </div>
-                </div>
-                <div class="card border-0 bg-transparent mb-2">
-                    <div class="card-header border-0 p-0 bg-transparent" id="g4">
-                        <h4 class="cursor-pointer" data-bs-toggle="collapse" data-bs-target="#collapse-g4"
-                            aria-expanded="true" aria-controls="collapse-g4">
-                            Can my team consist of in-person and virtual participants?
-                        </h4>
-                    </div>
-
-                    <div id="collapse-g4" class="collapse bg-transparent" aria-labelledby="g4"
-                         data-bs-parent="#generalAccordion">
-                        <p>Yep!</p>
+                        <p>Groups can have anywhere from one to four people. In-person and virtual participants be on the same team.</p>
                     </div>
                 </div>
             </div>
@@ -668,26 +670,24 @@
     </div>
 </section>
 
-<!-- Sponsors and Partners -->
-<section id="sponsors" class="container mb-6 mt-0 pt-2">
-    <div>
-        <h1 class="subtitle">
-            <span style="color: #44F3E8;">.</span><span style="color: white;">/</span>SPONSORS<br>& PARTNERS
-        </h1>
-    </div>
-
-    <!-- Sponsorship Prompt -->
-    <div class="sponsor-prompt sponsors-bg p-4">
-        <p class="sponsor-prompt-text">
-            Interested in becoming a sponsor?
-            <br>
-            Check out our <a href="files/MH8 Sponsorship Prospectus.pdf" target="_blank">prospectus</a> and contact us
-            at <a href="mailto:sponsorship@masseyhacks.ca">sponsorship@masseyhacks.ca!</a>
-            <br>
-            The MasseyHacks VII transparency report is available <a
-                href="https://mh7.masseyhacks.ca/files/transparency-report.pdf">here</a>.
-        </p>
-    </div>
+    <!-- Sponsors and Partners -->
+    <section id="sponsors" class="container mb-6 mt-0 pt-2 px-5">
+        <div>
+            <h1 class="subtitle">
+                <span style="color: #44F3E8;">.</span><span style="color: white;">/</span>SPONSORS<br>& PARTNERS
+            </h1>
+        </div>
+       
+        <!-- Sponsorship Prompt -->
+        <div class="sponsor-prompt sponsors-bg p-4">
+            <p class="sponsor-prompt-text">
+                Interested in becoming a sponsor?
+                <br>
+                Check out our <a href="files/MH8 Sponsorship Prospectus.pdf" target="_blank">prospectus</a> and contact us at <a href="mailto:sponsorship@masseyhacks.ca">sponsorship@masseyhacks.ca!</a>
+                <br>
+                The MasseyHacks VII transparency report is available <a href="https://mh7.masseyhacks.ca/files/transparency-report.pdf">here</a>.
+            </p>
+        </div>
 
     <div class="row justify-content-center px-4">
 
@@ -736,37 +736,51 @@
     </div>
 </section>
 
-<footer>
-    <div class="container-fluid">
-        <div class="row align-items-center justify-content-center footer">
-            <div class="col-md-6 text-center my-5">
-                <img class="footer-logo" src="images/logo.svg" alt="Logo">
-                <h1 class="footer-title mt-2">MasseyHacks VIII</h1>
-                <div class="row footer-social justify-content-center">
-                    <div class="col-2">
-                        <a href="mailto:hello@masseyhacks.ca" target="_blank">
-                            <i class="far fa-envelope"></i>
-                        </a>
+    <footer>
+        <div class="container-fluid px-5">
+            <div class="row align-items-center justify-content-center footer p-5">
+                <div class="col-md-6 text-center">
+                    <img class="footer-logo" src="images/logo.svg">
+                    <h1 class="footer-title mt-2">MasseyHacks VIII</h1>
+                    <div class="row footer-social justify-content-center">
+                        <div class="col-2">
+                            <a href="mailto:hello@masseyhacks.ca" target="_blank">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <a href="https://instagram.com/masseyhacks" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <a href="https://twitter.com/masseyhacks" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <a href="https://www.youtube.com/channel/UCTYmXP2HjkqhLV1OW4EDW5Q" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <a href="https://www.facebook.com/masseyhacks" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <a href="https://instagram.com/masseyhacks" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a href="https://twitter.com/masseyhacks" target="_blank">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a href="https://www.youtube.com/channel/UCTYmXP2HjkqhLV1OW4EDW5Q" target="_blank">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                    <div class="col-2">
-                        <a href="https://www.facebook.com/masseyhacks" target="_blank">
-                            <i class="fab fa-facebook"></i>
-                        </a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="footer-links mt-2">
+                        <a class="footer-link" href="#hero">Home</a>
+                        <br>
+                        <a class="footer-link" href="#about">About</a>
+                        <br>
+                        <a class="footer-link" href="#jumpstart">Weeks</a>
+                        <br>
+                        <a class="footer-link" href="#faq">FAQ</a>
+                        <br>
+                        <a class="footer-link" href="#sponsors">Sponsors</a>
                     </div>
                 </div>
                 <div class="footer-links mt-2">

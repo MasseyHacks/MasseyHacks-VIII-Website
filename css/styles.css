@@ -530,7 +530,7 @@ body {
 
 .subtitle {
     font-weight: 700;
-    font-size: 5rem; color: #F3DFAD;
+    font-size: 4.5rem; color: #F3DFAD;
 }
 
 #faq h1{
@@ -611,6 +611,8 @@ footer{
 
 .footer {
     height: fit-content;
+    padding-left: 8rem !important;
+    padding-right: 8rem !important;
 }
 
 .footer-title{
