@@ -1,0 +1,12 @@
+<svg width="306" height="381" viewBox="-20 -20 306 381" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="78.5" cy="45.5" r="45.5" fill="#F3D0AD" filter="url(#shadow)"/>
+    <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M58.8951 235.451C48.1726 233.212 44.0618 220.079 51.5926 212.123L180.122 76.3273C187.47 68.5636 200.455 71.5661 203.648 81.7671L258.118 255.787C261.31 265.988 252.356 275.861 241.894 273.676L58.8951 235.451Z"
+          fill="#FF58C0" filter="url(#shadow)"/>
+
+    <filter id="shadow" width="200%" height="200%" x="-50%" y="-50%">
+        <feOffset dx="0" dy="0" in="SourceGraphic" result="offOut"/>
+        <feGaussianBlur in="offOut" result="blurOut" stdDeviation="10"/>
+        <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+    </filter>
+</svg>

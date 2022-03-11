@@ -16,6 +16,9 @@
     --week-5-colour: #03B2C8;
 
     --folder-width: 768px;
+    --window-width: 768px;
+    --about-height: 768px;
+    --jumpstart-height: 768px;
     scroll-behavior: auto;
 }
 
@@ -209,7 +212,7 @@ body {
 
     width: 100%;
     min-height: calc(var(--folder-width) * 0.5);
-    background: linear-gradient(var(--week-1-colour), #52FAF02F);
+    background: linear-gradient(var(--week-1-colour), #52FAF0FF);
 
     border-radius: 0 0 1.8vw 1.8vw;
 }
@@ -450,8 +453,8 @@ nav {
 
 a:not(.sponsor-obj){
     text-decoration: none;
-  position: relative;
-  color: #0074D9;
+    position: relative;
+    color: #0074D9;
 }
 
 footer a::before{
@@ -463,25 +466,25 @@ nav a::before{
 }
 
 a:not(.sponsor-obj)::before{
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 0.125rem;
-  background-color: #0074D9;
-  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0.125rem;
+    background-color: #0074D9;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 @media (hover: hover) and (pointer: fine) {
-  a:not(.sponsor-obj):hover::before{
-    left: 0;
-    right: auto;
-    width: 100%;
-  }
-  a:not(.sponsor-obj):hover{
-      opacity: 0.8;
-  }
+    a:not(.sponsor-obj):hover::before{
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+    a:not(.sponsor-obj):hover{
+        opacity: 0.8;
+    }
 }
 
 body {
@@ -553,43 +556,43 @@ body {
 .cursor-pointer{
     cursor: pointer;
 }
-  
+
 .sponsor-obj img{
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
 }
 
 .gold img {
-  max-height: 26.6rem;
-  max-width: min(56rem, 100%);
-  vertical-align: middle;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+    max-height: 26.6rem;
+    max-width: min(56rem, 100%);
+    vertical-align: middle;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 
 .silver img {
-  max-height: 18.75rem;
-  max-width: min(25rem, 100%);
-  vertical-align: middle;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+    max-height: 18.75rem;
+    max-width: min(25rem, 100%);
+    vertical-align: middle;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 
 .partner img {
-  max-height: 18.75rem;
-  width: 18.75rem;
-  max-width: 30%;
-  vertical-align: middle;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+    max-height: 18.75rem;
+    width: 18.75rem;
+    max-width: 30%;
+    vertical-align: middle;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 
 .bronze img {
-  max-height: 7.8rem;
-  max-width: min(17.2rem, 100%);
-  vertical-align: middle;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+    max-height: 7.8rem;
+    max-width: min(17.2rem, 100%);
+    vertical-align: middle;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 
 .zoom {
@@ -699,14 +702,4 @@ footer{
     .hero-glass > img{
         height: 0;
     }
-}
-
-#shapes {
-    position: absolute;
-    top: 100vh;
-    left: 0;
-    width: 100vw;
-    height: auto;
-    display: inherit;
-    z-index: -1;
 }
