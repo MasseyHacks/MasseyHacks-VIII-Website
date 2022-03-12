@@ -635,7 +635,13 @@ footer{
     text-decoration: none !important;
     color: white !important;
     font-size: clamp(1rem, 1.25rem, 2rem);
+    font-weight: 600;
 }
+
+#copyrighttext{
+    opacity: 0.5;
+}
+
 
 @media screen and (max-width: 767px), screen and (max-height: 576px){
     html{
