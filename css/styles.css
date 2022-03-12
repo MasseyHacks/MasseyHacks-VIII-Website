@@ -621,6 +621,10 @@ footer{
     font-size: clamp(2rem, 2.5rem, 3rem);
 }
 
+.footer-address{
+    font-size: clamp(1rem, 1rem, 1.5rem);
+}
+
 .footer-logo{
     height: 15vh;
 }
@@ -641,6 +645,10 @@ footer{
     color: white;
 }
 
+.fit-content{
+    width: fit-content;
+}
+
 .footer-link{
     text-decoration: none !important;
     color: white !important;
@@ -648,8 +656,9 @@ footer{
     font-weight: 600;
 }
 
-#copyrighttext{
-    opacity: 0.5;
+.copyright-text{
+    font-size: clamp(0.75rem, 1rem, 1.25rem);
+    opacity: 0.7;
 }
 
 
