@@ -128,13 +128,17 @@ body {
 }
 
 #mc-embedded-subscribe{
-    background-color: white !important;
+    background-color: #FF58C0 !important;
     color: black !important;
-    margin: 0.25rem 0 0 0 !important;
-    padding: 0.5rem 0.5rem !important;
+    padding: 0.5rem 1rem !important;
     font-size: 1rem !important;
-    height: fit-content !important;
+    height: 100% !important;
     line-height: 100% !important;
+    width: fit-content !important;
+}
+
+#mc-embedded-subscribe:hover{
+    opacity: 0.8;
 }
 
 /* Folder Section Thingies */
@@ -611,8 +615,6 @@ footer{
 
 .footer {
     height: fit-content;
-    padding-left: 8rem !important;
-    padding-right: 8rem !important;
 }
 
 .footer-title{
@@ -621,6 +623,14 @@ footer{
 
 .footer-logo{
     height: 15vh;
+}
+
+.footer-nav{
+    display: flex;
+}
+
+.footer-email-social{
+    width: 75%;
 }
 
 .footer-social{
@@ -707,5 +717,17 @@ footer{
 @media screen and (max-width: 768px) and (max-height: 400px) {
     .hero-glass > img{
         height: 0;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .footer-nav{
+        display: none;
+    }
+    footer{
+        text-align: center !important;
+    }
+    #mc_embed_signup{
+        display:none !important;
     }
 }
