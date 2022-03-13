@@ -17,8 +17,17 @@
 
     --folder-width: 768px;
     --window-width: 768px;
+    --window-height: 768px;
+    --body-height: 768px;
+    --bg-row-height: calc(var(--body-height) / 12);
+    --bg-img-padding-constant: var(--bg-row-height);
+
+    --hero-height: 100vh;
     --about-height: 768px;
+    --faq-height: 768px;
     --jumpstart-height: 768px;
+    --sponsors-height: 768px;
+
     scroll-behavior: auto;
 }
 
@@ -35,16 +44,34 @@ body {
     padding: 3rem;
 }
 
+#bg-shapes {
+    top: var(--hero-height);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: var(--body-height);
+    overflow: hidden;
+    z-index: -1;
+    /*d-flex flex-column w-100 h-100 position-absolute translate-middle top-50 start-50*/
+}
+
+
+#bg-shapes > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    min-height: var(--bg-row-height);
+    max-height: var(--bg-row-height);
+    /*d-flex justify-content-around align-items-center w-100*/
+}
+
 /* Hero Section Thingies */
 #hero {
     width: 100%;
     height: 100vh;
-    background-color: var(--bg-colour);
-    /*background-image: url("../images/hero-section/hero-triangles-large.svg");*/
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .hero-glass {
@@ -512,7 +539,7 @@ body {
     font-weight: 700;
 }
 
-#aboutshadow {
+.aboutshadow {
     text-shadow: 0.125rem 0.125rem #FF58C0;
 }
 

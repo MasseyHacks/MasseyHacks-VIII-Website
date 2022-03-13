@@ -11,26 +11,9 @@ const toggleNavLinks = () => {
 
 // Updating folder-width css variable
 const rootNode = document.querySelector(":root");
-const folderNode = document.querySelector(".folder");
-const updateFolderWidth = () => {
-    const curFolderWidth = folderNode.getBoundingClientRect().width;
-    rootNode.style.setProperty("--folder-width", `${curFolderWidth}px`);
-};
-
-const updateWindowWidth = () => {
-    const curWindowWidth = $(window).width();
-    rootNode.style.setProperty("--window-width", `${curWindowWidth}px`);
-};
-
-const updateAboutHeight = () => {
-    const curAboutHeight = $("#about").height();
-    rootNode.style.setProperty("--about-height", `${curAboutHeight}px`);
-};
-
-const updateJumpstartHeight = () => {
-    const curJumpstartHeight = $("#jumpstart").height();
-    rootNode.style.setProperty("--jumpstart-height", `${curJumpstartHeight}px`);
-};
+const setCSSVariable = (cssVar, newVal) => {
+    rootNode.style.setProperty(cssVar, `${newVal}px`);
+}
 
 // Initialization of Folder
 const initFolderBtn = () => {
@@ -136,22 +119,47 @@ const jsCounter = (parentElement) => {
     });
 };
 
+const bgShapesImgNodes = document.querySelectorAll("#bg-shapes img");
+const randomMovement = () => {
+    bgShapesImgNodes.forEach((bgShapesImgNode) => {
+        const randomX = -100 + Math.random() * 200;
+        const randomY = -100 + Math.random() * 200;
+        bgShapesImgNode.style.setProperty("transform", `translate(${randomX}%, ${randomY}%)`);
+    });
+};
+
+
+const calcShapePaddingConstant = () => {
+    rootNode.style.setProperty("--bg-img-padding-constant", `calc(var(--bg-row-height) / ${$(window).height() / 85}) + 37px`);
+};
+
+
+
+const updateCSSVariable = () => {
+    setCSSVariable("--folder-width", $(".folder").width());
+    setCSSVariable("--window-width", $(window).width());
+    setCSSVariable("--window-height", $(window).height());
+    setCSSVariable("--body-height", $("body").height() - $("footer").height() - $("#hero").height());
+
+    setCSSVariable("--hero-height", $("#hero").height());
+    setCSSVariable("--about-height", $("#about").height());
+    setCSSVariable("--faq-height", $("#faq").height());
+    setCSSVariable("--jumpstart-height", $("#jumpstart").height());
+    setCSSVariable("--sponsors-height", $("#sponsors").height());
+};
 
 // Window Events
 window.onload = () => {
     initFolderBtn();
-    updateFolderWidth();
-    updateWindowWidth();
-    updateAboutHeight();
-    updateJumpstartHeight();
+    updateCSSVariable();
+    calcShapePaddingConstant();
 };
 
 window.addEventListener("resize", (evt) => {
-    updateFolderWidth();
-    updateWindowWidth();
-    updateAboutHeight();
-    updateJumpstartHeight();
+    updateCSSVariable();
+    calcShapePaddingConstant();
 }, true);
+
 
 
 const isScrolledIntoView = (elem, padding) => {
