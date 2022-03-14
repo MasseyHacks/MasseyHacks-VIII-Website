@@ -35,9 +35,6 @@ body {
     margin-top: 15vh; color: white;
 }
 
-#jumpstart {
-    padding: 5rem 3rem 7rem 3rem;
-}
 
 /* Hero Section Thingies */
 #hero {
@@ -167,6 +164,7 @@ body {
     margin: 0 !important;
     width: 16% !important;
     height: initial !important;
+    min-height: 2.5rem;
     font-weight: bolder;
     font-size: clamp(0.8rem, 1.8vw, 1.4rem);
     opacity: 1 !important;
@@ -490,7 +488,11 @@ nav {
     }
 
     .hero-glass > h1 {
-        font-size: clamp(1.4rem, 2.5vw, 3rem);
+        font-size: clamp(1.6rem, 2.5vw, 3rem);
+    }
+
+    .hero-glass > p {
+        font-size: clamp(1.1rem, 1.5vw, 2rem);
     }
 
     .hero-glass > div:nth-child(4) {
@@ -578,10 +580,6 @@ body {
 .subtitle {
     font-weight: 700;
     font-size: 4.5rem; color: #F3DFAD;
-}
-
-#faq {
-    padding: 5rem 0;
 }
 
 #faq h1{
@@ -801,6 +799,10 @@ footer{
 }
 
 @media screen and (max-width: 991px){
+    .folder {
+        width: 100%;
+    }
+
     .footer-nav{
         display: none;
     }
