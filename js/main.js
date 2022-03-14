@@ -196,3 +196,13 @@ $(document).ready(function() {
         }
     });
 });
+
+$(window).resize(()=> {
+    const weekMHBtnNode = document.querySelector(".folder-tabs > span:nth-child(5)");
+    if(screen.width <= 576){
+        weekMHBtnNode.innerHTML = "MH VIII";
+    }
+    else{
+        weekMHBtnNode.innerHTML = "MasseyHacks";
+    }
+});
