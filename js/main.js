@@ -128,16 +128,6 @@ const jsCounter = (parentElement) => {
     });
 };
 
-const bgShapesImgNodes = document.querySelectorAll("#bg-shapes img");
-const randomMovement = () => {
-    bgShapesImgNodes.forEach((bgShapesImgNode) => {
-        const randomX = -100 + Math.random() * 200;
-        const randomY = -100 + Math.random() * 200;
-        bgShapesImgNode.style.setProperty("transform", `translate(${randomX}%, ${randomY}%)`);
-    });
-};
-
-
 const calcShapePaddingConstant = () => {
     if ($(window).width() < 1024) {
         rootNode.style.setProperty("--bg-img-padding-constant", `calc(var(--bg-row-height) / ${$(window).height() / 10}) + 60px`);
@@ -162,23 +152,11 @@ const updateCSSVariable = () => {
     setCSSVariable("--sponsors-height", $("#sponsors").height());
 };
 
-// Window Events
-window.onload = () => {
-    initFolderBtn();
+
+new ResizeObserver(() => {
     updateCSSVariable();
     calcShapePaddingConstant();
-
-    // setInterval(() => {
-    //     updateCSSVariable();
-    //     calcShapePaddingConstant();
-    // }, 100);
-};
-
-$(window).resize(() => {
-    updateCSSVariable();
-    calcShapePaddingConstant();
-});
-
+}).observe(document.querySelector("body"));
 
 
 
@@ -201,6 +179,10 @@ $(window).scroll(() => {
 });
 
 $(document).ready(function() {
+    initFolderBtn();
+    updateCSSVariable();
+    calcShapePaddingConstant();
+
     $("a").on('click', function(event){
         if (this.hash !== ""){
             event.preventDefault();
