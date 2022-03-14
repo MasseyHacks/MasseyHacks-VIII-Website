@@ -23,7 +23,7 @@
     --window-width: 768px;
     --window-height: 768px;
     --body-height: 768px;
-    --bg-row-height: calc(var(--body-height) / 11);
+    --bg-row-height: calc(var(--body-height) / 10);
     --bg-img-padding-constant: var(--bg-row-height);
 
     --hero-height: 100vh;

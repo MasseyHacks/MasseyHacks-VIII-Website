@@ -139,7 +139,7 @@ const randomMovement = () => {
 
 
 const calcShapePaddingConstant = () => {
-    rootNode.style.setProperty("--bg-img-padding-constant", `calc(var(--bg-row-height) / ${$(window).height() / 86}) + 37px`);
+    rootNode.style.setProperty("--bg-img-padding-constant", `calc(var(--bg-row-height) / ${$(window).height() / 20}) + 45px`);
 };
 
 
