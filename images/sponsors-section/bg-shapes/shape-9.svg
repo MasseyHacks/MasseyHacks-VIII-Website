@@ -1,0 +1,13 @@
+<svg width="281" height="307" viewBox="-20 -20 281 307" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M226.769 25.7731C227.781 14.7776 216.676 6.7622 206.983 11.4921L22.2643 101.624C12.7535 106.264 11.7311 119.745 20.4145 126.012L185.836 245.405C194.519 251.672 206.478 246.085 207.471 235.297L226.769 25.7731Z"
+          fill="#52FAF0" filter="url(#shadow)"/>
+
+
+    <filter id="shadow" width="200%" height="200%" x="-50%" y="-50%">
+        <feOffset dx="0" dy="0" in="SourceGraphic" result="offOut"/>
+        <feGaussianBlur in="offOut" result="blurOut" stdDeviation="10"/>
+        <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+    </filter>
+</svg>

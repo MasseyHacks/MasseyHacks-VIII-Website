@@ -1,4 +1,12 @@
-<svg width="363" height="374" viewBox="0 0 363 374" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M290.114 232.607C301.046 230.388 305.328 217.095 297.65 209.211L110.233 16.782C102.868 9.22053 89.9146 12.3354 86.6565 22.4512L7.23113 269.047C3.973 279.162 12.7859 288.902 23.2714 286.773L290.114 232.607Z" fill="#FF7DD3"/>
-<circle r="62.6258" transform="matrix(-1 0 0 1 170.626 136.552)" fill="#F3D0AD"/>
+<svg width="403" height="414" viewBox="-20 -20 403 414" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M290.114 232.607C301.046 230.388 305.328 217.095 297.65 209.211L110.233 16.782C102.868 9.22053 89.9146 12.3354 86.6565 22.4512L7.23113 269.047C3.973 279.162 12.7859 288.902 23.2714 286.773L290.114 232.607Z"
+          fill="#FF7DD3" filter="url(#shadow)"/>
+    <circle r="62.6258" transform="matrix(-1 0 0 1 170.626 136.552)" fill="#F3D0AD" filter="url(#shadow)"/>
+
+    <filter id="shadow" width="200%" height="200%" x="-50%" y="-50%">
+        <feOffset dx="0" dy="0" in="SourceGraphic" result="offOut"/>
+        <feGaussianBlur in="offOut" result="blurOut" stdDeviation="10"/>
+        <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+    </filter>
 </svg>
