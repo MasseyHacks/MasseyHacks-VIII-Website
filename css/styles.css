@@ -593,6 +593,10 @@ body {
     font-weight: 500;
 }
 
+#faq .text-bg{
+    margin-top: 2rem;
+}
+
 .sponsor-prompt {
     margin-top: 2rem;
     text-align: center;
