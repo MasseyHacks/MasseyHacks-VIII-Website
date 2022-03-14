@@ -139,7 +139,12 @@ const randomMovement = () => {
 
 
 const calcShapePaddingConstant = () => {
-    rootNode.style.setProperty("--bg-img-padding-constant", `calc(var(--bg-row-height) / ${$(window).height() / 20}) + 45px`);
+    if ($(window).width() < 1024) {
+        rootNode.style.setProperty("--bg-img-padding-constant", `calc(var(--bg-row-height) / ${$(window).height() / 10}) + 60px`);
+    }
+    else {
+        rootNode.style.setProperty("--bg-img-padding-constant", `calc(var(--bg-row-height) / ${$(window).height() / 20}) + 45px`);
+    }
 };
 
 
@@ -163,16 +168,16 @@ window.onload = () => {
     updateCSSVariable();
     calcShapePaddingConstant();
 
-    setInterval(() => {
-        updateCSSVariable();
-        calcShapePaddingConstant();
-    }, 100);
+    // setInterval(() => {
+    //     updateCSSVariable();
+    //     calcShapePaddingConstant();
+    // }, 100);
 };
 
-// $(window).resize(() => {
-//     updateCSSVariable();
-//     calcShapePaddingConstant();
-// });
+$(window).resize(() => {
+    updateCSSVariable();
+    calcShapePaddingConstant();
+});
 
 
 
