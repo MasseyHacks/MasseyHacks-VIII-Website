@@ -38,11 +38,20 @@ const initFolderBtn = () => {
     const weekTwoBtnNode = document.querySelector(".folder-tabs > span:nth-child(2)");
     const weekThreeBtnNode = document.querySelector(".folder-tabs > span:nth-child(3)");
     const weekFiveBtnNode = document.querySelector(".folder-tabs > span:nth-child(4)");
+    const weekMHBtnNode = document.querySelector(".folder-tabs > span:nth-child(5)");
 
-    weekOneBtnNode.innerHTML = "WEEK 1";
-    weekTwoBtnNode.innerHTML = "WEEK 2";
-    weekThreeBtnNode.innerHTML = "WEEK 3/4";
-    weekFiveBtnNode.innerHTML = "WEEK 5";
+
+    weekOneBtnNode.innerHTML = "Week 1";
+    weekTwoBtnNode.innerHTML = "Week 2";
+    weekThreeBtnNode.innerHTML = "Week 3/4";
+    weekFiveBtnNode.innerHTML = "Week 5";
+    
+    if(screen.width <= 576) {
+        weekMHBtnNode.innerHTML = "MH VIII";
+    } else {
+        weekMHBtnNode.innerHTML = "MasseyHacks";
+    }
+
 
 
     const folderTabsNode = document.querySelector(".folder-tabs");
