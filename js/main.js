@@ -195,6 +195,9 @@ $(document).ready(function() {
             });
         }
     });
+    if (isScrolledIntoView($("#about"), 30)) {
+        jsCounter(aboutSectionNode);
+    }
 });
 
 $(window).resize(()=> {
