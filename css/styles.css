@@ -557,8 +557,8 @@ body {
     border-radius: 3.875rem;
 }
 
-#aboutsubtitle {
-    font-weight: 700;
+.aboutsubtitle {
+    font-weight: 700 !important;
 }
 
 #aboutshadow {
