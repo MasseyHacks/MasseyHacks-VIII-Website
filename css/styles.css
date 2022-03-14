@@ -613,6 +613,7 @@ body {
 .subtitle {
     font-weight: 700;
     font-size: 4.5rem; color: #F3DFAD;
+    margin-top: 0 !important;
 }
 
 #faq h1{
