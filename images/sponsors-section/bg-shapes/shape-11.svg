@@ -1,18 +1,1 @@
-<svg width="247" height="237" viewBox="-20 -20 247 237" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M72.7447 54.9273C74.1932 44.0696 86.9895 39.0081 95.4762 45.9361L187.522 121.076C195.803 127.836 193.759 141.006 183.82 144.938L76.064 187.558C66.1243 191.489 55.6216 183.281 57.0349 172.687L72.7447 54.9273Z"
-          fill="url(#paint0_linear_624_4)" filter="url(#shadow)"/>
-    <circle cx="47.5" cy="160.5" r="32.5" fill="#52FAF0" filter="url(#shadow)"/>
-    <defs>
-        <linearGradient id="paint0_linear_624_4" x1="76.0615" y1="30.0839" x2="129.921" y2="166.256"
-                        gradientUnits="userSpaceOnUse">
-            <stop stop-color="#F5D18C"/>
-            <stop offset="1" stop-color="#F3D0AD"/>
-        </linearGradient>
-    </defs>
-    <filter id="shadow" width="200%" height="200%" x="-50%" y="-50%">
-        <feOffset dx="0" dy="0" in="SourceGraphic" result="offOut"/>
-        <feGaussianBlur in="offOut" result="blurOut" stdDeviation="10"/>
-        <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
-    </filter>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="247" height="237" fill="none" viewBox="-20 -20 247 237"><path fill="url(#paint0_linear_624_4)" fill-rule="evenodd" d="M72.7447 54.9273C74.1932 44.0696 86.9895 39.0081 95.4762 45.9361L187.522 121.076C195.803 127.836 193.759 141.006 183.82 144.938L76.064 187.558C66.1243 191.489 55.6216 183.281 57.0349 172.687L72.7447 54.9273Z" clip-rule="evenodd" filter="url(#shadow)"/><circle cx="47.5" cy="160.5" r="32.5" fill="#52FAF0" filter="url(#shadow)"/><defs><linearGradient id="paint0_linear_624_4" x1="76.061" x2="129.921" y1="30.084" y2="166.256" gradientUnits="userSpaceOnUse"><stop stop-color="#F5D18C"/><stop offset="1" stop-color="#F3D0AD"/></linearGradient></defs><filter id="shadow" width="200%" height="200%" x="-50%" y="-50%"><feOffset dx="0" dy="0" in="SourceGraphic" result="offOut"/><feGaussianBlur in="offOut" result="blurOut" stdDeviation="10"/><feBlend in="SourceGraphic" in2="blurOut" mode="normal"/></filter></svg>
