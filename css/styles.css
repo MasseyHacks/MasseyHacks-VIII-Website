@@ -761,7 +761,7 @@ footer{
 
 @media screen and (max-width: 576px), screen and (max-height: 400px){
     html{
-        font-size: 12px;
+        font-size: 13px;
     }
 
     /* Folder Section */

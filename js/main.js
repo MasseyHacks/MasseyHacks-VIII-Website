@@ -164,6 +164,13 @@ const calcShapePaddingConstant = () => {
 $(window).resize(() => {
     updateCSSVariable();
     calcShapePaddingConstant();
+    const weekMHBtnNode = document.querySelector(".folder-tabs > span:nth-child(5)");
+    if(screen.width <= 576){
+        weekMHBtnNode.innerHTML = "MH VIII";
+    }
+    else{
+        weekMHBtnNode.innerHTML = "MasseyHacks";
+    }
 });
 
 const isScrolledIntoView = (elem, padding) => {
@@ -204,15 +211,5 @@ $(document).ready(function() {
     });
     if (isScrolledIntoView($("#about"), 30)) {
         jsCounter(aboutSectionNode);
-    }
-});
-
-$(window).resize(()=> {
-    const weekMHBtnNode = document.querySelector(".folder-tabs > span:nth-child(5)");
-    if(screen.width <= 576){
-        weekMHBtnNode.innerHTML = "MH VIII";
-    }
-    else{
-        weekMHBtnNode.innerHTML = "MasseyHacks";
     }
 });
