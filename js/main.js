@@ -69,7 +69,10 @@ const swiper = new Swiper('.folder-swiper', {
     loop: true,
     // spaceBetween: 30,
     // effect: "fade",
-
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
