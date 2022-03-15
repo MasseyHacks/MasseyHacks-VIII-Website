@@ -128,38 +128,43 @@ const jsCounter = (parentElement) => {
     });
 };
 
-const calcShapePaddingConstant = () => {
-    if ($(window).width() < 1024) {
-        rootNode.style.setProperty("--bg-img-padding-constant", `calc(var(--bg-row-height) / ${$(window).height() / 10}) + 60px`);
-    }
-    else {
-        rootNode.style.setProperty("--bg-img-padding-constant", `calc(var(--bg-row-height) / ${$(window).height() / 20}) + 45px`);
-    }
-};
 
+
+const heroJquery = $("#hero");
+const windowJquery = $(window);
+const folderJquery = $(".folder");
+const bodyJquery = $("body");
+const footerJquery = $("footer");
 
 
 const updateCSSVariable = () => {
-    setCSSVariable("--folder-width", $(".folder").width());
-    setCSSVariable("--window-width", $(window).width());
-    setCSSVariable("--window-height", $(window).height());
-    setCSSVariable("--body-height", $("body").height() - $("footer").height() - $("#hero").height());
+    setCSSVariable("--hero-height", heroJquery.height());
+    setCSSVariable("--folder-width", folderJquery.width());
+    setCSSVariable("--window-width", windowJquery.width());
+    setCSSVariable("--window-height", windowJquery.height());
+    setCSSVariable("--body-height", bodyJquery.height() - footerJquery.height() - heroJquery.height());
+};
 
-    setCSSVariable("--hero-height", $("#hero").height());
-    setCSSVariable("--about-height", $("#about").height());
-    setCSSVariable("--faq-height", $("#faq").height());
-    setCSSVariable("--jumpstart-height", $("#jumpstart").height());
-    setCSSVariable("--sponsors-height", $("#sponsors").height());
+const calcShapePaddingConstant = () => {
+    if ($(window).width() < 1024) {
+        rootNode.style.setProperty("--bg-img-padding-constant", `calc(var(--bg-row-height) / ${windowJquery.height() / 10}) + 60px`);
+    }
+    else {
+        rootNode.style.setProperty("--bg-img-padding-constant", `calc(var(--bg-row-height) / ${windowJquery.height() / 20}) + 45px`);
+    }
 };
 
 
-new ResizeObserver(() => {
+// new ResizeObserver(() => {
+//     updateCSSVariable();
+//     calcShapePaddingConstant();
+// }).observe(document.querySelector("body"));
+
+
+$(window).resize(() => {
     updateCSSVariable();
     calcShapePaddingConstant();
-}).observe(document.querySelector("body"));
-
-
-
+});
 
 const isScrolledIntoView = (elem, padding) => {
     const docViewTop = $(window).scrollTop();
