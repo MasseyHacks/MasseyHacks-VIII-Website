@@ -22,16 +22,18 @@ const initFolderBtn = () => {
     const weekThreeBtnNode = document.querySelector(".folder-tabs > span:nth-child(3)");
     const weekFiveBtnNode = document.querySelector(".folder-tabs > span:nth-child(4)");
     const weekMHBtnNode = document.querySelector(".folder-tabs > span:nth-child(5)");
-
-
-    weekOneBtnNode.innerHTML = "Week 1";
-    weekTwoBtnNode.innerHTML = "Week 2";
-    weekThreeBtnNode.innerHTML = "Week 3/4";
-    weekFiveBtnNode.innerHTML = "Week 5";
     
     if(screen.width <= 576) {
+        weekOneBtnNode.innerHTML = "W1";
+        weekTwoBtnNode.innerHTML = "W2";
+        weekThreeBtnNode.innerHTML = "W3/4";
+        weekFiveBtnNode.innerHTML = "W5";
         weekMHBtnNode.innerHTML = "MH VIII";
     } else {
+        weekOneBtnNode.innerHTML = "Week 1";
+        weekTwoBtnNode.innerHTML = "Week 2";
+        weekThreeBtnNode.innerHTML = "Week 3/4";
+        weekFiveBtnNode.innerHTML = "Week 5";
         weekMHBtnNode.innerHTML = "MasseyHacks";
     }
 
@@ -164,11 +166,23 @@ const calcShapePaddingConstant = () => {
 $(window).resize(() => {
     updateCSSVariable();
     calcShapePaddingConstant();
+    const weekOneBtnNode = document.querySelector(".folder-tabs > span:nth-child(1)");
+    const weekTwoBtnNode = document.querySelector(".folder-tabs > span:nth-child(2)");
+    const weekThreeBtnNode = document.querySelector(".folder-tabs > span:nth-child(3)");
+    const weekFiveBtnNode = document.querySelector(".folder-tabs > span:nth-child(4)");
     const weekMHBtnNode = document.querySelector(".folder-tabs > span:nth-child(5)");
-    if(screen.width <= 576){
+    
+    if(screen.width <= 576) {
+        weekOneBtnNode.innerHTML = "W1";
+        weekTwoBtnNode.innerHTML = "W2";
+        weekThreeBtnNode.innerHTML = "W3/4";
+        weekFiveBtnNode.innerHTML = "W5";
         weekMHBtnNode.innerHTML = "MH VIII";
-    }
-    else{
+    } else {
+        weekOneBtnNode.innerHTML = "Week 1";
+        weekTwoBtnNode.innerHTML = "Week 2";
+        weekThreeBtnNode.innerHTML = "Week 3/4";
+        weekFiveBtnNode.innerHTML = "Week 5";
         weekMHBtnNode.innerHTML = "MasseyHacks";
     }
 });
