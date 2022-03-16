@@ -189,7 +189,7 @@ const bgShapeDivs = document.querySelectorAll("#bg-shapes > div");
 
 const getTargetTranslate = (translate) => {
     const [targetPosX, targetPosY] = translate.split(",");
-    return [parseFloat(targetPosX.replace(/[^\d.-]/g, '')), parseFloat(targetPosY.replace(/[^\d.-]/g, ''))];
+    return [parseFloat(targetPosX.replace(/[^\d.-]/g, '')), (targetPosY) ? parseFloat(targetPosY.replace(/[^\d.-]/g, '')) : 0];
 };
 
 const updateBgImgPosition = () => {
