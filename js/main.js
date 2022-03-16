@@ -136,7 +136,6 @@ const jsCounter = (parentElement) => {
 };
 
 
-
 const heroJquery = $("#hero");
 const windowJquery = $(window);
 const folderJquery = $(".folder");
@@ -168,6 +167,56 @@ const calcShapePaddingConstant = () => {
 // }).observe(document.querySelector("body"));
 
 
+const bgImgNodes = document.querySelectorAll("#bg-shapes img");
+const bgImgTargetPos = new Map();
+const bgImgRandomPos = new Map();
+
+const lerp = (v0, v1, t) => {
+    return v0 * (1 - t) + v1 * t
+};
+
+const generateRandomBgPos = () => {
+    bgImgNodes.forEach(bgImgNode => {
+        bgImgTargetPos.set(bgImgNode, getTargetTranslate(bgImgNode.style.transform));
+
+        const randomPosX = -10 + Math.random() * 20;
+        const randomPosY = -100 + Math.random() * 200;
+        bgImgRandomPos.set(bgImgNode, [randomPosX, randomPosY]);
+    });
+};
+
+const bgShapeDivs = document.querySelectorAll("#bg-shapes > div");
+
+const getTargetTranslate = (translate) => {
+    const [targetPosX, targetPosY] = translate.split(",");
+    return [parseFloat(targetPosX.replace(/[^\d.-]/g, '')), parseFloat(targetPosY.replace(/[^\d.-]/g, ''))];
+};
+
+const updateBgImgPosition = () => {
+    bgShapeDivs.forEach(bgShapeDiv => {
+        const docHeight = $(window).height();
+        const docViewTop = $(window).scrollTop();
+        const docViewBottom = docViewTop + docHeight;
+        const elemHeight = bgShapeDiv.getBoundingClientRect().height;
+        const elemTop = bgShapeDiv.getBoundingClientRect().top + window.scrollY;
+        const elemBottom = elemTop + elemHeight;
+
+
+        if (docViewTop >= elemTop) {
+            const percentInView = (docViewTop - elemTop) / docHeight;
+            const bgImgNodes = bgShapeDiv.querySelectorAll("img");
+
+            bgImgNodes.forEach(bgImgNode => {
+                const [randomPosX, randomPosY] = bgImgRandomPos.get(bgImgNode);
+                const [targetPosX, targetPosY] = bgImgTargetPos.get(bgImgNode);
+                const curRandomPosX = lerp(targetPosX, randomPosX, percentInView);
+                const curRandomPosY = lerp(targetPosY, randomPosY, percentInView);
+                bgImgNode.style.transform = `translate(${curRandomPosX}vw, ${curRandomPosY}%)`;
+            });
+        }
+    });
+};
+
 $(window).resize(() => {
     updateCSSVariable();
     calcShapePaddingConstant();
@@ -189,9 +238,12 @@ $(window).scroll(() => {
     if (isScrolledIntoView($("#about"), 30)) {
         jsCounter(aboutSectionNode);
     }
+    updateBgImgPosition();
 });
 
 $(document).ready(function() {
+    generateRandomBgPos();
+    updateBgImgPosition();
     initFolderBtn();
     updateCSSVariable();
     calcShapePaddingConstant();
