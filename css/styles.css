@@ -544,7 +544,7 @@ nav a::after{
 }
 
 #faq .cursor-pointer a::after {
-    background-color: var(--yellow-colour);
+    background-color: var(--pink-colour);
 }
 
 a:not(.sponsor-obj)::after{
