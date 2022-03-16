@@ -533,6 +533,7 @@ a:not(.sponsor-obj){
     text-decoration: none;
     position: relative;
     color: #0074D9;
+    display:inline-block;
 }
 
 footer a::after{
