@@ -255,10 +255,10 @@ $(document).ready(function() {
             $('html,body').animate({
                 scrollTop: $(hash).offset().top,
             }, 600, 'swing').promise().then(function(){
-                window.location.hash = "";
+                /*window.location.hash = "";
                 location.hash.replace('#', '');
                 location.hash = '';
-                window.history.replaceState({}, "", "");
+                window.history.replaceState({}, "", "");*/
             });
         }
     });
