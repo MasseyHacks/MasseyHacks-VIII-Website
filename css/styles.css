@@ -535,15 +535,19 @@ a:not(.sponsor-obj){
     color: #0074D9;
 }
 
-footer a::before{
+footer a::after{
     background-color: white !important;
 }
 
-nav a::before{
+nav a::after{
     background-color: var(--grey-colour) !important;
 }
 
-a:not(.sponsor-obj)::before{
+#faq .cursor-pointer a::after {
+    background-color: var(--yellow-colour);
+}
+
+a:not(.sponsor-obj)::after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -555,7 +559,7 @@ a:not(.sponsor-obj)::before{
 }
 
 @media (hover: hover) and (pointer: fine) {
-    a:not(.sponsor-obj):hover::before{
+    a:not(.sponsor-obj):hover::after{
         left: 0;
         right: auto;
         width: 100%;
