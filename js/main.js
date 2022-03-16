@@ -217,12 +217,6 @@ const updateBgImgPosition = () => {
     });
 };
 
-$(window).resize(() => {
-    updateCSSVariable();
-    calcShapePaddingConstant();
-    updateFolderBtnTxt();
-});
-
 const isScrolledIntoView = (elem, padding) => {
     const docViewTop = $(window).scrollTop();
     const docViewBottom = docViewTop + $(window).height();
@@ -233,13 +227,6 @@ const isScrolledIntoView = (elem, padding) => {
 };
 
 const aboutSectionNode = document.querySelector("#about");
-
-$(window).scroll(() => {
-    if (isScrolledIntoView($("#about"), 30)) {
-        jsCounter(aboutSectionNode);
-    }
-    updateBgImgPosition();
-});
 
 $(document).ready(function() {
     generateRandomBgPos();
@@ -262,6 +249,20 @@ $(document).ready(function() {
             });
         }
     });
+
+    $(window).resize(() => {
+        updateCSSVariable();
+        calcShapePaddingConstant();
+        updateFolderBtnTxt();
+    });
+
+    $(window).scroll(() => {
+        if (isScrolledIntoView($("#about"), 30)) {
+            jsCounter(aboutSectionNode);
+        }
+        updateBgImgPosition();
+    });
+
     if (isScrolledIntoView($("#about"), 30)) {
         jsCounter(aboutSectionNode);
     }
