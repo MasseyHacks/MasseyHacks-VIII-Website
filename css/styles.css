@@ -532,7 +532,7 @@ nav {
 a:not(.sponsor-obj){
     text-decoration: none;
     position: relative;
-    color: #0074D9;
+    color: #158C9B;
     display: inline-block;
 }
 
@@ -559,7 +559,7 @@ a:not(.sponsor-obj)::after{
     right: 0;
     width: 0;
     height: 0.125rem;
-    background-color: #0074D9;
+    background-color: #158C9B;
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
