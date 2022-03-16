@@ -22,7 +22,7 @@ const updateFolderBtnTxt = () => {
     const weekFiveBtnNode = document.querySelector(".folder-tabs > span:nth-child(4)");
     const weekMHBtnNode = document.querySelector(".folder-tabs > span:nth-child(5)");
 
-    if($(window).width() <= 576) {
+    if ($(window).width() <= 576) {
         weekOneBtnNode.innerHTML = "W1";
         weekTwoBtnNode.innerHTML = "W2";
         weekThreeBtnNode.innerHTML = "W3/4";
@@ -126,8 +126,7 @@ const jsCounter = (parentElement) => {
                 // span.innerHTML = targetValue.toString();
                 span.innerHTML = addCommaToNum(targetValue);
                 clearInterval();
-            }
-            else {
+            } else {
                 // span.innerHTML = (curAmt + increment).toString();
                 span.innerHTML = addCommaToNum(curAmt + increment);
             }
@@ -154,28 +153,20 @@ const updateCSSVariable = () => {
 const calcShapePaddingConstant = () => {
     if ($(window).width() < 1024) {
         rootNode.style.setProperty("--bg-img-padding-constant", `calc(var(--bg-row-height) / ${windowJquery.height() / 10}) + 60px`);
-    }
-    else {
+    } else {
         rootNode.style.setProperty("--bg-img-padding-constant", `calc(var(--bg-row-height) / ${windowJquery.height() / 20}) + 45px`);
     }
 };
-
-
-// new ResizeObserver(() => {
-//     updateCSSVariable();
-//     calcShapePaddingConstant();
-// }).observe(document.querySelector("body"));
-
 
 const bgImgNodes = document.querySelectorAll("#bg-shapes img");
 const bgImgTargetPos = new Map();
 const bgImgRandomPos = new Map();
 
 const lerp = (v0, v1, t) => {
-    return v0 * (1 - t) + v1 * t
+    return v0 * (1 - t) + v1 * t;
 };
 
-const generateRandomBgPos = () => {
+const initRandomBgPos = () => {
     bgImgNodes.forEach(bgImgNode => {
         bgImgTargetPos.set(bgImgNode, getTargetTranslate(bgImgNode.style.transform));
 
@@ -188,8 +179,9 @@ const generateRandomBgPos = () => {
 const bgShapeDivs = document.querySelectorAll("#bg-shapes > div");
 
 const getTargetTranslate = (translate) => {
-    const [targetPosX, targetPosY] = translate.split(",");
-    return [parseFloat(targetPosX.replace(/[^\d.-]/g, '')), parseFloat(targetPosY.replace(/[^\d.-]/g, ''))];
+    const targetPos = translate.split(",");
+    const targetPosX = targetPos[0].replace(/[^\d.-]/g, ''), targetPosY = targetPos[1].replace(/[^\d.-]/g, '');
+    return [parseFloat(targetPosX), parseFloat(targetPosY)];
 };
 
 const updateBgImgPosition = () => {
@@ -207,8 +199,11 @@ const updateBgImgPosition = () => {
             const bgImgNodes = bgShapeDiv.querySelectorAll("img");
 
             bgImgNodes.forEach(bgImgNode => {
-                const [randomPosX, randomPosY] = bgImgRandomPos.get(bgImgNode);
-                const [targetPosX, targetPosY] = bgImgTargetPos.get(bgImgNode);
+                const randomPos = bgImgRandomPos.get(bgImgNode);
+                const randomPosX = randomPos[0], randomPosY = randomPos[1];
+                const targetPos = bgImgTargetPos.get(bgImgNode);
+                const targetPosX = targetPos[0], targetPosY = targetPos[1];
+
                 const curRandomPosX = lerp(targetPosX, randomPosX, percentInView);
                 const curRandomPosY = lerp(targetPosY, randomPosY, percentInView);
                 bgImgNode.style.transform = `translate(${curRandomPosX}vw, ${curRandomPosY}%)`;
@@ -222,6 +217,11 @@ $(window).resize(() => {
     calcShapePaddingConstant();
     updateFolderBtnTxt();
 });
+
+// new ResizeObserver(() => {
+//     updateCSSVariable();
+//     calcShapePaddingConstant();
+// }).observe(document.querySelector("body"));
 
 const isScrolledIntoView = (elem, padding) => {
     const docViewTop = $(window).scrollTop();
@@ -241,20 +241,20 @@ $(window).scroll(() => {
     updateBgImgPosition();
 });
 
-$(document).ready(function() {
-    generateRandomBgPos();
+$(document).ready(function () {
+    initRandomBgPos();
     updateBgImgPosition();
     initFolderBtn();
     updateCSSVariable();
     calcShapePaddingConstant();
 
-    $("a").on('click', function(event){
-        if (this.hash !== ""){
+    $("a").on('click', function (event) {
+        if (this.hash !== "") {
             event.preventDefault();
             var hash = this.hash;
             $('html,body').animate({
                 scrollTop: $(hash).offset().top,
-            }, 600, 'swing').promise().then(function(){
+            }, 600, 'swing').promise().then(function () {
                 window.location.hash = "";
                 location.hash.replace('#', '');
                 location.hash = '';
