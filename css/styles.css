@@ -767,7 +767,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 576px), screen and (max-height: 400px){
+@media screen and (max-width: 576px){
 
     /* Folder Section */
 
@@ -820,7 +820,7 @@ footer{
         height: initial !important;
         border-radius: 2.5vw 2.5vw 0 0;
         font-weight: bolder;
-        font-size: clamp(0.7rem, 3vw, 3rem);
+        font-size: clamp(0.7rem, 2vw, 3rem);
         padding: 2px;
     }
 }
