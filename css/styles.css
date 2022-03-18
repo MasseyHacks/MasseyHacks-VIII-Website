@@ -748,6 +748,9 @@ footer{
     opacity: 0.7;
 }
 
+.jumpstart-apply:hover{
+    opacity: 0.8;
+}
 
 @media screen and (max-width: 767px), screen and (max-height: 576px){
     html{
