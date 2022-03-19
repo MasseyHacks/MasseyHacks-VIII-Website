@@ -530,11 +530,11 @@ nav {
     }
 }
 
-a:not(.sponsor-obj):not(.jumpstart-apply) {
+a:not(.sponsor-obj, .jumpstart-apply) {
     text-decoration: none;
     position: relative;
-    color: #158C9B;
     display: inline-block;
+    color: #158C9B;
 }
 
 footer a::after {
@@ -553,7 +553,7 @@ nav a::after {
     background-color: var(--pink-colour);
 }
 
-a:not(.sponsor-obj):not(.jumpstart-apply)::after {
+a:not(.sponsor-obj, .jumpstart-apply)::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -564,7 +564,7 @@ a:not(.sponsor-obj):not(.jumpstart-apply)::after {
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-a:not(.sponsor-obj):not(.jumpstart-apply):hover::after, #faq .cursor-pointer:not(.collapsed) a::after {
+a:not(.sponsor-obj, .jumpstart-apply):hover::after, #faq .cursor-pointer:not(.collapsed) a::after {
     left: 0;
     right: auto;
     width: 100%;
