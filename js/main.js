@@ -172,10 +172,10 @@ const bgImgTargetPos = new Map();
 const bgImgRandomPos = new Map();
 
 const lerp = (v0, v1, t) => {
-    return v0 * (1 - t) + v1 * t
+    return v0 * (1 - t) + v1 * t;
 };
 
-const generateRandomBgPos = () => {
+const initRandomBgPos = () => {
     bgImgNodes.forEach(bgImgNode => {
         bgImgTargetPos.set(bgImgNode, getTargetTranslate(bgImgNode.style.transform));
 
@@ -197,8 +197,8 @@ const updateBgImgPosition = () => {
         const docHeight = $(window).height();
         const docViewTop = $(window).scrollTop();
         const docViewBottom = docViewTop + docHeight;
-        const elemHeight = bgShapeDiv.getBoundingClientRect().height;
-        const elemTop = bgShapeDiv.getBoundingClientRect().top + window.scrollY;
+        const elemHeight = $(bgShapeDiv).height();
+        const elemTop = $(bgShapeDiv).offset().top;
         const elemBottom = elemTop + elemHeight;
 
 
@@ -229,7 +229,7 @@ const isScrolledIntoView = (elem, padding) => {
 const aboutSectionNode = document.querySelector("#about");
 
 $(document).ready(function() {
-    generateRandomBgPos();
+    initRandomBgPos();
     updateBgImgPosition();
     initFolderBtn();
     updateCSSVariable();
@@ -250,20 +250,20 @@ $(document).ready(function() {
         }
     });
 
-    $(window).resize(() => {
-        updateCSSVariable();
-        calcShapePaddingConstant();
-        updateFolderBtnTxt();
-    });
-
-    $(window).scroll(() => {
-        if (isScrolledIntoView($("#about"), 30)) {
-            jsCounter(aboutSectionNode);
-        }
-        updateBgImgPosition();
-    });
-
     if (isScrolledIntoView($("#about"), 30)) {
         jsCounter(aboutSectionNode);
     }
+});
+
+$(window).resize(() => {
+    updateCSSVariable();
+    calcShapePaddingConstant();
+    updateFolderBtnTxt();
+});
+
+$(window).scroll(() => {
+    if (isScrolledIntoView($("#about"), 30)) {
+        jsCounter(aboutSectionNode);
+    }
+    updateBgImgPosition();
 });
