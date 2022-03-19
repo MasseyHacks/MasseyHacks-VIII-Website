@@ -545,6 +545,10 @@ nav a::after {
     background-color: var(--grey-colour) !important;
 }
 
+nav a {
+    color: var(--grey-colour) !important;
+}
+
 #faq .cursor-pointer a {
     width: 100%;
 }
