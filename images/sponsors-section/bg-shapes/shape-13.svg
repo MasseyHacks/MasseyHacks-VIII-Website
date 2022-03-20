@@ -1,6 +1,6 @@
 <svg width="515" height="477" viewBox="-20 -20 515 477" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M344.18 133.518C346.596 122.988 336.221 113.99 325.727 117.514L47.0749 211.07C36.8108 214.517 34.1186 227.414 42.2004 234.423L256.712 420.46C264.794 427.469 277.677 423.411 280.04 413.112L344.18 133.518Z"
+          d="M344.18 133.518 L47.0749 211.07 L256.712 420.46 L344.18 133.518Z"
           fill="#F5D18C" filter="url(#shadow)"/>
     <circle r="31.8021" transform="matrix(-1 0 0 1 32.1979 376.943)" fill="#52FAF0" filter="url(#shadow)"/>
     <filter id="shadow" width="200%" height="200%" x="-50%" y="-50%">
