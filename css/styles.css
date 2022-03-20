@@ -673,8 +673,7 @@ body {
 
 .partner img {
     max-height: 18.75rem;
-    width: 18.75rem;
-    max-width: 30%;
+    max-width: min(25rem, 100%);
     vertical-align: middle;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
