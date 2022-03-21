@@ -1,7 +1,7 @@
 <svg width="136" height="139" viewBox="-20 -20 136 139" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd"
           d="M21.0426 5.80254 L93.6861 63.5758 L9.66278 98.0264 L21.0426 5.80254Z"
-          fill="#06C4B8" filter="url(#shadow)"/>
+          fill="#52FAF0" filter="url(#shadow)"/>
 
     <filter id="shadow" width="200%" height="200%" x="-50%" y="-50%">
         <feOffset dx="0" dy="0" in="SourceGraphic" result="offOut"/>
