@@ -540,7 +540,7 @@ nav {
     }
 }
 
-a:not(.sponsor-obj, .jumpstart-apply) {
+a:not(.sponsor-obj, .jumpstart-apply, #mlh-trust-badge) {
     text-decoration: none;
     position: relative;
     display: inline-block;
@@ -567,7 +567,7 @@ nav a::after {
     display: none !important;
 }
 
-a:not(.sponsor-obj, .jumpstart-apply)::after {
+a:not(.sponsor-obj, .jumpstart-apply, #mlh-trust-badge)::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -578,13 +578,13 @@ a:not(.sponsor-obj, .jumpstart-apply)::after {
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-a:not(.sponsor-obj, .jumpstart-apply):hover::after, #faq .cursor-pointer:not(.collapsed) a::after {
+a:not(.sponsor-obj, .jumpstart-apply, #mlh-trust-badge):hover::after, #faq .cursor-pointer:not(.collapsed) a::after {
     left: 0;
     right: auto;
     width: 100%;
 }
 
-a:not(.sponsor-obj):hover {
+a:not(.sponsor-obj, #mlh-trust-badge):hover {
     opacity: 0.8;
 }
 
