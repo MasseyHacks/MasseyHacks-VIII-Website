@@ -540,10 +540,6 @@ nav {
     }
 }
 
-a{
-    transition: opacity 0.2s ease-in-out;
-}
-
 a:not(.sponsor-obj, .jumpstart-apply) {
     text-decoration: none;
     position: relative;
