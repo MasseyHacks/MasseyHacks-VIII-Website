@@ -146,6 +146,31 @@ body {
     color: white;
 }
 
+.mh-signup-btn {
+    font-size: clamp(0.8rem, 4vw, 1.3rem);
+    background-color: hsl(323, 100%, 67.3%);
+    color: white !important;
+    font-weight: bold;
+    padding: 0.5em 1.5em;
+    margin-top: 1rem;
+    border-radius: 50px;
+
+    transition: color 150ms ease-in-out;
+}
+
+.mh-signup-btn:hover {
+    color: var(--bg-colour) !important;
+}
+
+.mh-signup-btn:focus, .mh-signup-btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.mh-signup-btn::after {
+    display: none !important;
+}
+
 .mc-field-group {
     padding-bottom: 0 !important;
 }
