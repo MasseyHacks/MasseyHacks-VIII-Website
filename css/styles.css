@@ -799,6 +799,21 @@ footer {
     border-radius: 50px;
     color: white;
     background-color: #138F9F;
+
+    transition: color 150ms ease-in-out;
+}
+
+.jumpstart-apply:hover {
+    color: var(--bg-colour) !important;
+}
+
+.jumpstart-apply:focus, .jumpstart-apply:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.jumpstart-apply::after {
+    display: none !important;
 }
 
 @media screen and (max-width: 767px), screen and (max-height: 576px) {
