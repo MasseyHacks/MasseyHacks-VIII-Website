@@ -27,6 +27,7 @@
     --bg-img-padding-constant: var(--bg-row-height);
 
     --hero-height: 100vh;
+    --mentor-btn-width: 285px;
 
     scroll-behavior: auto;
 }
@@ -147,25 +148,18 @@ body {
 }
 
 .mh-signup-btn {
-    width:fit-content;
+    width: fit-content;
     font-size: clamp(0.7rem, 1.48vw, 1.4rem);
     background-color: hsl(323, 100%, 67.3%);
     color: white !important;
     font-weight: bold;
     padding: 0.5em 1.5em;
     border-radius: 50px;
-    margin: 0.5rem 0rem 0.5rem 0.5rem;
+    margin: 0.5rem 0 0.5rem 0.5rem;
 
     transition: color 150ms ease-in-out;
     overflow: hidden;
     white-space: nowrap;
-}
-
-.signup-container {
-    display: flex;
-    justify-content: space-evenly;
-    width: 80%;
-    flex-wrap: wrap;
 }
 
 .mh-signup-btn:hover {
@@ -180,6 +174,38 @@ body {
 .mh-signup-btn::after {
     display: none !important;
 }
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    max-width: 840px;
+    justify-content: space-evenly;
+    background-color: #1D1D1DCC;
+    border-radius: 20px;
+    color: white;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.signup-grid {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+}
+
+.volunteer-btn {
+    min-width: var(--mentor-btn-width);
+    /*letter-spacing: 0.15rem;*/
+    letter-spacing: initial;
+    justify-self: end;
+}
+
+.divider-line {
+    min-width: 3px;
+    border-radius: 2px;
+    background: var(--yellow-colour);
+}
+
 
 .mc-field-group {
     padding-bottom: 0 !important;
@@ -899,6 +925,42 @@ footer {
         font-weight: bolder;
         font-size: clamp(0.7rem, 2vw, 3rem);
         padding: 2px;
+    }
+
+    /*.signup-grid {*/
+    /*    grid-template-columns: 1fr;*/
+    /*}*/
+
+    /*.divider-line {*/
+    /*    height: 3px;*/
+    /*    width: 60%;*/
+    /*    margin: 5px auto;*/
+    /*}*/
+
+    /*.volunteer-btn {*/
+    /*    justify-self: center;*/
+    /*}*/
+
+    /*.mentor-btn {*/
+    /*    justify-self: center;*/
+    /*    margin-left: 0 !important;*/
+    /*}*/
+
+    /*.volunteer-btn {*/
+    /*    min-width: initial;*/
+    /*    width: 40%;*/
+    /*}*/
+}
+
+@media screen and (max-width: 450px) {
+    .volunteer-btn {
+        min-width: initial;
+        width: 40%;
+    }
+
+    .signup-grid {
+        display: flex;
+        justify-content: center;
     }
 }
 

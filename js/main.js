@@ -149,6 +149,7 @@ const updateCSSVariable = () => {
     setCSSVariable("--window-width", windowJquery.width());
     setCSSVariable("--window-height", windowJquery.height());
     setCSSVariable("--body-height", bodyJquery.height() - footerJquery.height() - heroJquery.height());
+    setCSSVariable("--mentor-btn-width", $(".mentor-btn").width() + 20);
 };
 
 const calcShapePaddingConstant = () => {
