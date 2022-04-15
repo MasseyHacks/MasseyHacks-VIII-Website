@@ -147,15 +147,22 @@ body {
 }
 
 .mh-signup-btn {
-    font-size: clamp(0.8rem, 4vw, 1.3rem);
+    width: 30%;
+    font-size: clamp(0.7rem, 1.48vw, 1.4rem);
     background-color: hsl(323, 100%, 67.3%);
     color: white !important;
     font-weight: bold;
+    margin-top: 1.1rem;
     padding: 0.5em 1.5em;
-    margin-top: 1rem;
-    border-radius: 50px;
+    border-radius: 10px;
 
     transition: color 150ms ease-in-out;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
 }
 
 .mh-signup-btn:hover {
@@ -913,5 +920,16 @@ footer {
 
     #mc_embed_signup {
         display: none !important;
+    }
+
+    .signup-container {
+        width: 70%;
+        flex-direction: column;
+    }
+
+    .mh-signup-btn {
+        width: auto;
+        font-size: clamp(0.7rem, 3.2vw, 1.211rem);
+        border-radius: 50px;
     }
 }
