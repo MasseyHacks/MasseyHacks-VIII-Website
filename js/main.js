@@ -25,14 +25,14 @@ const updateFolderBtnTxt = () => {
     if($(window).width() <= 576) {
         weekOneBtnNode.innerHTML = "W1";
         weekTwoBtnNode.innerHTML = "W2";
-        weekThreeBtnNode.innerHTML = "W3/4";
-        weekFiveBtnNode.innerHTML = "W5";
+        weekThreeBtnNode.innerHTML = "W3";
+        weekFiveBtnNode.innerHTML = "W4/5";
         weekMHBtnNode.innerHTML = "MH VIII";
     } else {
         weekOneBtnNode.innerHTML = "Week 1";
         weekTwoBtnNode.innerHTML = "Week 2";
-        weekThreeBtnNode.innerHTML = "Week 3/4";
-        weekFiveBtnNode.innerHTML = "Week 5";
+        weekThreeBtnNode.innerHTML = "Week 3";
+        weekFiveBtnNode.innerHTML = "Week 4/5";
         weekMHBtnNode.innerHTML = "MasseyHacks";
     }
 }
