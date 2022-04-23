@@ -13,7 +13,7 @@
     --week-1-colour: #05605A;
     --week-2-colour: #147F78;
     --week-3-colour: #249E96;
-    --week-5-colour: #33BCB4;
+    --week-4-colour: #33BCB4;
     --week-mh-colour: #43DBD2;
 
     --folder-primary-colour: #C5FFFC;
@@ -291,7 +291,7 @@ body {
 
 .folder-tabs > span:nth-child(4) {
     border-radius: 0;
-    background-color: var(--week-5-colour) !important;
+    background-color: var(--week-4-colour) !important;
     color: var(--folder-secondary-colour);
 }
 
