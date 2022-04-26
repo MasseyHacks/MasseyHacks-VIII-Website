@@ -1,5 +1,6 @@
 const colAmt = 12;
 const rowAmt = 3;
+const eventStartTime = 0;
 
 class TimeLineGrid {
     cellGridNode = null;
@@ -7,14 +8,21 @@ class TimeLineGrid {
 
     constructor() {
         this.cellGridNode = document.createElement("div");
-        this.cellGridNode.classList.add("timeline-grid");
+        this.cellGridNode.className = "timeline-grid";
         const scheduleSection = document.querySelector(".timeline-wrapper");
+        this.generateLabel();
         scheduleSection.appendChild(this.cellGridNode);
+
         for (let row = 0; row < rowAmt; row++) {
             const curRowCells = [];
             for (let col = 0; col < colAmt; col++) {
+                const newCellWrapperNode = document.createElement("div");
+                newCellWrapperNode.className = "timeline-cell-wrapper";
+
                 const newCellNode = document.createElement("div");
-                this.cellGridNode.appendChild(newCellNode);
+                newCellWrapperNode.appendChild(newCellNode);
+
+                this.cellGridNode.appendChild(newCellWrapperNode);
                 curRowCells.push(newCellNode);
             }
             this.timeCellNodes.push(curRowCells);
@@ -28,6 +36,17 @@ class TimeLineGrid {
         this.timeCellNodes[row-1][col-1].style.backgroundColor = "purple";
 
     }
+
+    generateLabel() {
+        for (let col = 0; col < colAmt; col++) {
+            const timeLineLabel = document.createElement("div");
+            timeLineLabel.className = "timeline-label";
+            timeLineLabel.innerHTML = `${eventStartTime + col}:00`
+            this.cellGridNode.appendChild(timeLineLabel);
+        }
+    }
+
+
 }
 
 class TimeCell {
