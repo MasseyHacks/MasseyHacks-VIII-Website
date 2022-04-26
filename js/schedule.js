@@ -2,6 +2,7 @@ const colAmt = 32;
 const rowAmt = 3;
 const eventStartTime = 9;
 
+
 class TimeLineGrid {
     cellGridNode = null;
     timeCellNodes = [];
