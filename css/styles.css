@@ -894,14 +894,6 @@ footer {
     color: #33BCB4;
 }
 
-.schedule-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 200px);
-    grid-template-rows: repeat(6, 50px);
-    overflow-x: scroll;
-    align-items: center;
-}
-
 @media screen and (max-width: 767px), screen and (max-height: 576px) {
     html {
         font-size: 14px;

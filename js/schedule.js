@@ -2,6 +2,7 @@ const colAmt = 12;
 const rowAmt = 3;
 const eventStartTime = 0;
 
+
 class TimeLineGrid {
     cellGridNode = null;
     timeCellNodes = [];
@@ -23,6 +24,7 @@ class TimeLineGrid {
                 newCellWrapperNode.appendChild(newCellNode);
 
                 this.cellGridNode.appendChild(newCellWrapperNode);
+
                 curRowCells.push(newCellNode);
             }
             this.timeCellNodes.push(curRowCells);
@@ -45,8 +47,6 @@ class TimeLineGrid {
             this.cellGridNode.appendChild(timeLineLabel);
         }
     }
-
-
 }
 
 class TimeCell {
