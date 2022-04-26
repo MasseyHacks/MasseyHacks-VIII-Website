@@ -1,6 +1,6 @@
-const colAmt = 12;
+const colAmt = 32;
 const rowAmt = 3;
-const eventStartTime = 0;
+const eventStartTime = 9;
 
 class TimeLineGrid {
     cellGridNode = null;
@@ -41,7 +41,7 @@ class TimeLineGrid {
         for (let col = 0; col < colAmt; col++) {
             const timeLineLabel = document.createElement("div");
             timeLineLabel.className = "timeline-label";
-            timeLineLabel.innerHTML = `${eventStartTime + col}:00`
+            timeLineLabel.innerHTML = `${(eventStartTime + col) % 24}:00`
             this.cellGridNode.appendChild(timeLineLabel);
         }
     }
