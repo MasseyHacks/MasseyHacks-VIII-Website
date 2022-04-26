@@ -851,10 +851,15 @@ footer {
     display: none !important;
 }
 
-.schedule-grid {
+.timeline-wrapper {
+    overflow-x: scroll;
+}
+
+
+.timeline-grid {
     display: grid;
     grid-template-columns: repeat(12, 200px);
-    grid-template-rows: repeat(6, 50px);
+    grid-template-rows: repeat(3, 50px);
     overflow-x: scroll;
     align-items: center;
 }
