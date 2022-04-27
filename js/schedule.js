@@ -1,40 +1,33 @@
 const colAmt = 32;
 const rowAmt = 3;
 const eventStartTime = 9;
+const scheduleSection = document.querySelector(".timeline-wrapper");
 
 
 class TimeLineGrid {
-    cellGridNode = null;
     timeCellNodes = [];
+    colContainerNodes = [];
 
     constructor() {
-        this.cellGridNode = document.createElement("div");
-        this.cellGridNode.className = "timeline-grid";
-        const scheduleSection = document.querySelector(".timeline-wrapper");
+        this.setupColContainer();
         this.generateLabel();
-        scheduleSection.appendChild(this.cellGridNode);
-
         for (let row = 0; row < rowAmt; row++) {
-            const curRowCells = [];
             for (let col = 0; col < colAmt; col++) {
-                const newCellWrapperNode = document.createElement("div");
-                newCellWrapperNode.className = "timeline-cell-wrapper";
+                const colNode = document.createElement("div");
+                colNode.className = "timeline-cell";
 
-                const newCellNode = document.createElement("div");
-                newCellWrapperNode.appendChild(newCellNode);
-
-                this.cellGridNode.appendChild(newCellWrapperNode);
-                curRowCells.push(newCellNode);
+                this.colContainerNodes[col].appendChild(colNode);
+                this.timeCellNodes[col].push(colNode);
             }
-            this.timeCellNodes.push(curRowCells);
         }
     }
 
     setTimeCell(col, row, timeCell) {
-        console.log(this.timeCellNodes);
-        this.timeCellNodes[row-1][col-1].style.width = "100%";
-        this.timeCellNodes[row-1][col-1].style.height = "5px";
-        this.timeCellNodes[row-1][col-1].style.backgroundColor = "purple";
+        const lineNode = document.createElement("div");
+        lineNode.style.width = "100%";
+        lineNode.style.height = "5px";
+        lineNode.style.backgroundColor = "purple";
+        this.timeCellNodes[col-1][row-1].appendChild(lineNode);
 
     }
 
@@ -43,7 +36,18 @@ class TimeLineGrid {
             const timeLineLabel = document.createElement("div");
             timeLineLabel.className = "timeline-label";
             timeLineLabel.innerHTML = `${(eventStartTime + col) % 24}:00`
-            this.cellGridNode.appendChild(timeLineLabel);
+            this.colContainerNodes[col].appendChild(timeLineLabel);
+        }
+        rootNode.style.setProperty("--last-timeline-label-content", `"${(eventStartTime + colAmt) % 24}:00"`);
+    }
+
+    setupColContainer() {
+        for (let col = 0; col < colAmt; col++) {
+            this.timeCellNodes.push([]);
+            const colContainerNode = document.createElement("div");
+            colContainerNode.className = "timeline-col-container";
+            scheduleSection.appendChild(colContainerNode);
+            this.colContainerNodes.push(colContainerNode);
         }
     }
 }
@@ -63,6 +67,6 @@ class TimeCell {
 }
 
 window.onload = () => {
-    const gridOne = new TimeLineGrid();
-    gridOne.setTimeCell(5, 3);
+    const timeLine = new TimeLineGrid();
+    timeLine.setTimeCell(5, 3);
 };
