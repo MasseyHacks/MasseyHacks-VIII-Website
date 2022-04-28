@@ -724,6 +724,21 @@ body {
     margin-bottom: 0;
 }
 
+.special-thanks {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.special-thanks-text {
+    color: black;
+    font-size: larger;
+    margin-bottom: 0;
+}
+
+.special-thanks-name {
+    font-weight: 700;
+}
+
 .cursor-pointer {
     cursor: pointer;
 }
