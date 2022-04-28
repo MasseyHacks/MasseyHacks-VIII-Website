@@ -1,8 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="138" height="138" fill="none" viewBox="-20 -20 138 138">
-    <circle r="48.926" fill="#FF58C0" filter="url(#shadow)" transform="matrix(-1 0 0 1 48.9262 48.9264)" />
-    <filter id="shadow" width="200%" height="200%" x="-50%" y="-50%">
-        <feOffset dx="0" dy="0" in="SourceGraphic" result="offOut" />
-        <feGaussianBlur in="offOut" result="blurOut" stdDeviation="10" />
-        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
-    </filter>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="138" height="138" fill="none" viewBox="-20 -20 138 138"><circle r="48.926" fill="#FF58C0" filter="url(#shadow)" transform="matrix(-1 0 0 1 48.9262 48.9264)"/><filter id="shadow" width="200%" height="200%" x="-50%" y="-50%"><feOffset dx="0" dy="0" in="SourceGraphic" result="offOut"/><feGaussianBlur in="offOut" result="blurOut" stdDeviation="10"/><feBlend in="SourceGraphic" in2="blurOut" mode="normal"/></filter></svg>
