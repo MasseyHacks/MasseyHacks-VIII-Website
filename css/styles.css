@@ -967,6 +967,12 @@ footer {
     color: #33BCB4;
 }
 
+.timeline-text-section > p {
+    margin: 0;
+    white-space: nowrap;
+    font-size: 0.85rem;
+}
+
 @media screen and (max-width: 767px), screen and (max-height: 576px) {
     html {
         font-size: 14px;
