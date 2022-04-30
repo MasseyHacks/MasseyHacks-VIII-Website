@@ -937,6 +937,19 @@ footer {
     color: #33BCB4;
 }
 
+.timeline-text-section {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+}
+
+.timeline-text-section > h5 {
+    margin: 0;
+}
+
 @media screen and (max-width: 767px), screen and (max-height: 576px) {
     html {
         font-size: 14px;

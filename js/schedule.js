@@ -22,13 +22,27 @@ class TimeLineGrid {
         }
     }
 
-    setTimeCell(col, row, timeCell) {
+    setTimeCell(col, row, title, description) {
         const lineNode = document.createElement("div");
         lineNode.style.width = "100%";
         lineNode.style.height = "5px";
         lineNode.style.backgroundColor = "purple";
-        this.timeCellNodes[col-1][row-1].appendChild(lineNode);
+        lineNode.style.position = "relative";
 
+        const textSection = document.createElement("div");
+        textSection.className = "timeline-text-section";
+
+        const titleNode = document.createElement("h5");
+        titleNode.innerHTML = title;
+
+        const descriptionNode = document.createElement("p");
+        descriptionNode.innerHTML = description;
+
+        textSection.appendChild(titleNode);
+        textSection.appendChild(descriptionNode);
+        lineNode.appendChild(textSection);
+
+        this.timeCellNodes[col-1][row-1].appendChild(lineNode);
     }
 
     generateLabel() {
@@ -58,7 +72,7 @@ class TimeCell {
     fromTime = null;
     toTime = null;
 
-    constructor (title,description, fromTime, toTime) {
+    constructor (title, description, fromTime, toTime) {
         this.title = title;
         this.description = description;
         this.fromTime = fromTime;
@@ -68,5 +82,5 @@ class TimeCell {
 
 window.onload = () => {
     const timeLine = new TimeLineGrid();
-    timeLine.setTimeCell(5, 3);
+    timeLine.setTimeCell(5, 3, "Hello", "Gamer Ree");
 };
