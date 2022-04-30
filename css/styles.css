@@ -942,12 +942,21 @@ footer {
     flex-direction: column;
     height: 20px;
     position: absolute;
-    bottom: 25px;
+    top: 0;
     left: 0;
+    /*bottom: 30px;*/
+    transform: translate(0, calc(-200% - 5px));
+    z-index: 100;
 }
 
 .timeline-text-section > h5 {
     margin: 0;
+}
+
+.timeline-text-section > p {
+    margin: 0;
+    white-space: nowrap;
+    font-size: 0.85rem;
 }
 
 @media screen and (max-width: 767px), screen and (max-height: 576px) {
