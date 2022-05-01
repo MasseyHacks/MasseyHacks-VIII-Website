@@ -28,6 +28,8 @@
 
     --hero-height: 100vh;
     --mentor-btn-width: 285px;
+
+    --timeline-label-border-width: 1px;
     --last-timeline-label-content: "";
 
     scroll-behavior: auto;
@@ -909,9 +911,9 @@ footer {
 .timeline-cell {
     display: flex;
     align-items: center;
-    width: 250px;
+    width: 220px;
     height: 100px;
-    border-left: 2px solid #000;
+    border-left: var(--timeline-label-border-width) solid #000;
 }
 
 .timeline-label {
@@ -925,6 +927,7 @@ footer {
 
 .timeline-col-container {
     margin: 30px 0;
+    position: relative;
 }
 
 .timeline-col-container:first-child {
@@ -936,7 +939,7 @@ footer {
 }
 
 .timeline-col-container:last-child > .timeline-cell {
-    border-right: 2px solid #000;
+    border-right: var(--timeline-label-border-width) solid #000;
 }
 
 .timeline-col-container:last-child > .timeline-label::after {
