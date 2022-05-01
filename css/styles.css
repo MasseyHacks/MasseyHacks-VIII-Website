@@ -955,44 +955,27 @@ footer {
     color: #33BCB4;
 }
 
-.timeline-cell-wrapper {
-    width: 100%;
-    height: 100%;
-    border-left: 1px solid #000;
+.timeline-text-section {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*bottom: 30px;*/
+    transform: translate(0, calc(-200% - 5px));
+    z-index: 100;
 }
 
-.timeline-label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(-50%, 0);
-    height: 100%;
-    color: #33BCB4;
+.timeline-text-section > h5 {
+    margin: 0;
+    white-space: nowrap;
 }
 
 .timeline-text-section > p {
     margin: 0;
     white-space: nowrap;
     font-size: 0.85rem;
-}
-
-@media screen and (max-width: 767px), screen and (max-height: 576px) {
-    html {
-        font-size: 14px;
-    }
-
-    .subtitle {
-        font-size: 4rem;
-    }
-
-    .folder-searchbar > h1 {
-        font-size: clamp(1.5rem, 3.3vw, 3.5rem);
-        line-height: 1;
-    }
-
-    .folder-content-container > p {
-        line-height: 1.8rem;
-    }
 }
 
 @media screen and (max-width: 576px) {

@@ -141,4 +141,3 @@ window.onload = () => {
     const timeLine = new TimeLineGrid();
     initTimeLine(timeLine);
 };
-
