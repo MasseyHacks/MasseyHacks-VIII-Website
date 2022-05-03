@@ -878,13 +878,14 @@ footer {
 
 .schedule-container {
     display: grid;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(29, 29, 29, 0.8);
     grid-template-rows: auto;
     grid-row-gap: 15px;
     justify-content: center;
     align-items: center;
     margin: 0 2vw;
     border-radius: 10px;
+    color: white;
 }
 
 .schedule-title {
@@ -911,6 +912,15 @@ footer {
 
 .timeline-wrapper::-webkit-scrollbar-thumb {
     width: initial;
+    background: #666;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #333;
 }
 
 .timeline-cell {
@@ -918,7 +928,7 @@ footer {
     align-items: center;
     width: 220px;
     height: 100px;
-    border-left: var(--timeline-label-border-width) solid #000;
+    border-left: var(--timeline-label-border-width) solid rgb(80, 80, 80);
 }
 
 .timeline-label {
@@ -928,6 +938,7 @@ footer {
     transform: translate(-50%, 0);
     height: 30px;
     color: #33BCB4;
+    font-weight: bold;
 }
 
 .timeline-col-container {
@@ -944,7 +955,7 @@ footer {
 }
 
 .timeline-col-container:last-child > .timeline-cell {
-    border-right: var(--timeline-label-border-width) solid #000;
+    border-right: var(--timeline-label-border-width) solid rgb(80, 80, 80);
 }
 
 .timeline-col-container:last-child > .timeline-label::after {
@@ -958,6 +969,7 @@ footer {
     align-items: center;
     transform: translate(50%, 0);
     color: #33BCB4;
+    font-weight: bold;
 }
 
 .timeline-text-section {
