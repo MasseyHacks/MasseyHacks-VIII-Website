@@ -886,6 +886,7 @@ footer {
     margin: 0 2vw;
     border-radius: 10px;
     color: white;
+    position: relative;
 }
 
 .schedule-title {
@@ -895,7 +896,7 @@ footer {
     justify-content: center;
     align-items: center;
     align-self: self-end;
-    margin: 0;
+    margin: 10px 0 0 0;
     padding-top: 5px;
 }
 
@@ -908,6 +909,17 @@ footer {
     display: flex;
     /*margin: 20px 0;*/
     overflow-x: scroll;
+}
+
+.schedule-index {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%);
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-shadow: 0.08rem 0.08rem var(--pink-colour);
 }
 
 .timeline-wrapper::-webkit-scrollbar-thumb {
