@@ -113,8 +113,8 @@ const initTimeLine = (timeLine) => {
     timeLine.setTimeCell(1, 2, 0.5, 0.5, "Opening Ceremonies", "10:30AM - 11:00AM | Cafeteria", "#FF58C0");
     timeLine.setTimeCell(1, 5, 0.25, 1, "OpenCV with Python", "1:15PM - 2:15PM | TBD", "#52FAF0");
     timeLine.setTimeCell(1, 7, 0.75, 1, "React.js Workshop", "3:45PM - 4:45PM | TBD", "#52FAF0");
-    timeLine.setTimeCell(1, 9, 0, 0.75, "!Light", "5:00PM - 5:45PM | TBD", "#147F78");
-    timeLine.setTimeCell(1, 11, 0.5, 0.75, "Cup Stacking", "7:30PM - 8:15PM | Cafeteria", "#147F78");
+    timeLine.setTimeCell(1, 9, 0, 0.75, "!Light (IP)", "5:00PM - 5:45PM | TBD", "#147F78");
+    timeLine.setTimeCell(1, 11, 0.5, 0.75, "Cup Stacking (IP)", "7:30PM - 8:15PM | Cafeteria", "#147F78");
     timeLine.setTimeCell(1, 12, 0.5, 0.5, "Check-Out (IP)", "8:30PM - 9:00PM | Front Desk", "#FF58C0");
     timeLine.setTimeCell(1, 24, 0, 1, "Check-In (IP)", "8:00AM - 9:00AM | Front Desk", "#FF58C0");
     timeLine.setTimeCell(1, 27, 0.75, 0.5, "Submission Deadline", "11:45AM - 12:15PM", "#FF58C0");
