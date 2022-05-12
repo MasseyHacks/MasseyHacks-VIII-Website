@@ -91,10 +91,10 @@ class TimeLineGrid {
         for (let col = 0; col < colAmt; col++) {
             const timeLineLabel = document.createElement("div");
             timeLineLabel.className = "timeline-label";
-            timeLineLabel.innerHTML = `${(eventStartTime + col) % 24}:00`
+            timeLineLabel.innerHTML = `${(eventStartTime + col - 1) % 12 + 1}:00 ${(eventStartTime + col) % 24 >= 12 ? "PM" : "AM"}`
             this.colContainerNodes[col].appendChild(timeLineLabel);
         }
-        rootNode.style.setProperty("--last-timeline-label-content", `"${(eventStartTime + colAmt) % 24}:00"`);
+        rootNode.style.setProperty("--last-timeline-label-content", `"${(eventStartTime + colAmt - 1) % 12 + 1}:00 ${(eventStartTime + colAmt) % 24 >= 12 ? "PM" : "AM"}"`);
     }
 
     setupColContainer() {
@@ -111,8 +111,8 @@ class TimeLineGrid {
 const initTimeLine = (timeLine) => {
     timeLine.setTimeCell(1, 1, 0, 1, "Check In (IP)", "9:00AM - 10:00AM | Front Desk", "#FF58C0");
     timeLine.setTimeCell(1, 2, 0.5, 0.5, "Opening Ceremonies", "10:30AM - 11:00AM | Cafeteria", "#FF58C0");
-    timeLine.setTimeCell(1, 5, 0.25, 1, "OpenCV with Python", "1:15PM - 2:15PM | TBD", "#52FAF0");
-    timeLine.setTimeCell(1, 7, 0.75, 1, "React.js Workshop", "3:45PM - 4:45PM | TBD", "#52FAF0");
+    timeLine.setTimeCell(1, 5, 0.5, 1, "OpenCV with Python", "1:30PM - 2:30PM | TBD", "#52FAF0");
+    timeLine.setTimeCell(1, 6, 0.75, 1, "React.js Workshop", "2:45PM - 3:45PM | TBD", "#52FAF0");
     timeLine.setTimeCell(1, 9, 0, 0.75, "!Light (IP)", "5:00PM - 5:45PM | TBD", "#147F78");
     timeLine.setTimeCell(1, 11, 0.5, 0.75, "Cup Stacking (IP)", "7:30PM - 8:15PM | Cafeteria", "#147F78");
     timeLine.setTimeCell(1, 12, 0.5, 0.5, "Check-Out (IP)", "8:30PM - 9:00PM | Front Desk", "#FF58C0");
@@ -129,14 +129,14 @@ const initTimeLine = (timeLine) => {
     timeLine.setTimeCell(2, 10, 0, 1.5, "Dinner (IP)", "6:00PM - 7:30PM | Cafeteria", "#F3DFAD");
     timeLine.setTimeCell(2, 14, 0.5, 8.5, "Hackenger Hunt 2", "10:30PM - 7:00AM | Online", "#147F78");
     timeLine.setTimeCell(2, 24, 0.5, 1, "Breakfast (IP)", "8:30AM - 9:30AM | Cafeteria", "#F3DFAD");
-    timeLine.setTimeCell(2, 27, 0.5, 1.5, "Lunch (IP)", "11:30AM - 1:00PM | Cafeteria", "#F3DFAD");
+    timeLine.setTimeCell(2, 28, 0.5, 1.5, "Lunch (IP)", "12:30PM - 2:00PM | Cafeteria", "#F3DFAD");
 
     timeLine.setTimeCell(3, 1, 0, 2.5, "Team Formation", "9:00AM - 11:30AM", "#FF58C0");
     timeLine.setTimeCell(3, 6, 0, 4, "Hackenger Hunt 1", "2:00PM - 6:00PM | Online", "#147F78");
     timeLine.setTimeCell(3, 14, 0.5, 1, "Skribbl.io", "10:30PM - 11:30PM | Discord", "#147F78");
-    timeLine.setTimeCell(3, 16, 0, 1, "Escape Room", "0:00AM - 1:00AM | Discord", "#147F78");
+    timeLine.setTimeCell(3, 16, 0, 1, "Escape Room", "12:00AM - 1:00AM | Discord", "#147F78");
     timeLine.setTimeCell(3, 17, 0.5, 1, "Speaking Points", "1:30AM - 2:30AM | Discord", "#147F78");
-    timeLine.setTimeCell(3, 29, 0, 2, "Judging", "1:00PM - 3:00PM", "#FF58C0");
+    timeLine.setTimeCell(3, 30, 0, 2, "Judging", "2:00PM - 4:00PM", "#FF58C0");
 }
 
 window.onload = () => {
