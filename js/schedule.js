@@ -117,11 +117,12 @@ const initTimeLine = (timeLine) => {
     timeLine.setTimeCell(1, 11, 0.5, 0.75, "Cup Stacking (IP)", "7:30PM - 8:15PM | Cafeteria", "#147F78");
     timeLine.setTimeCell(1, 12, 0.5, 0.5, "Check-Out (IP)", "8:30PM - 9:00PM | Front Desk", "#FF58C0");
     timeLine.setTimeCell(1, 24, 0, 1, "Check-In (IP)", "8:00AM - 9:00AM | Front Desk", "#FF58C0");
-    timeLine.setTimeCell(1, 27, 0.75, 0.5, "Submission Deadline", "11:45AM - 12:15PM", "#FF58C0");
+    timeLine.setTimeCell(1, 27, 0, 0.1, "Devpost Deadline", "11:00 AM", "#FF58C0");
+    timeLine.setTimeCell(1, 27, 0.75, 0.1, "Late Submission Deadline", "11:45AM", "#FF58C0");
     timeLine.setTimeCell(1, 32, 0, 1, "Closing Ceremonies", "4:00PM - 5:00PM | Cafeteria", "#FF58C0");
 
     timeLine.setTimeCell(2, 1, 0, 1.25, "Breakfast Snacks (IP)", "9:00AM - 10:15AM | Cafeteria", "#F3DFAD");
-    timeLine.setTimeCell(2, 3, 0, 0.25, "Hacking Starts", "11:00AM - 11:15AM", "#FF58C0");
+    timeLine.setTimeCell(2, 3, 0, 0.1, "Hacking Starts", "11:00AM", "#FF58C0");
     timeLine.setTimeCell(2, 4, 0, 1.5, "Lunch (IP)", "12:00PM - 1:30PM | Cafeteria", "#F3DFAD");
     timeLine.setTimeCell(2, 5, 0.75, 1, "Intro to Python I", "1:45PM - 2:45PM | TBD", "#52FAF0");
     timeLine.setTimeCell(2, 7, 0, 1, "Intro to Python II", "3:00PM - 4:00PM | TBD", "#52FAF0");
