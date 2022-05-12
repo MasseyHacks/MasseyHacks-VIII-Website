@@ -110,7 +110,7 @@ class TimeLineGrid {
 
 const initTimeLine = (timeLine) => {
     timeLine.setTimeCell(1, 1, 0, 1, "Check In (IP)", "9:00AM - 10:00AM | Front Desk", "#FF58C0");
-    timeLine.setTimeCell(1, 2, 0.5, 0.5, "Opening Ceremonies", "10:30AM - 11:00AM | Cafeteria", "#FF58C0");
+    timeLine.setTimeCell(1, 2, 0.5, 0.5, "Opening Ceremonies", "10:30AM - 11:00AM | North Gym", "#FF58C0");
     timeLine.setTimeCell(1, 5, 0.5, 1, "OpenCV with Python", "1:30PM - 2:30PM | TBD", "#52FAF0");
     timeLine.setTimeCell(1, 6, 0.75, 1, "React.js Workshop", "2:45PM - 3:45PM | TBD", "#52FAF0");
     timeLine.setTimeCell(1, 9, 0, 0.75, "!Light (IP)", "5:00PM - 5:45PM | TBD", "#147F78");
@@ -119,7 +119,7 @@ const initTimeLine = (timeLine) => {
     timeLine.setTimeCell(1, 24, 0, 1, "Check-In (IP)", "8:00AM - 9:00AM | Front Desk", "#FF58C0");
     timeLine.setTimeCell(1, 27, 0, 0.1, "Devpost Deadline", "11:00 AM", "#FF58C0");
     timeLine.setTimeCell(1, 27, 0.75, 0.1, "Late Submission Deadline", "11:45AM", "#FF58C0");
-    timeLine.setTimeCell(1, 32, 0, 1, "Closing Ceremonies", "4:00PM - 5:00PM | Cafeteria", "#FF58C0");
+    timeLine.setTimeCell(1, 32, 0, 1, "Closing Ceremonies", "4:00PM - 5:00PM | North Gym", "#FF58C0");
 
     timeLine.setTimeCell(2, 1, 0, 1.25, "Breakfast Snacks (IP)", "9:00AM - 10:15AM | Cafeteria", "#F3DFAD");
     timeLine.setTimeCell(2, 3, 0, 0.1, "Hacking Starts", "11:00AM", "#FF58C0");
@@ -137,7 +137,7 @@ const initTimeLine = (timeLine) => {
     timeLine.setTimeCell(3, 14, 0.5, 1, "Skribbl.io", "10:30PM - 11:30PM | Discord", "#147F78");
     timeLine.setTimeCell(3, 16, 0, 1, "Escape Room", "12:00AM - 1:00AM | Discord", "#147F78");
     timeLine.setTimeCell(3, 17, 0.5, 1, "Speaking Points", "1:30AM - 2:30AM | Discord", "#147F78");
-    timeLine.setTimeCell(3, 30, 0, 2, "Judging", "2:00PM - 4:00PM", "#FF58C0");
+    timeLine.setTimeCell(3, 30, 0, 2, "Judging", "2:00PM - 4:00PM | Cafeteria", "#FF58C0");
 }
 
 window.onload = () => {
