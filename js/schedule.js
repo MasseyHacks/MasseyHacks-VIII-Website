@@ -111,7 +111,7 @@ class TimeLineGrid {
 const initTimeLine = (timeLine) => {
     timeLine.setTimeCell(1, 1, 0, 1, "Check In (IP)", "9:00AM - 10:00AM | Front Desk", "#FF58C0");
     timeLine.setTimeCell(1, 2, 0.5, 0.5, "Opening Ceremonies", "10:30AM - 11:00AM | North Gym", "#FF58C0");
-    timeLine.setTimeCell(1, 5, 0.5, 1, "OpenCV with Python", "1:30PM - 2:30PM | TBD", "#52FAF0");
+    timeLine.setTimeCell(1, 5, 0.5, 1, "Computer Vision", "1:30PM - 2:30PM | TBD", "#52FAF0");
     timeLine.setTimeCell(1, 6, 0.75, 1, "React.js Workshop", "2:45PM - 3:45PM | TBD", "#52FAF0");
     timeLine.setTimeCell(1, 9, 0, 0.75, "!Light (IP)", "5:00PM - 5:45PM | TBD", "#147F78");
     timeLine.setTimeCell(1, 11, 0.5, 0.75, "Cup Stacking (IP)", "7:30PM - 8:15PM | Cafeteria", "#147F78");
