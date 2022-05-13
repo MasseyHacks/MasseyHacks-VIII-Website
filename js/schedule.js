@@ -117,9 +117,8 @@ const initTimeLine = (timeLine) => {
     timeLine.setTimeCell(1, 11, 0.5, 0.75, "Cup Stacking (IP)", "7:30PM - 8:15PM | Cafeteria", "#147F78");
     timeLine.setTimeCell(1, 12, 0.5, 0.5, "Check-Out (IP)", "8:30PM - 9:00PM | Front Desk", "#FF58C0");
     timeLine.setTimeCell(1, 24, 0, 1, "Check-In (IP)", "8:00AM - 9:00AM | Front Desk", "#FF58C0");
-    timeLine.setTimeCell(1, 27, 0, 0.1, "Devpost Deadline", "11:00 AM", "#FF58C0");
     timeLine.setTimeCell(1, 27, 0.75, 0.1, "Late Submission Deadline", "11:45AM", "#FF58C0");
-    timeLine.setTimeCell(1, 32, 0, 1, "Closing Ceremonies", "4:00PM - 5:00PM | North Gym", "#FF58C0");
+    timeLine.setTimeCell(1, 32, 0.5, 0.5, "Closing Ceremonies", "4:30PM - 5:00PM | North Gym", "#FF58C0");
 
     timeLine.setTimeCell(2, 1, 0, 1.25, "Breakfast Snacks (IP)", "9:00AM - 10:15AM | Cafeteria", "#F3DFAD");
     timeLine.setTimeCell(2, 3, 0, 0.1, "Hacking Starts", "11:00AM", "#FF58C0");
@@ -130,6 +129,7 @@ const initTimeLine = (timeLine) => {
     timeLine.setTimeCell(2, 10, 0, 1.5, "Dinner (IP)", "6:00PM - 7:30PM | Cafeteria", "#F3DFAD");
     timeLine.setTimeCell(2, 14, 0.5, 8.5, "Hackenger Hunt 2", "10:30PM - 7:00AM | Online", "#147F78");
     timeLine.setTimeCell(2, 24, 0.5, 1, "Breakfast (IP)", "8:30AM - 9:30AM | Cafeteria", "#F3DFAD");
+    timeLine.setTimeCell(2, 27, 0, 0.1, "Devpost Deadline", "11:00 AM", "#FF58C0");
     timeLine.setTimeCell(2, 28, 0.5, 1.5, "Lunch (IP)", "12:30PM - 2:00PM | Cafeteria", "#F3DFAD");
 
     timeLine.setTimeCell(3, 1, 0, 2.5, "Team Formation", "9:00AM - 11:30AM", "#FF58C0");
