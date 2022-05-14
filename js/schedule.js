@@ -111,9 +111,9 @@ class TimeLineGrid {
 const initTimeLine = (timeLine) => {
     timeLine.setTimeCell(1, 1, 0, 1, "Check In (IP)", "9:00AM - 10:00AM | Front Desk", "#FF58C0");
     timeLine.setTimeCell(1, 2, 0.5, 0.5, "Opening Ceremonies", "10:30AM - 11:00AM | North Gym", "#FF58C0");
-    timeLine.setTimeCell(1, 5, 0.5, 1, "Computer Vision", "1:30PM - 2:30PM | TBD", "#52FAF0");
-    timeLine.setTimeCell(1, 6, 0.75, 1, "React.js Workshop", "2:45PM - 3:45PM | TBD", "#52FAF0");
-    timeLine.setTimeCell(1, 9, 0, 0.75, "!Light (IP)", "5:00PM - 5:45PM | TBD", "#147F78");
+    timeLine.setTimeCell(1, 5, 0.5, 1, "Computer Vision", "1:30PM - 2:30PM | Room 103", "#52FAF0");
+    timeLine.setTimeCell(1, 6, 0.75, 1, "React.js Workshop", "2:45PM - 3:45PM | Room 102", "#52FAF0");
+    timeLine.setTimeCell(1, 9, 0, 0.75, "!Light (IP)", "5:00PM - 5:45PM | Cafeteria", "#147F78");
     timeLine.setTimeCell(1, 11, 0.5, 0.75, "Cup Stacking (IP)", "7:30PM - 8:15PM | Cafeteria", "#147F78");
     timeLine.setTimeCell(1, 12, 0.5, 0.5, "Check-Out (IP)", "8:30PM - 9:00PM | Front Desk", "#FF58C0");
     timeLine.setTimeCell(1, 24, 0, 1, "Check-In (IP)", "8:00AM - 9:00AM | Front Desk", "#FF58C0");
@@ -123,9 +123,9 @@ const initTimeLine = (timeLine) => {
     timeLine.setTimeCell(2, 1, 0, 1.25, "Breakfast Snacks (IP)", "9:00AM - 10:15AM | Cafeteria", "#F3DFAD");
     timeLine.setTimeCell(2, 3, 0, 0.1, "Hacking Starts", "11:00AM", "#FF58C0");
     timeLine.setTimeCell(2, 4, 0, 1.5, "Lunch (IP)", "12:00PM - 1:30PM | Cafeteria", "#F3DFAD");
-    timeLine.setTimeCell(2, 5, 0.75, 1, "Intro to Python I", "1:45PM - 2:45PM | TBD", "#52FAF0");
-    timeLine.setTimeCell(2, 7, 0, 1, "Intro to Python II", "3:00PM - 4:00PM | TBD", "#52FAF0");
-    timeLine.setTimeCell(2, 8, 0.25, 1, "Github", "4:15PM - 5:15PM | TBD", "#52FAF0");
+    timeLine.setTimeCell(2, 5, 0.75, 1, "Intro to Python I", "1:45PM - 2:45PM | Room 149", "#52FAF0");
+    timeLine.setTimeCell(2, 7, 0, 1, "Intro to Python II", "3:00PM - 4:00PM | Room 149", "#52FAF0");
+    timeLine.setTimeCell(2, 8, 0.25, 1, "Github", "4:15PM - 5:15PM | Room 103", "#52FAF0");
     timeLine.setTimeCell(2, 10, 0, 1.5, "Dinner (IP)", "6:00PM - 7:30PM | Cafeteria", "#F3DFAD");
     timeLine.setTimeCell(2, 14, 0.5, 8.5, "Hackenger Hunt 2", "10:30PM - 7:00AM | Online", "#147F78");
     timeLine.setTimeCell(2, 24, 0.5, 1, "Breakfast (IP)", "8:30AM - 9:30AM | Cafeteria", "#F3DFAD");
