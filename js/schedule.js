@@ -137,6 +137,7 @@ const initTimeLine = (timeLine) => {
     timeLine.setTimeCell(3, 14, 0.5, 1, "Skribbl.io", "10:30PM - 11:30PM | Discord", "#147F78");
     timeLine.setTimeCell(3, 16, 0, 1, "Escape Room", "12:00AM - 1:00AM | Discord", "#147F78");
     timeLine.setTimeCell(3, 17, 0.5, 1, "Speaking Points", "1:30AM - 2:30AM | Discord", "#147F78");
+    timeLine.setTimeCell(3, 28, 0, 0.1, "Final Submission Deadline", "12:00PM | Devpost", "#FF58C0");
     timeLine.setTimeCell(3, 30, 0, 2, "Judging", "2:00PM - 4:00PM | Cafeteria", "#FF58C0");
 }
 
