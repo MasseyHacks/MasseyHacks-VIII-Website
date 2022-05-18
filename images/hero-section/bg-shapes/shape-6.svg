@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="366" height="442" fill="none" viewBox="-20 -20 366 442">
-    <path fill="#FF7DD3" fill-rule="evenodd" d="M66.6778 271.699 L224.635 73.7677 L318.197 302.958 L66.6778 271.699Z" clip-rule="evenodd" filter="url(#shadow)" />
-    <circle cx="181" cy="64" r="64" fill="#F3D0AD" filter="url(#shadow)" />
-    <filter id="shadow" width="200%" height="200%" x="-50%" y="-50%">
-        <feOffset dx="0" dy="0" in="SourceGraphic" result="offOut" />
-        <feGaussianBlur in="offOut" result="blurOut" stdDeviation="10" />
-        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
-    </filter>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="366" height="442" fill="none" viewBox="-20 -20 366 442"><path fill="#FF7DD3" fill-rule="evenodd" d="M66.6778 271.699 L224.635 73.7677 L318.197 302.958 L66.6778 271.699Z" clip-rule="evenodd" filter="url(#shadow)"/><circle cx="181" cy="64" r="64" fill="#F3D0AD" filter="url(#shadow)"/><filter id="shadow" width="200%" height="200%" x="-50%" y="-50%"><feOffset dx="0" dy="0" in="SourceGraphic" result="offOut"/><feGaussianBlur in="offOut" result="blurOut" stdDeviation="10"/><feBlend in="SourceGraphic" in2="blurOut" mode="normal"/></filter></svg>
