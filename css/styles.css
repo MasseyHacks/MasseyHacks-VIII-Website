@@ -152,7 +152,7 @@ body {
 
 .mh-signup-btn {
     width: fit-content;
-    font-size: clamp(0.7rem, 1.48vw, 1.4rem);
+    /*font-size: clamp(0.7rem, 1.48vw, 1.4rem);*/
     background-color: hsl(323, 100%, 67.3%);
     color: white !important;
     font-weight: bold;
